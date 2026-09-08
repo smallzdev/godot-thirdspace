@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8i4vx16byycf"
-path="res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"
+uid="uid://bg1p14g001fe8"
+path="res://.godot/imported/Right Hit (54x52).png-250a08821b10966c0f2773a5a502effa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jump (32x32).png"
-dest_files=["res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"]
+source_file="res://PixelPack/Traps/Spike Head/Right Hit (54x52).png"
+dest_files=["res://.godot/imported/Right Hit (54x52).png-250a08821b10966c0f2773a5a502effa.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8i4vx16byycf"
-path="res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"
+uid="uid://ctcmt1w8h4onk"
+path="res://.godot/imported/Checkpoint (Flag Out) (64x64).png-2af870e62d13e679b69a613b5af3b07f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jump (32x32).png"
-dest_files=["res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"]
+source_file="res://PixelPack/Items/Checkpoints/Checkpoint/Checkpoint (Flag Out) (64x64).png"
+dest_files=["res://.godot/imported/Checkpoint (Flag Out) (64x64).png-2af870e62d13e679b69a613b5af3b07f.ctex"]
 
 [params]
 

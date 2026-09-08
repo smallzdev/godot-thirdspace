@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8i4vx16byycf"
-path="res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"
+uid="uid://cgoaqvw4f0nul"
+path="res://.godot/imported/Part 2 (22x22).png-5e2672bf072465b1dfa9840f6b218f48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jump (32x32).png"
-dest_files=["res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"]
+source_file="res://PixelPack/Traps/Blocks/Part 2 (22x22).png"
+dest_files=["res://.godot/imported/Part 2 (22x22).png-5e2672bf072465b1dfa9840f6b218f48.ctex"]
 
 [params]
 

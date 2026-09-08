@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8i4vx16byycf"
-path="res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"
+uid="uid://bxdd1t0rioxyc"
+path="res://.godot/imported/Bananas.png-ab222fa19b6ed58e73e0ae4f074f5663.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jump (32x32).png"
-dest_files=["res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"]
+source_file="res://PixelPack/Items/Fruits/Bananas.png"
+dest_files=["res://.godot/imported/Bananas.png-ab222fa19b6ed58e73e0ae4f074f5663.ctex"]
 
 [params]
 

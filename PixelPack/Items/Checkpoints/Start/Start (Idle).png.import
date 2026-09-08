@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8i4vx16byycf"
-path="res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"
+uid="uid://kn07sv5ln45o"
+path="res://.godot/imported/Start (Idle).png-af521986fd09a31dd0ccd25d8accd1f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jump (32x32).png"
-dest_files=["res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"]
+source_file="res://PixelPack/Items/Checkpoints/Start/Start (Idle).png"
+dest_files=["res://.godot/imported/Start (Idle).png-af521986fd09a31dd0ccd25d8accd1f8.ctex"]
 
 [params]
 

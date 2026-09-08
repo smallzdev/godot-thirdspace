@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8i4vx16byycf"
-path="res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"
+uid="uid://blehvc84tq02v"
+path="res://.godot/imported/Idle (32x32).png-1229c4589faf1ceb8abeffdb7510e333.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jump (32x32).png"
-dest_files=["res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"]
+source_file="res://PixelPack/Main Characters/Pink Man/Idle (32x32).png"
+dest_files=["res://.godot/imported/Idle (32x32).png-1229c4589faf1ceb8abeffdb7510e333.ctex"]
 
 [params]
 

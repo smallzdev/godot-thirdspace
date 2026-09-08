@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8i4vx16byycf"
-path="res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"
+uid="uid://cu7om5gapxxq6"
+path="res://.godot/imported/Spiked Ball.png-abb8fe71336cfd10d29713e0d4b18741.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jump (32x32).png"
-dest_files=["res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"]
+source_file="res://PixelPack/Traps/Spiked Ball/Spiked Ball.png"
+dest_files=["res://.godot/imported/Spiked Ball.png-abb8fe71336cfd10d29713e0d4b18741.ctex"]
 
 [params]
 

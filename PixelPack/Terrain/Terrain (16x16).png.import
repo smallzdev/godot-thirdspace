@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8i4vx16byycf"
-path="res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"
+uid="uid://cp3trgw5n2mge"
+path="res://.godot/imported/Terrain (16x16).png-3458bc9cf478a9f0712ff370d8ccd591.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jump (32x32).png"
-dest_files=["res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"]
+source_file="res://PixelPack/Terrain/Terrain (16x16).png"
+dest_files=["res://.godot/imported/Terrain (16x16).png-3458bc9cf478a9f0712ff370d8ccd591.ctex"]
 
 [params]
 
