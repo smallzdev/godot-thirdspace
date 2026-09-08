@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://w1pv3wjhuft3"]
 
 [ext_resource type="Texture2D" uid="uid://2v1y4vx7jcu6" path="res://Terrain (16x16).png" id="1_sy5k4"]
+[ext_resource type="Texture2D" uid="uid://b8i4vx16byycf" path="res://Jump (32x32).png" id="2_j2q8x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j2q8x"]
 texture = ExtResource("1_sy5k4")
@@ -152,9 +153,6 @@ texture = ExtResource("1_sy5k4")
 [sub_resource type="TileSet" id="TileSet_stm8k"]
 sources/0 = SubResource("TileSetAtlasSource_j2q8x")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_112p8"]
-load_path = "res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"
-
 [node name="Node" type="Node" unique_id=1698342437]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1140490436]
@@ -168,4 +166,4 @@ layer_0/tile_data = PackedInt32Array(786432, 393216, 4, 786433, 393216, 4, 78643
 texture_filter = 1
 position = Vector2(130, 501)
 scale = Vector2(1.6875, 1.5)
-texture = SubResource("CompressedTexture2D_112p8")
+texture = ExtResource("2_j2q8x")
