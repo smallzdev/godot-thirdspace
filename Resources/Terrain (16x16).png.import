@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvmm8ge5x012k"
-path="res://.godot/imported/Wall Jump (32x32).png-2d71649911446c6fd62595203a683b6a.ctex"
+uid="uid://2v1y4vx7jcu6"
+path="res://.godot/imported/Terrain (16x16).png-d6116532bb4eeacf734c91d1ed205ba0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Wall Jump (32x32).png"
-dest_files=["res://.godot/imported/Wall Jump (32x32).png-2d71649911446c6fd62595203a683b6a.ctex"]
+source_file="res://Resources/Terrain (16x16).png"
+dest_files=["res://.godot/imported/Terrain (16x16).png-d6116532bb4eeacf734c91d1ed205ba0.ctex"]
 
 [params]
 

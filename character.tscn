@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://ji2ahpa1peus"]
 
-[ext_resource type="Texture2D" uid="uid://b8i4vx16byycf" path="res://Jump (32x32).png" id="1_glpr6"]
+[ext_resource type="Texture2D" uid="uid://b8i4vx16byycf" path="res://Resources/MainCharacter/Jump (32x32).png" id="1_glpr6"]
 [ext_resource type="Script" uid="uid://sv2j1i1u0bos" path="res://character.gd" id="1_pjt0s"]
-[ext_resource type="Texture2D" uid="uid://dc886yuxils0" path="res://Idle (32x32).png" id="2_pjt0s"]
-[ext_resource type="Texture2D" uid="uid://bjrnb5q6xwlkp" path="res://Run (32x32).png" id="4_wfnr8"]
+[ext_resource type="Texture2D" uid="uid://dc886yuxils0" path="res://Resources/MainCharacter/Idle (32x32).png" id="2_pjt0s"]
+[ext_resource type="Texture2D" uid="uid://bjrnb5q6xwlkp" path="res://Resources/MainCharacter/Run (32x32).png" id="4_wfnr8"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_stm8k"]
 radius = 10.947369

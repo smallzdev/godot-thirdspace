@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpawa0w3mognm"
-path="res://.godot/imported/Yellow.png-88c6913f28228537dc1b892250a78059.ctex"
+uid="uid://dc886yuxils0"
+path="res://.godot/imported/Idle (32x32).png-e4ad8c036a3665dd3c8cabc6572f9a92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PixelPack/Background/Yellow.png"
-dest_files=["res://.godot/imported/Yellow.png-88c6913f28228537dc1b892250a78059.ctex"]
+source_file="res://Resources/MainCharacter/Idle (32x32).png"
+dest_files=["res://.godot/imported/Idle (32x32).png-e4ad8c036a3665dd3c8cabc6572f9a92.ctex"]
 
 [params]
 
