@@ -5,6 +5,7 @@
 [node name="main-menu" type="Node" unique_id=1227080688]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1685152784]
+texture_filter = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
