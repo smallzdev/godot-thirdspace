@@ -5,6 +5,11 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -950.0
 @onready var mainSprite = %MainCharacter
 
+# 	var fall := Input.get_axis("Down")
+	# if direction:
+		# velocity.y = direction * SPEED
+			# print("test")
+
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -24,6 +29,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		mainSprite.animation = "default"
+		
+	if not is_on_floor() and global_position.y > 1000:
+		get_tree().reload_current_scene()
 
 	move_and_slide()
 	
