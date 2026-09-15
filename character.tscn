@@ -210,3 +210,6 @@ position = Vector2(99.5, 409)
 scale = Vector2(2.96875, 2.9375)
 sprite_frames = SubResource("SpriteFrames_stm8k")
 autoplay = "default"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1012341498]
+position = Vector2(101, 412)

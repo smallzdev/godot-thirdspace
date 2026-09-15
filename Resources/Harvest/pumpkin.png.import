@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnwtp8c632d3v"
-path="res://.godot/imported/Brown.png-5fa5f34eb17108f27f0767c40b621e1b.ctex"
+uid="uid://c10fs0dcdk6dt"
+path="res://.godot/imported/pumpkin.png-939b80f4a7b86a916afffc04fb02d9f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PixelPack/Background/Brown.png"
-dest_files=["res://.godot/imported/Brown.png-5fa5f34eb17108f27f0767c40b621e1b.ctex"]
+source_file="res://Resources/Harvest/pumpkin.png"
+dest_files=["res://.godot/imported/pumpkin.png-939b80f4a7b86a916afffc04fb02d9f7.ctex"]
 
 [params]
 
