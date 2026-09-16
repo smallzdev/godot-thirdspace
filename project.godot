@@ -15,6 +15,11 @@ run/main_scene="uid://dtfmq4tyy5op7"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://Resources/icon.svg"
 
+[autoload]
+
+Global="*uid://c670dualriwb3"
+Eventcontroller="*uid://dwb41o81hgtjp"
+
 [display]
 
 window/stretch/mode="canvas_items"

@@ -3,9 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://yi82pyg4ria0" path="res://Resources/Blue.png" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://2v1y4vx7jcu6" path="res://Resources/Terrain (16x16).png" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://ji2ahpa1peus" path="res://character.tscn" id="3_h2yge"]
-[ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://ue72iyrjftst" path="res://finish.gd" id="5_7mycd"]
 [ext_resource type="Texture2D" uid="uid://cgxt7tkhwrfvp" path="res://Resources/End (Pressed) (64x64).png" id="6_272bh"]
+[ext_resource type="PackedScene" uid="uid://bkopc4odunmjm" path="res://coin.tscn" id="7_5vw27"]
+[ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://coin_ui.tscn" id="7_272bh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
 texture = ExtResource("1_ig7tw")
@@ -168,140 +169,6 @@ texture = ExtResource("1_ig7tw")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_0xm2m")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lquwl"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7mycd"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_272bh"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5vw27"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kek77"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(0, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4c57u"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(32, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_efxa6"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(64, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dg77c"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(96, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ycdy4"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(0, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w48qg"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(32, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vivmo"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(64, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2cqfq"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(96, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yaehf"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(0, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_074og"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(32, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cegan"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(64, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_82xsv"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(96, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_getpj"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(0, 128, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ryguw"]
-atlas = ExtResource("4_1bvp3")
-region = Rect2(32, 128, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_stm8k"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lquwl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7mycd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_272bh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5vw27")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kek77")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4c57u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_efxa6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dg77c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ycdy4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w48qg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vivmo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2cqfq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yaehf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_074og")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cegan")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_82xsv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_getpj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ryguw")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 7.0
-}]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_stm8k"]
 size = Vector2(45.44928, 46.459267)
 
@@ -387,57 +254,6 @@ layer_0/tile_data = PackedInt32Array(786432, 393216, 1, 786433, 458752, 1, 78643
 
 [node name="CharacterBody2D" parent="." unique_id=177745067 instance=ExtResource("3_h2yge")]
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1204171097]
-texture_filter = 1
-position = Vector2(859, 466)
-scale = Vector2(3, 3)
-sprite_frames = SubResource("SpriteFrames_stm8k")
-autoplay = "default"
-frame = 17
-frame_progress = 0.5349523
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2109552915]
-texture_filter = 1
-position = Vector2(502, 267)
-scale = Vector2(3, 3)
-sprite_frames = SubResource("SpriteFrames_stm8k")
-autoplay = "default"
-frame = 17
-frame_progress = 0.5349523
-
-[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="." unique_id=1549332899]
-texture_filter = 1
-position = Vector2(1176, 524)
-scale = Vector2(3, 3)
-sprite_frames = SubResource("SpriteFrames_stm8k")
-autoplay = "default"
-frame_progress = 0.6900558
-
-[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="." unique_id=277515086]
-texture_filter = 1
-position = Vector2(1497, 445)
-scale = Vector2(3, 3)
-sprite_frames = SubResource("SpriteFrames_stm8k")
-autoplay = "default"
-frame_progress = 0.6900558
-
-[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="." unique_id=707857327]
-texture_filter = 1
-position = Vector2(2119, 366.00003)
-scale = Vector2(3, 3)
-sprite_frames = SubResource("SpriteFrames_stm8k")
-autoplay = "default"
-frame = 1
-frame_progress = 0.12435939
-
-[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="." unique_id=2115356167]
-texture_filter = 1
-position = Vector2(2532, 309)
-scale = Vector2(3, 3)
-sprite_frames = SubResource("SpriteFrames_stm8k")
-autoplay = "default"
-frame_progress = 0.6900558
-
 [node name="Finish" type="Area2D" parent="." unique_id=995221132]
 script = ExtResource("5_7mycd")
 
@@ -454,5 +270,12 @@ sprite_frames = SubResource("SpriteFrames_udkci")
 autoplay = "default"
 frame = 4
 frame_progress = 0.92803615
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=993562204]
+
+[node name="CoinUI" parent="CanvasLayer" unique_id=662362470 instance=ExtResource("7_272bh")]
+
+[node name="Coin" parent="." unique_id=1389673919 instance=ExtResource("7_5vw27")]
+position = Vector2(504, 345)
 
 [connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]
