@@ -143,15 +143,19 @@ animations = [{
 script = ExtResource("1_0t63x")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1140476286]
+texture_filter = 1
 position = Vector2(0, -1)
+scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_xrivr")
 animation = &"updown"
 autoplay = "updown"
+frame_progress = 0.70626974
 
 [node name="Area2D" type="Area2D" parent="." unique_id=752126635]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=16813768]
 position = Vector2(0, -1)
+scale = Vector2(3, 3)
 shape = SubResource("CircleShape2D_xrivr")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
