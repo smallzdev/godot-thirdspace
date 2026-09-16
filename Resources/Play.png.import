@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dy1dwj583kuyx"
-path="res://.godot/imported/Restart.png-5b264e060f32d8731aedd996e6b77ff9.ctex"
+uid="uid://cuipknqhbymjq"
+path="res://.godot/imported/Play.png-a1dd3401fc0f824555916a7281507171.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PixelPack/Menu/Buttons/Restart.png"
-dest_files=["res://.godot/imported/Restart.png-5b264e060f32d8731aedd996e6b77ff9.ctex"]
+source_file="res://Resources/Play.png"
+dest_files=["res://.godot/imported/Play.png-a1dd3401fc0f824555916a7281507171.ctex"]
 
 [params]
 

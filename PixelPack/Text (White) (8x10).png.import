@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuipknqhbymjq"
-path="res://.godot/imported/Play.png-1e7559577390f15b0c025d679354a5ad.ctex"
+uid="uid://c02xqa72b6w2c"
+path="res://.godot/imported/Text (White) (8x10).png-da5ab19974b443755d2eacd5f1dca924.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PixelPack/Menu/Buttons/Play.png"
-dest_files=["res://.godot/imported/Play.png-1e7559577390f15b0c025d679354a5ad.ctex"]
+source_file="res://PixelPack/Text (White) (8x10).png"
+dest_files=["res://.godot/imported/Text (White) (8x10).png-da5ab19974b443755d2eacd5f1dca924.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c02xqa72b6w2c"
-path="res://.godot/imported/Text (White) (8x10).png-4fd29ec0f881ad09f560d4ebc69c9ce1.ctex"
+uid="uid://dy1dwj583kuyx"
+path="res://.godot/imported/Restart.png-298d6f1b5d6b74ab89933e6b59c28cec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PixelPack/Menu/Text/Text (White) (8x10).png"
-dest_files=["res://.godot/imported/Text (White) (8x10).png-4fd29ec0f881ad09f560d4ebc69c9ce1.ctex"]
+source_file="res://Resources/Restart.png"
+dest_files=["res://.godot/imported/Restart.png-298d6f1b5d6b74ab89933e6b59c28cec.ctex"]
 
 [params]
 
