@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cpawa0w3mognm" path="res://Resources/Yellow.png" id="1_7vrkn"]
 [ext_resource type="Texture2D" uid="uid://cuipknqhbymjq" path="res://Resources/Play.png" id="2_fu7sn"]
-[ext_resource type="Script" uid="uid://c6h0e3ba0qupy" path="res://menubuttons.gd" id="3_fu7sn"]
+[ext_resource type="Script" uid="uid://c6h0e3ba0qupy" path="res://scripts/menubuttons.gd" id="3_fu7sn"]
 
 [sub_resource type="FontFile" id="FontFile_glbon"]
 subpixel_positioning = 0

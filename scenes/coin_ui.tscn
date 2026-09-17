@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://do62venya66n5"]
 
-[ext_resource type="Script" uid="uid://u0l8mn78b3q6" path="res://coin_ui.gd" id="1_i8ha2"]
+[ext_resource type="Script" uid="uid://u0l8mn78b3q6" path="res://scripts/coin_ui.gd" id="1_i8ha2"]
 [ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="2_kgjm3"]
 
 [node name="CoinUI" type="Control" unique_id=662362470]
