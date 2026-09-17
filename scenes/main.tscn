@@ -279,6 +279,7 @@ frame_progress = 0.92803615
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1992329975]
 
 [node name="HeartUI" type="Control" parent="CanvasLayer2" unique_id=1059890347]
+texture_filter = 1
 layout_mode = 3
 anchors_preset = 0
 offset_left = 30.0
