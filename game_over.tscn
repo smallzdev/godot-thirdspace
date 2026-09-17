@@ -3,8 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://duqlnhd1nq2a6" path="res://Resources/Pink.png" id="1_y26ei"]
 [ext_resource type="Texture2D" uid="uid://cuipknqhbymjq" path="res://Resources/Play.png" id="2_ccer4"]
 [ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Restart.png" id="3_8u835"]
+[ext_resource type="Script" uid="uid://hxymjj6ood0j" path="res://buttons.gd" id="3_ftari"]
 
 [sub_resource type="FontFile" id="FontFile_j3pc0"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -46,7 +50,8 @@ theme_override_fonts/font = SubResource("FontFile_j3pc0")
 theme_override_font_sizes/font_size = 120
 text = "Game Over!"
 
-[node name="Button" type="Button" parent="." unique_id=1730818566]
+[node name="resume" type="Button" parent="." unique_id=1730818566]
+unique_name_in_owner = true
 texture_filter = 1
 offset_left = 178.0
 offset_top = 264.0
@@ -55,8 +60,10 @@ offset_bottom = 295.0
 scale = Vector2(3, 3)
 text = "Resume"
 icon = ExtResource("2_ccer4")
+script = ExtResource("3_ftari")
 
-[node name="Button2" type="Button" parent="." unique_id=2139243022]
+[node name="mainmenubutton" type="Button" parent="." unique_id=2139243022]
+unique_name_in_owner = true
 texture_filter = 1
 offset_left = 638.0
 offset_top = 264.0

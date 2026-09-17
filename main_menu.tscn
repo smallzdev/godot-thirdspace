@@ -1,6 +1,32 @@
 [gd_scene format=3 uid="uid://d1xj64thgqt81"]
 
 [ext_resource type="Texture2D" uid="uid://cpawa0w3mognm" path="res://Resources/Yellow.png" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://cuipknqhbymjq" path="res://Resources/Play.png" id="2_fu7sn"]
+[ext_resource type="Script" uid="uid://c6h0e3ba0qupy" path="res://menubuttons.gd" id="3_fu7sn"]
+
+[sub_resource type="FontFile" id="FontFile_glbon"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/120/0/ascent = 0.0
+cache/0/120/0/descent = 0.0
+cache/0/120/0/underline_position = 0.0
+cache/0/120/0/underline_thickness = 0.0
+cache/0/120/0/scale = 1.0
 
 [node name="main-menu" type="Node" unique_id=1227080688]
 
@@ -12,3 +38,62 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_7vrkn")
+
+[node name="playButton" type="Button" parent="TextureRect" unique_id=857791057]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 104.0
+offset_top = 228.0
+offset_right = 199.0
+offset_bottom = 259.0
+scale = Vector2(3, 3)
+text = "Play"
+icon = ExtResource("2_fu7sn")
+script = ExtResource("3_fu7sn")
+
+[node name="placeholderbutton" type="Button" parent="TextureRect" unique_id=1616832112]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 451.00003
+offset_top = 231.0
+offset_right = 546.0
+offset_bottom = 262.0
+scale = Vector2(3, 3)
+text = "/"
+icon = ExtResource("2_fu7sn")
+
+[node name="placeholderbutton2" type="Button" parent="TextureRect" unique_id=754754196]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 790.0
+offset_top = 228.0
+offset_right = 885.0
+offset_bottom = 259.0
+scale = Vector2(3, 3)
+text = "/"
+icon = ExtResource("2_fu7sn")
+
+[node name="creditsbutton" type="Button" parent="TextureRect" unique_id=74736462]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 841.0
+offset_top = 530.0
+offset_right = 936.0
+offset_bottom = 561.0
+scale = Vector2(3, 3)
+text = "Credits"
+icon = ExtResource("2_fu7sn")
+
+[node name="Label" type="Label" parent="." unique_id=541770000]
+texture_filter = 1
+offset_left = 254.0
+offset_top = 23.0
+offset_right = 949.0
+offset_bottom = 296.0
+theme_override_fonts/font = SubResource("FontFile_glbon")
+theme_override_font_sizes/font_size = 120
+text = "Main Menu"
