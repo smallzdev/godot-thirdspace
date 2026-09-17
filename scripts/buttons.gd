@@ -1,6 +1,6 @@
 extends Button
 
-var mainMenuScene = preload("res://main_menu.tscn")
+var mainMenuScene = preload("res://scenes/main_menu.tscn")
 
 func _ready():
 	# Game Over Screen Buttons

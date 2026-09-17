@@ -3,7 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://duqlnhd1nq2a6" path="res://Resources/Pink.png" id="1_y26ei"]
 [ext_resource type="Texture2D" uid="uid://cuipknqhbymjq" path="res://Resources/Play.png" id="2_ccer4"]
 [ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Restart.png" id="3_8u835"]
-[ext_resource type="Script" uid="uid://hxymjj6ood0j" path="res://buttons.gd" id="3_ftari"]
+[ext_resource type="Script" uid="uid://hxymjj6ood0j" path="res://scripts/buttons.gd" id="3_ftari"]
+
 
 [sub_resource type="FontFile" id="FontFile_j3pc0"]
 subpixel_positioning = 0
