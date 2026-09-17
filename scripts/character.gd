@@ -5,7 +5,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -950.0
 var lives = 3
-var gameoverscene = preload("res://game_over.tscn")
+var gameoverscene = preload("res://scenes/game_over.tscn")
 
 @onready var mainSprite = %MainCharacter
 @onready var livesLabel = $"../CanvasLayer2/HeartUI/LivesLabel"

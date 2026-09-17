@@ -1,6 +1,6 @@
 extends Area2D
 
-var scene2 = preload("res://level2.tscn")
+var scene2 = preload("res://scenes/level2.tscn")
 
 func _on_body_entered(body: Node2D) -> void:
 	if (body.name == "CharacterBody2D"):
