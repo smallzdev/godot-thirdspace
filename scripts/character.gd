@@ -8,6 +8,7 @@ var lives = 3
 var gameoverscene = preload("res://scenes/game_over.tscn")
 
 @onready var mainSprite = %MainCharacter
+@onready var livesLabel = $"../CanvasLayer2/HeartUI/LivesLabel"
 
 # Fetches the current startposition :D
 func _ready() -> void:
@@ -32,12 +33,13 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		mainSprite.animation = "default"
 	if not is_on_floor() and global_position.y > 1000:
-		var startposition: Vector2
 		Global.remove_all_coins(amount)
-		if lives == 0:
+		var startposition: Vector2
+		if lives == 1:
 			print("All lives used, game over D:")
 			get_tree().change_scene_to_packed(gameoverscene)
 		lives -= 1
+		livesLabel.text = str(lives)
 		print("lives: ", lives)
 		global_position = startposition
 		
