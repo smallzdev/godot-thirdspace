@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://copqbgx1v0cee"]
+
+[ext_resource type="Texture2D" uid="uid://dq4k6xpn1srhi" path="res://Resources/Harvest/autumntree.png" id="1_vplca"]
+[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="2_viusy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(29, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_13qdw"]
+size = Vector2(29, 24)
+
+[node name="Tree" type="Node2D" unique_id=862735303]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=390670425]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1004589557]
+position = Vector2(0.5, 4)
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1244416347]
+texture = ExtResource("1_vplca")
+
+[node name="interactable" parent="." unique_id=977272514 instance=ExtResource("2_viusy")]
+interact_name = "Drop Coin"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactable" unique_id=1771058857]
+position = Vector2(0.5, 4)
+shape = SubResource("RectangleShape2D_13qdw")

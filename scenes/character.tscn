@@ -4,10 +4,11 @@
 [ext_resource type="Script" uid="uid://sv2j1i1u0bos" path="res://scripts/character.gd" id="1_pjt0s"]
 [ext_resource type="Texture2D" uid="uid://dc886yuxils0" path="res://Resources/MainCharacter/Idle (32x32).png" id="2_pjt0s"]
 [ext_resource type="Texture2D" uid="uid://bjrnb5q6xwlkp" path="res://Resources/MainCharacter/Run (32x32).png" id="4_wfnr8"]
+[ext_resource type="PackedScene" uid="uid://qu41r5de8b2" path="res://scenes/interacting_component.tscn" id="5_dp8ca"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_stm8k"]
-radius = 10.947369
-height = 33.361694
+radius = 5.389477
+height = 23.829773
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wa5vi"]
 atlas = ExtResource("2_pjt0s")
@@ -199,7 +200,7 @@ animations = [{
 script = ExtResource("1_pjt0s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1406975777]
-position = Vector2(101, 413)
+position = Vector2(100, 420)
 scale = Vector2(2.96875, 2.9375)
 shape = SubResource("CapsuleShape2D_stm8k")
 
@@ -213,3 +214,6 @@ autoplay = "default"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1012341498]
 position = Vector2(101, 412)
+
+[node name="InteractingComponent" parent="." unique_id=818544180 instance=ExtResource("5_dp8ca")]
+position = Vector2(98, 417)

@@ -282,34 +282,53 @@ frame_progress = 0.92803615
 texture_filter = 1
 layout_mode = 3
 anchors_preset = 0
-offset_left = 30.0
-offset_top = 30.0
-offset_right = 70.0
-offset_bottom = 70.0
-scale = Vector2(3, 3)
+offset_left = 23.0
+offset_top = 33.0
+offset_right = 63.0
+offset_bottom = 73.0
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer2/HeartUI" unique_id=2025442482]
 texture_filter = 1
 layout_mode = 0
-offset_left = 48.0
-offset_top = -7.0
-offset_right = 74.0
-offset_bottom = 20.0
+offset_left = 142.0
+offset_top = -18.0
+offset_right = 168.0
+offset_bottom = 9.0
+scale = Vector2(3, 3)
 texture = ExtResource("7_kek77")
 expand_mode = 1
 stretch_mode = 1
 
 [node name="LivesLabel" type="Label" parent="CanvasLayer2/HeartUI" unique_id=1051447047]
 layout_mode = 0
-offset_left = 75.0
-offset_top = -3.0
-offset_right = 93.0
-offset_bottom = 20.0
+offset_left = 239.0
+offset_top = -5.0
+offset_right = 268.0
+offset_bottom = 64.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
 text = "3"
 horizontal_alignment = 1
 
 [node name="Coin" parent="." unique_id=1389673919 instance=ExtResource("7_5vw27")]
 position = Vector2(504, 345)
+
+[node name="Coin2" parent="." unique_id=234341811 instance=ExtResource("7_5vw27")]
+position = Vector2(472, 514)
+
+[node name="Coin3" parent="." unique_id=1729357214 instance=ExtResource("7_5vw27")]
+position = Vector2(531, 514)
+
+[node name="Coin4" parent="." unique_id=1321849626 instance=ExtResource("7_5vw27")]
+position = Vector2(1001, 428)
+
+[node name="Coin5" parent="." unique_id=1463650716 instance=ExtResource("7_5vw27")]
+position = Vector2(1345, 158)
+
+[node name="Coin6" parent="." unique_id=45339988 instance=ExtResource("7_5vw27")]
+position = Vector2(2347, 248)
+
+[node name="Coin7" parent="." unique_id=1382988838 instance=ExtResource("7_5vw27")]
+position = Vector2(2347, 175)
 
 [connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]
