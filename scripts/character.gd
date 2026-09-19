@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name CharacterBody
 
 @export var amount = 1
 
@@ -34,14 +35,14 @@ func _physics_process(delta: float) -> void:
 		mainSprite.animation = "default"
 	if not is_on_floor() and global_position.y > 1000:
 		Global.remove_all_coins(amount)
-		var startposition: Vector2
+		var spawnposition: Vector2
 		if lives == 1:
 			print("All lives used, game over D:")
 			get_tree().change_scene_to_packed(gameoverscene)
 		lives -= 1
 		livesLabel.text = str(lives)
 		print("lives: ", lives)
-		global_position = startposition
+		global_position = spawnposition
 		
 	move_and_slide()
 	

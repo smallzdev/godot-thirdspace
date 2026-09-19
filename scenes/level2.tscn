@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://bnwtp8c632d3v" path="res://Resources/Brown.png" id="1_r40rm"]
 [ext_resource type="Texture2D" uid="uid://2v1y4vx7jcu6" path="res://Resources/Terrain (16x16).png" id="2_6q4t8"]
 [ext_resource type="PackedScene" uid="uid://ji2ahpa1peus" path="res://scenes/character.tscn" id="3_6q4t8"]
+[ext_resource type="PackedScene" uid="uid://b81aq5w2ohki6" path="res://scenes/checkpoint.tscn" id="5_alqfr"]
+[ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/coin_ui.tscn" id="6_yqkch"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8tcn8"]
 texture = ExtResource("2_6q4t8")
@@ -168,7 +170,22 @@ sources/0 = SubResource("TileSetAtlasSource_8tcn8")
 
 [node name="Node" type="Node" unique_id=493559345]
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1503899844]
+offset_right = 1153.0
+offset_bottom = 694.0
+texture = ExtResource("1_r40rm")
+
+[node name="Area2D" parent="." unique_id=520493769 instance=ExtResource("5_alqfr")]
+texture_filter = 1
+position = Vector2(220.00002, 480)
+
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=330441141]
+
+[node name="CoinUI" parent="CanvasLayer2" unique_id=662362470 instance=ExtResource("6_yqkch")]
+offset_left = 54.0
+offset_top = 25.0
+offset_right = 93.0
+offset_bottom = 47.0
 
 [node name="HeartUI" type="Control" parent="CanvasLayer2" unique_id=1556341452]
 layout_mode = 3
@@ -177,6 +194,7 @@ offset_left = 30.0
 offset_top = 30.0
 offset_right = 70.0
 offset_bottom = 70.0
+scale = Vector2(3, 3)
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer2/HeartUI" unique_id=2021017998]
 texture_filter = 1
@@ -198,11 +216,6 @@ offset_bottom = 20.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "3"
 horizontal_alignment = 1
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1503899844]
-offset_right = 1153.0
-offset_bottom = 694.0
-texture = ExtResource("1_r40rm")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=708783800]
 texture_filter = 1

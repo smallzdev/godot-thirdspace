@@ -43,13 +43,14 @@ texture = ExtResource("1_7vrkn")
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
-offset_left = 104.0
-offset_top = 228.0
-offset_right = 199.0
-offset_bottom = 259.0
-scale = Vector2(3, 3)
+offset_left = 161.0
+offset_top = 237.0
+offset_right = 325.0
+offset_bottom = 317.0
+theme_override_font_sizes/font_size = 48
 text = "Play"
 icon = ExtResource("2_fu7sn")
+expand_icon = true
 script = ExtResource("3_fu7sn")
 
 [node name="placeholderbutton" type="Button" parent="TextureRect" unique_id=1616832112]
@@ -80,13 +81,14 @@ icon = ExtResource("2_fu7sn")
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
-offset_left = 841.0
-offset_top = 530.0
-offset_right = 936.0
-offset_bottom = 561.0
-scale = Vector2(3, 3)
+offset_left = 779.0
+offset_top = 528.0
+offset_right = 1013.0
+offset_bottom = 605.0
+theme_override_font_sizes/font_size = 48
 text = "Credits"
 icon = ExtResource("2_fu7sn")
+expand_icon = true
 
 [node name="Label" type="Label" parent="." unique_id=541770000]
 texture_filter = 1

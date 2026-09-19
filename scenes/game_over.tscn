@@ -53,22 +53,24 @@ text = "Game Over!"
 [node name="resume" type="Button" parent="." unique_id=1730818566]
 unique_name_in_owner = true
 texture_filter = 1
-offset_left = 178.0
-offset_top = 264.0
-offset_right = 273.0
-offset_bottom = 295.0
-scale = Vector2(3, 3)
+offset_left = 232.0
+offset_top = 266.0
+offset_right = 478.0
+offset_bottom = 341.0
+theme_override_font_sizes/font_size = 48
 text = "Resume"
 icon = ExtResource("2_ccer4")
+expand_icon = true
 script = ExtResource("3_ftari")
 
 [node name="mainmenubutton" type="Button" parent="." unique_id=2139243022]
 unique_name_in_owner = true
 texture_filter = 1
-offset_left = 638.0
-offset_top = 264.0
-offset_right = 733.0
-offset_bottom = 295.0
-scale = Vector2(3, 3)
+offset_left = 691.0
+offset_top = 267.0
+offset_right = 889.0
+offset_bottom = 342.0
+theme_override_font_sizes/font_size = 48
 text = "Menu"
 icon = ExtResource("3_8u835")
+expand_icon = true
