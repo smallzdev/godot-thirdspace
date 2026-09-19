@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://copqbgx1v0cee"]
 
+[ext_resource type="Script" uid="uid://c7oelha8n2d6q" path="res://scenes/tree.gd" id="1_viusy"]
 [ext_resource type="Texture2D" uid="uid://dq4k6xpn1srhi" path="res://Resources/Harvest/autumntree.png" id="1_vplca"]
 [ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="2_viusy"]
 
@@ -10,6 +11,7 @@ size = Vector2(29, 24)
 size = Vector2(29, 24)
 
 [node name="Tree" type="Node2D" unique_id=862735303]
+script = ExtResource("1_viusy")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=390670425]
 

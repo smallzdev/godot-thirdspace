@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bkopc4odunmjm" path="res://scenes/coin.tscn" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/coin_ui.tscn" id="7_272bh"]
 [ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="7_kek77"]
+[ext_resource type="PackedScene" uid="uid://copqbgx1v0cee" path="res://scenes/tree.tscn" id="9_85g3d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
 texture = ExtResource("1_ig7tw")
@@ -330,5 +331,8 @@ position = Vector2(2347, 248)
 
 [node name="Coin7" parent="." unique_id=1382988838 instance=ExtResource("7_5vw27")]
 position = Vector2(2347, 175)
+
+[node name="Tree" parent="." unique_id=862735303 instance=ExtResource("9_85g3d")]
+position = Vector2(780, 559)
 
 [connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]

@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cuipknqhbymjq" path="res://Resources/Play.png" id="2_ccer4"]
 [ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Restart.png" id="3_8u835"]
 [ext_resource type="Script" uid="uid://hxymjj6ood0j" path="res://scripts/buttons.gd" id="3_ftari"]
+[ext_resource type="AudioStream" uid="uid://b5rtupdam1bao" path="res://songs/gameover.wav" id="5_7m3ot"]
 
 [sub_resource type="FontFile" id="FontFile_j3pc0"]
 subpixel_positioning = 0
@@ -74,3 +75,7 @@ theme_override_font_sizes/font_size = 48
 text = "Menu"
 icon = ExtResource("3_8u835")
 expand_icon = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=389428772]
+stream = ExtResource("5_7m3ot")
+autoplay = true

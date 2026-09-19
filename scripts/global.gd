@@ -10,7 +10,7 @@ func add_coins(amount: int) -> void:
 	
 func remove_all_coins(amount: int) -> void:
 	coins = 0
-	print("No more coins ", coins)
+	print("No more coins: ", coins)
 	Eventcontroller.emit_signal("remove_coin", coins)
 
 # Called when the node enters the scene tree for the first time.
