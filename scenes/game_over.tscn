@@ -30,6 +30,11 @@ cache/0/120/0/underline_position = 0.0
 cache/0/120/0/underline_thickness = 0.0
 cache/0/120/0/scale = 1.0
 
+[sub_resource type="LabelSettings" id="LabelSettings_wu84c"]
+font_size = 120
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+
 [node name="game_over" type="Node" unique_id=2046450511]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=791841921]
@@ -50,6 +55,7 @@ offset_bottom = 305.0
 theme_override_fonts/font = SubResource("FontFile_j3pc0")
 theme_override_font_sizes/font_size = 120
 text = "Game Over!"
+label_settings = SubResource("LabelSettings_wu84c")
 
 [node name="resume" type="Button" parent="." unique_id=1730818566]
 unique_name_in_owner = true

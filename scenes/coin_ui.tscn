@@ -3,6 +3,11 @@
 [ext_resource type="Script" uid="uid://u0l8mn78b3q6" path="res://scripts/coin_ui.gd" id="1_i8ha2"]
 [ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="2_kgjm3"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_rtw2f"]
+font_size = 50
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
 [node name="CoinUI" type="Control" unique_id=662362470]
 layout_mode = 3
 anchors_preset = 0
@@ -13,6 +18,7 @@ offset_bottom = 30.0
 script = ExtResource("1_i8ha2")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=956696934]
+texture_filter = 1
 layout_mode = 0
 offset_left = -11.333334
 offset_top = -15.666666
@@ -32,4 +38,5 @@ offset_bottom = 68.333336
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "0"
+label_settings = SubResource("LabelSettings_rtw2f")
 horizontal_alignment = 1

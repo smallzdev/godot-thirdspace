@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dxyo3o6xcprpx" path="res://scripts/interacting_component.gd" id="1_ofc3v"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xrivr"]
-radius = 20.83333
+radius = 8.333332
 height = 79.99999
 
 [sub_resource type="LabelSettings" id="LabelSettings_ofc3v"]
