@@ -175,11 +175,6 @@ offset_right = 1153.0
 offset_bottom = 694.0
 texture = ExtResource("1_r40rm")
 
-[node name="Checkpoint1" parent="." unique_id=520493769 instance=ExtResource("5_alqfr")]
-unique_name_in_owner = true
-texture_filter = 1
-position = Vector2(220.00002, 480)
-
 [node name="Checkpoint2" parent="." unique_id=89005797 instance=ExtResource("5_alqfr")]
 unique_name_in_owner = true
 texture_filter = 1

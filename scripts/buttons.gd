@@ -12,6 +12,7 @@ func _ready():
 
 # game over screen buttons
 func _resume_button_pressed():
+	Global.checkpointNumber = 0
 	get_tree().change_scene_to_file("res://scenes/main.tscn")
 
 func _mainMenu_button_pressed():
