@@ -42,7 +42,13 @@ func _physics_process(delta: float) -> void:
 		lives -= 1
 		livesLabel.text = str(lives)
 		print("lives: ", lives)
-		global_position = spawnposition
+		if Global.checkpointNumber == 0:
+			global_position = spawnposition
+		elif Global.checkpointNumber == 1:
+			global_position = %Checkpoint1/spawnPosition.global_position
+			print("yay the checkpoint spawning script works!")
+		elif Global.checkpointNumber == 2:
+			global_position = %Checkpoint2/spawnPosition.global_position
 		
 	move_and_slide()
 	

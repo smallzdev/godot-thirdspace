@@ -200,20 +200,20 @@ animations = [{
 script = ExtResource("1_pjt0s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1406975777]
-position = Vector2(100, 420)
+position = Vector2(7.6293945e-06, 2.0000305)
 scale = Vector2(2.96875, 2.9375)
 shape = SubResource("CapsuleShape2D_stm8k")
 
 [node name="MainCharacter" type="AnimatedSprite2D" parent="." unique_id=1751925148]
 unique_name_in_owner = true
 texture_filter = 1
-position = Vector2(99.5, 409)
+position = Vector2(-0.49999237, -8.9999695)
 scale = Vector2(2.96875, 2.9375)
 sprite_frames = SubResource("SpriteFrames_stm8k")
 autoplay = "default"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1012341498]
-position = Vector2(101, 412)
+position = Vector2(1, -6)
 
 [node name="InteractingComponent" parent="." unique_id=818544180 instance=ExtResource("5_dp8ca")]
-position = Vector2(98, 417)
+position = Vector2(-2, -1)

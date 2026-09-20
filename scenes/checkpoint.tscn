@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://blpqkv2m3drwp" path="res://scenes/checkpoint.gd" id="2_ywqth"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vsimk"]
-size = Vector2(17, 25.333334)
+size = Vector2(17, 199.66667)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_stm8k"]
 animations = [{
@@ -26,12 +26,15 @@ scale = Vector2(3, 3)
 script = ExtResource("2_ywqth")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1496369252]
-position = Vector2(2.5, 3.333333)
+position = Vector2(2.5, -83.833336)
 shape = SubResource("RectangleShape2D_vsimk")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=961305107]
 unique_name_in_owner = true
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_stm8k")
+
+[node name="spawnPosition" type="Marker2D" parent="." unique_id=1204543325]
+position = Vector2(1.3333334, -20.666668)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
