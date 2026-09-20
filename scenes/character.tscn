@@ -216,4 +216,5 @@ autoplay = "default"
 position = Vector2(1, -6)
 
 [node name="InteractingComponent" parent="." unique_id=818544180 instance=ExtResource("5_dp8ca")]
+visibility_layer = 2
 position = Vector2(-2, -1)

@@ -335,7 +335,7 @@ position = Vector2(2347, 248)
 position = Vector2(2347, 175)
 
 [node name="Tree" parent="." unique_id=862735303 instance=ExtResource("9_85g3d")]
-position = Vector2(780, 559)
+position = Vector2(728, 448)
 
 [node name="Checkpoint1" parent="." unique_id=89005797 instance=ExtResource("10_choun")]
 unique_name_in_owner = true

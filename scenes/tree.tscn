@@ -2,29 +2,47 @@
 
 [ext_resource type="Script" uid="uid://c7oelha8n2d6q" path="res://scenes/tree.gd" id="1_viusy"]
 [ext_resource type="Texture2D" uid="uid://dq4k6xpn1srhi" path="res://Resources/Harvest/autumntree.png" id="1_vplca"]
+[ext_resource type="Texture2D" uid="uid://brqhle3s48hw3" path="res://Resources/Harvest/wiltedtree.png" id="2_qd6xs"]
 [ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="2_viusy"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
-size = Vector2(29, 24)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_13qdw"]
-size = Vector2(29, 24)
+size = Vector2(189, 182)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_13qdw"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vplca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qd6xs")
+}],
+"loop": 1,
+"name": &"harvest",
+"speed": 5.0
+}]
 
 [node name="Tree" type="Node2D" unique_id=862735303]
 script = ExtResource("1_viusy")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=390670425]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1004589557]
-position = Vector2(0.5, 4)
-shape = SubResource("RectangleShape2D_xrivr")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1244416347]
-texture = ExtResource("1_vplca")
-
 [node name="interactable" parent="." unique_id=977272514 instance=ExtResource("2_viusy")]
-interact_name = "Drop Coin"
+visibility_layer = 2
+collision_mask = 2
+interact_name = "[E] Harvest"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interactable" unique_id=1771058857]
-position = Vector2(0.5, 4)
+visibility_layer = 2
+position = Vector2(3.5, 36)
 shape = SubResource("RectangleShape2D_13qdw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1774837625]
+texture_filter = 1
+scale = Vector2(8, 8)
+sprite_frames = SubResource("SpriteFrames_13qdw")
+animation = &"harvest"
+frame_progress = 0.98515445

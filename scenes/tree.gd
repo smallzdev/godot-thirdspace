@@ -1,9 +1,7 @@
 extends Node2D
 
 @onready var interactable: Area2D = $interactable
-@onready var sprite_2d: Sprite2D = $Sprite2D
-#^ need to make another pixel art w 
-#tree no leaves
+@onready var sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 func _ready() -> void:
 	interactable.interact = _on_interact
