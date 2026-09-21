@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://ds5wpo1ol86a2"]
+
+[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="1_c13y7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njqwk"]
+size = Vector2(221.5, 141)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xrivr"]
+font_size = 32
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Tutorial" type="Node2D" unique_id=454102696]
+
+[node name="interactable" parent="." unique_id=977272514 instance=ExtResource("1_c13y7")]
+interact_name = "Tutorial"
+is_interactable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactable" unique_id=379634261]
+position = Vector2(112.25, 75.5)
+shape = SubResource("RectangleShape2D_njqwk")
+
+[node name="Label" type="Label" parent="." unique_id=1618079503]
+offset_right = 336.0
+offset_bottom = 23.0
+text = "Tutorial text"
+label_settings = SubResource("LabelSettings_xrivr")

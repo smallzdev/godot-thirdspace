@@ -1,8 +1,8 @@
-# Third Spaces First Project!
+# It's only UP from here
 
-This is our first submission to a Hack Club Program called [Third Space](https://thirdspace.hackclub.com/). We are both begginers, and have never made a game before. This game is made in the Godot engine.
+This is our first submission to a Hack Club Program called [Third Space](https://thirdspace.hackclub.com/). This is both our first time making a game :D
 
-Made with love by [Smallz](https://github.com/smallzdev) and [Vick-St3r](https://github.com/Vick-St3r)
+Made with <3 and Godot by [Smallz](https://github.com/smallzdev) and [Vick-St3r](https://github.com/Vick-St3r)
 
 ## How do I play?
 Instructions on how to play are coming soon.

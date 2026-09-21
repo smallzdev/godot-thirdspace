@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="7_kek77"]
 [ext_resource type="PackedScene" uid="uid://copqbgx1v0cee" path="res://scenes/tree.tscn" id="9_85g3d"]
 [ext_resource type="PackedScene" uid="uid://b81aq5w2ohki6" path="res://scenes/checkpoint.tscn" id="10_choun"]
+[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="11_ya4ey"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
 texture = ExtResource("1_ig7tw")
@@ -253,6 +254,15 @@ font_size = 50
 outline_size = 8
 outline_color = Color(0, 0, 0, 1)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_13qdw"]
+size = Vector2(347, 118)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(319.75, 204.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b1lj4"]
+size = Vector2(115.5, 129)
+
 [node name="Node" type="Node" unique_id=444136582]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=820354676]
@@ -372,5 +382,28 @@ position = Vector2(3036, 48)
 
 [node name="Coin10" parent="." unique_id=1765118 instance=ExtResource("7_5vw27")]
 position = Vector2(3355, 54)
+
+[node name="Tutorial" type="Node2D" parent="." unique_id=1892005916]
+
+[node name="interactable" parent="Tutorial" unique_id=977272514 instance=ExtResource("11_ya4ey")]
+interact_name = "Use WASD/arrow keys to move"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/interactable" unique_id=1681030151]
+position = Vector2(-216, 465)
+shape = SubResource("RectangleShape2D_13qdw")
+
+[node name="interactable2" parent="Tutorial" unique_id=1484343657 instance=ExtResource("11_ya4ey")]
+interact_name = "Set a new spawnpoint!"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/interactable2" unique_id=178699992]
+position = Vector2(1417.125, 237.25)
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="interactable3" parent="Tutorial" unique_id=1951233641 instance=ExtResource("11_ya4ey")]
+interact_name = "It's Harvest Season!"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/interactable3" unique_id=1701431883]
+position = Vector2(-446, 458)
+shape = SubResource("RectangleShape2D_b1lj4")
 
 [connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]
