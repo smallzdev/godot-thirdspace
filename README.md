@@ -9,10 +9,12 @@ Made with <3 and Godot by [Smallz](https://github.com/smallzdev) and [Vick-St3r]
 Our game is a platformer game. We're only beginners, so we're learning along the way.
 
 Level 1: Tutorial: Harvest!
+
 Level 2: In construction
 
+# Week 1: Harvest
 <details open>
-<summary><strong>Week 1: Harvest</strong></summary>
+<summary></summary>
 
 ![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/tutorial1.PNG)
 
