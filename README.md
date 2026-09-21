@@ -19,15 +19,15 @@ Level 2: In construction
 
 As the theme of the first week is HARVEST, we decided to make our first level fall themed! 
 
-![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/tutorial2.png?raw=true)
+![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/tutorial2.PNG)
 
 Harvest trees to earn coins!
 
-![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/tutorial3.png?raw=true)
+![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/tutorial3.PNG)
 
 And checkpoints to set a new spawnpoint!
 
-![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/tutorial4.png?raw=true)
+![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/tutorial4.PNG)
 
 ### What we learned
 
