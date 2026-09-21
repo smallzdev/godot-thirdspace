@@ -4,7 +4,7 @@ This is our first submission to a [Hack Club](https://hackclub.com/) Program cal
 
 Made with <3 and Godot by [Smallz](https://github.com/smallzdev) and [Vick-St3r](https://github.com/Vick-St3r)
 
-## What our game is about
+# About our game
 
 Our game is a platformer game. We're only beginners, so we're learning along the way.
 
@@ -12,7 +12,7 @@ Level 1: Tutorial: Harvest!
 Level 2: In construction
 
 <details open>
-<summary>## Week 1: Harvest</summary>
+<summary><strong>Week 1: Harvest</strong></summary>
 
 ![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/tutorial1.PNG)
 
