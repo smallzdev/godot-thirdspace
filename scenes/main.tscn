@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://2v1y4vx7jcu6" path="res://Resources/Terrain (16x16).png" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://ji2ahpa1peus" path="res://scenes/character.tscn" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://ue72iyrjftst" path="res://scripts/finish.gd" id="5_7mycd"]
-[ext_resource type="Texture2D" uid="uid://cgxt7tkhwrfvp" path="res://Resources/End (Pressed) (64x64).png" id="6_272bh"]
+[ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="5_ya4ey"]
 [ext_resource type="PackedScene" uid="uid://bkopc4odunmjm" path="res://scenes/coin.tscn" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/coin_ui.tscn" id="7_272bh"]
 [ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="7_kek77"]
@@ -185,70 +185,6 @@ sources/0 = SubResource("TileSetAtlasSource_0xm2m")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_stm8k"]
 size = Vector2(45.44928, 46.459267)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_d13ii"]
-atlas = ExtResource("6_272bh")
-region = Rect2(0, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1u8w0"]
-atlas = ExtResource("6_272bh")
-region = Rect2(64, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0odxb"]
-atlas = ExtResource("6_272bh")
-region = Rect2(128, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lswn8"]
-atlas = ExtResource("6_272bh")
-region = Rect2(192, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a6jrf"]
-atlas = ExtResource("6_272bh")
-region = Rect2(256, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xuqvo"]
-atlas = ExtResource("6_272bh")
-region = Rect2(320, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qsp4k"]
-atlas = ExtResource("6_272bh")
-region = Rect2(384, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kq58d"]
-atlas = ExtResource("6_272bh")
-region = Rect2(448, 0, 64, 64)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_udkci"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d13ii")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1u8w0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0odxb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lswn8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a6jrf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xuqvo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qsp4k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kq58d")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 7.0
-}]
-
 [sub_resource type="LabelSettings" id="LabelSettings_7m3ot"]
 font_size = 50
 outline_size = 8
@@ -291,14 +227,11 @@ position = Vector2(3355.0002, 143)
 scale = Vector2(2.15625, 2.109375)
 shape = SubResource("RectangleShape2D_stm8k")
 
-[node name="FinishSprite2D" type="AnimatedSprite2D" parent="Finish" unique_id=1814585825]
+[node name="FinishSprite2D" type="Sprite2D" parent="Finish" unique_id=877657192]
 texture_filter = 1
-position = Vector2(3356, 126)
-scale = Vector2(2.15625, 2.109375)
-sprite_frames = SubResource("SpriteFrames_udkci")
-autoplay = "default"
-frame = 4
-frame_progress = 0.92803615
+position = Vector2(3356, 130)
+scale = Vector2(4, 4)
+texture = ExtResource("5_ya4ey")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=993562204]
 
@@ -364,9 +297,8 @@ position = Vector2(1704, 134)
 position = Vector2(928, 448)
 
 [node name="Checkpoint1" parent="." unique_id=89005797 instance=ExtResource("10_choun")]
-unique_name_in_owner = true
 texture_filter = 1
-position = Vector2(1481, 238)
+position = Vector2(1514, 241)
 
 [node name="Tree2" parent="." unique_id=351346538 instance=ExtResource("9_85g3d")]
 position = Vector2(2069, -31)

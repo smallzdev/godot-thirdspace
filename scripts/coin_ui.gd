@@ -1,6 +1,6 @@
 extends Control
 
-@onready var label = $Label
+@onready var label = %CoinUILabel
 
 func _ready() -> void:
 	Eventcontroller.connect("coin_collected", on_event_coin_collected)

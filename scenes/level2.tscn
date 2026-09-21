@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cxl6teqw120nq" path="res://scenes/lives_ui.tscn" id="4_yqkch"]
 [ext_resource type="PackedScene" uid="uid://b81aq5w2ohki6" path="res://scenes/checkpoint.tscn" id="5_alqfr"]
 [ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/coin_ui.tscn" id="6_yqkch"]
+[ext_resource type="PackedScene" uid="uid://bkopc4odunmjm" path="res://scenes/coin.tscn" id="7_6ep0u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8tcn8"]
 texture = ExtResource("2_6q4t8")
@@ -171,14 +172,15 @@ sources/0 = SubResource("TileSetAtlasSource_8tcn8")
 [node name="Node" type="Node" unique_id=493559345]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1503899844]
-offset_right = 1153.0
-offset_bottom = 694.0
+offset_left = -602.0
+offset_top = -29.0
+offset_right = 1816.0
+offset_bottom = 1036.0
 texture = ExtResource("1_r40rm")
 
-[node name="Checkpoint2" parent="." unique_id=89005797 instance=ExtResource("5_alqfr")]
-unique_name_in_owner = true
+[node name="Checkpoint1" parent="." unique_id=89005797 instance=ExtResource("5_alqfr")]
 texture_filter = 1
-position = Vector2(286, 481)
+position = Vector2(1083, 481.00003)
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=330441141]
 
@@ -188,18 +190,25 @@ offset_top = 25.0
 offset_right = 93.0
 offset_bottom = 47.0
 
-[node name="LivesUI" parent="CanvasLayer2" unique_id=1059890347 instance=ExtResource("4_yqkch")]
+[node name="HeartUI" parent="CanvasLayer2" unique_id=1059890347 instance=ExtResource("4_yqkch")]
 offset_left = 159.0
 offset_top = 49.0
 offset_right = 199.0
 offset_bottom = 89.0
+script = null
 
 [node name="TileMap" type="TileMap" parent="." unique_id=708783800]
 texture_filter = 1
 scale = Vector2(3, 3)
 tile_set = SubResource("TileSet_stm8k")
 format = 2
-layer_0/tile_data = PackedInt32Array(786432, 393216, 0, 786433, 458752, 0, 786434, 524288, 0, 720899, 393216, 0, 720900, 458752, 0, 720901, 524288, 0, 851968, 393216, 1, 851969, 458752, 1, 851970, 524288, 1, 786435, 393216, 1, 786436, 458752, 1, 786437, 524288, 1, 851971, 393216, 1, 851972, 458752, 1, 851973, 524288, 1)
+layer_0/tile_data = PackedInt32Array(786432, 393216, 0, 786433, 458752, 0, 786434, 458752, 0, 720899, 393216, 0, 720900, 458752, 0, 720901, 524288, 0, 851968, 393216, 1, 851969, 458752, 1, 851970, 458752, 1, 786435, 458752, 1, 786436, 458752, 1, 786437, 524288, 1, 851971, 458752, 1, 851972, 458752, 1, 851973, 524288, 1, 720905, 786432, 1, 720909, 786432, 1, 720913, 786432, 1, 720917, 393216, 0, 720918, 458752, 0, 720919, 524288, 0, 786453, 393216, 1, 851989, 393216, 1, 917504, 393216, 2, 917505, 458752, 2, 917506, 458752, 2, 917507, 458752, 2, 917508, 458752, 2, 917509, 524288, 2, 917527, 524288, 2, 917525, 393216, 2, 917526, 458752, 2, 851991, 524288, 1, 786455, 524288, 1, 786454, 458752, 1, 851990, 458752, 1)
 
 [node name="CharacterBody2D" parent="." unique_id=177745067 instance=ExtResource("3_6q4t8")]
-position = Vector2(66, 477)
+position = Vector2(70, 397)
+
+[node name="Coin" parent="." unique_id=1389673919 instance=ExtResource("7_6ep0u")]
+position = Vector2(224, 490)
+
+[node name="Coin2" parent="." unique_id=23192246 instance=ExtResource("7_6ep0u")]
+position = Vector2(556, 458)

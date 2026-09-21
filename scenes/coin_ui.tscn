@@ -29,7 +29,8 @@ texture = ExtResource("2_kgjm3")
 expand_mode = 1
 stretch_mode = 1
 
-[node name="Label" type="Label" parent="." unique_id=2024032887]
+[node name="CoinUILabel" type="Label" parent="." unique_id=2024032887]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 79.33333
 offset_top = -0.6666665
