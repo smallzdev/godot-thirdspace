@@ -15,7 +15,7 @@ Level 2: In construction
 
 ## Week 1: Harvest
 
-![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/tutorial1.png?raw=true)
+![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/tutorial1.PNG)
 
 As the theme of the first week is HARVEST, we decided to make our first level fall themed! 
 
