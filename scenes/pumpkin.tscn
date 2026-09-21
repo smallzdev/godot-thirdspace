@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cwqyprewtyu1i"]
+
+[ext_resource type="Texture2D" uid="uid://c10fs0dcdk6dt" path="res://Resources/Harvest/pumpkin.png" id="1_qdl88"]
+
+[node name="pumpkin" type="Sprite2D" unique_id=1481662959]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_qdl88")

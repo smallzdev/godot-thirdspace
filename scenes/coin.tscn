@@ -154,6 +154,7 @@ frame_progress = 0.70626974
 [node name="Area2D" type="Area2D" parent="." unique_id=752126635]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=16813768]
+z_index = 3
 position = Vector2(0, -1)
 scale = Vector2(3, 3)
 shape = SubResource("CircleShape2D_xrivr")
