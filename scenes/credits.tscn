@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://c4007121q1xqh"]
+
+[ext_resource type="Texture2D" uid="uid://cpawa0w3mognm" path="res://Resources/Yellow.png" id="1_0bpdh"]
+[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Restart.png" id="2_2ckv8"]
+
+[sub_resource type="FontFile" id="FontFile_2ckv8"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/120/0/ascent = 0.0
+cache/0/120/0/descent = 0.0
+cache/0/120/0/underline_position = 0.0
+cache/0/120/0/underline_thickness = 0.0
+cache/0/120/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_0ctdu"]
+font_size = 120
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" unique_id=1741230153]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_0bpdh")
+
+[node name="Label" type="Label" parent="." unique_id=1239112350]
+texture_filter = 1
+layout_mode = 0
+offset_left = 228.0
+offset_top = 25.0
+offset_right = 923.0
+offset_bottom = 298.0
+theme_override_fonts/font = SubResource("FontFile_2ckv8")
+theme_override_font_sizes/font_size = 120
+text = "Credits:"
+label_settings = SubResource("LabelSettings_0ctdu")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=369078690]
+texture_filter = 1
+layout_mode = 0
+offset_left = 2.0
+offset_top = 170.0
+offset_right = 2296.0
+offset_bottom = 291.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = SubResource("FontFile_2ckv8")
+theme_override_font_sizes/font_size = 50
+text = "Made by Smallz and Vic"
+label_settings = SubResource("LabelSettings_0ctdu")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=2941051]
+texture_filter = 1
+layout_mode = 0
+offset_left = -18.000008
+offset_top = 258.0
+offset_right = 3442.0
+offset_bottom = 616.0
+scale = Vector2(0.35, 0.35)
+theme_override_fonts/font = SubResource("FontFile_2ckv8")
+text = "Some assets are from a free asset pack called \"Pixel
+Adventure\" https://pixelfrog-assets.itch.io/pixel-adventure-1"
+label_settings = SubResource("LabelSettings_0ctdu")
+horizontal_alignment = 1
+
+[node name="mainmenubutton" type="Button" parent="." unique_id=412603802]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 860.0
+offset_top = 456.0
+offset_right = 1058.0
+offset_bottom = 531.0
+theme_override_font_sizes/font_size = 48
+text = "Menu"
+icon = ExtResource("2_2ckv8")
+expand_icon = true
