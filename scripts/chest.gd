@@ -1,3 +1,6 @@
+## I know the following is kinda sloppy coding but ehh, as
+## long as it works I suppose. ;D
+
 extends Area2D
 # This script is for the chest to interact and open when
 # holding E, also handles animation :D
@@ -9,6 +12,7 @@ var chestInteract = false
 
 func _ready() -> void:
 	chestSprite.frame = 0
+	chestTimerLabel.visible = false
 # on collision, it sets chest interaction to true
 func _on_body_entered(body: Node2D) -> void:
 	if (body.name == "CharacterBody2D"):
@@ -22,18 +26,26 @@ func _process(delta) -> void:
 		# Countdown timer, rounds so its not crazy
 		chestTimerLabel.text = str(round(3 - holdSec))
 		
+		# if the animation is default, that means the chest is unopened
+		if chestSprite.animation == "default":
+			chestTimerLabel.visible = true
+		
 		# the following if statment checks if the character is
 		# is in range, the user held E for 3s, and it isn't
 		# already open by checking the animation frame
-		if holdSec >= 3 and chestInteract == true and chestSprite.frame == 0:
+		if holdSec >= 3 and chestInteract == true and chestSprite.animation == "default":
 			# uses print for debugging
 			print("Held E for 3 secs, chest interacted.")
 			holdSec = 0
+			# chestSprite.play plays the animation for the gems in chest
 			chestSprite.play("opened")
+			# i plan on changing the coins to a rng thing, but later
 			Global.add_coins(3)
 			chestTimerLabel.visible = false
 			
-		elif holdSec >=3 and chestSprite.frame <= 1:
+		# Checks animation and the holdsec thing is just so it
+		# doesn't start spamming the console ;-;
+		elif chestSprite.animation == "opened" and holdSec <= 1:
 			print("already interacted with chest")
 			holdSec = 0
 			# planning something here shortly, for now just print
