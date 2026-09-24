@@ -24,7 +24,8 @@ func _process(delta) -> void:
 	if Input.is_action_pressed("Interact"):
 		holdSec += delta
 		# Countdown timer, rounds so its not crazy
-		chestTimerLabel.text = str(round(3 - holdSec))
+		if chestSprite.animation == "default":
+			chestTimerLabel.text = str(round(3 - holdSec))
 		
 		# if the animation is default, that means the chest is unopened
 		if chestSprite.animation == "default":
@@ -40,12 +41,13 @@ func _process(delta) -> void:
 			# chestSprite.play plays the animation for the gems in chest
 			chestSprite.play("opened")
 			# i plan on changing the coins to a rng thing, but later
-			Global.add_coins(3)
-			chestTimerLabel.visible = false
+			chestTimerLabel.text = str("Click F to loot!")
 			
 		# Checks animation and the holdsec thing is just so it
 		# doesn't start spamming the console ;-;
-		elif chestSprite.animation == "opened" and holdSec <= 1:
-			print("already interacted with chest")
-			holdSec = 0
-			# planning something here shortly, for now just print
+	if Input.is_action_pressed("loot") and chestSprite.animation == "opened":
+		print("Opened chest")
+		Global.add_coins(3)
+		chestSprite.animation = "looted"
+		chestTimerLabel.visible = false
+		# planning something here shortly, for now just print

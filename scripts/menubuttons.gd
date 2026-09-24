@@ -14,4 +14,5 @@ func _menuPlay_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/main.tscn")
 	
 func _credit_button_pressed():
-	print("Credits are under construction")
+	get_tree().change_scene_to_file("res://scenes/credits.tscn")
+	

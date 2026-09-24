@@ -10,7 +10,7 @@ size = Vector2(71.5, 46.5)
 atlas = ExtResource("2_gqd3d")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_76toy"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilhio"]
 atlas = ExtResource("2_gqd3d")
 region = Rect2(32, 0, 32, 32)
 
@@ -39,12 +39,17 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bo4dx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_76toy")
 }],
 "loop": 0,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilhio")
+}],
+"loop": 1,
+"name": &"looted",
 "speed": 5.0
 }, {
 "frames": [{
@@ -85,10 +90,10 @@ sprite_frames = SubResource("SpriteFrames_udkci")
 
 [node name="chestTimerLabel" type="Label" parent="." unique_id=1277964863]
 unique_name_in_owner = true
-offset_left = -52.0
-offset_top = -65.0
-offset_right = -12.0
-offset_bottom = -26.0
+offset_left = -9.0
+offset_top = -103.0
+offset_right = 31.0
+offset_bottom = -64.0
 theme_override_font_sizes/font_size = 28
 text = "3"
 
