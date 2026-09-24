@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://76lm71kfkdxw" path="res://Resources/flag.png" id="1_yyywg"]
 [ext_resource type="Texture2D" uid="uid://mw8mrwp5bd70" path="res://Resources/redflag.png" id="2_vsimk"]
-[ext_resource type="Script" uid="uid://blpqkv2m3drwp" path="res://scenes/checkpoint.gd" id="2_ywqth"]
+[ext_resource type="Script" uid="uid://blpqkv2m3drwp" path="res://scripts/checkpoint.gd" id="2_ywqth"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vsimk"]
 size = Vector2(17, 199.66667)

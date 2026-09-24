@@ -2,71 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://bnwtp8c632d3v" path="res://Resources/Brown.png" id="1_r40rm"]
 [ext_resource type="Texture2D" uid="uid://2v1y4vx7jcu6" path="res://Resources/Terrain (16x16).png" id="2_6q4t8"]
-[ext_resource type="Texture2D" uid="uid://c7n03l6gs8t5m" path="res://Resources/chest.png" id="2_xa7n4"]
+[ext_resource type="PackedScene" uid="uid://bghrkuwdiqxab" path="res://scenes/chest.tscn" id="2_xa7n4"]
 [ext_resource type="PackedScene" uid="uid://ji2ahpa1peus" path="res://scenes/character.tscn" id="3_6q4t8"]
-[ext_resource type="Script" uid="uid://pwblqe1qci20" path="res://scenes/chest.gd" id="3_bo4dx"]
 [ext_resource type="PackedScene" uid="uid://cxl6teqw120nq" path="res://scenes/lives_ui.tscn" id="4_yqkch"]
 [ext_resource type="PackedScene" uid="uid://b81aq5w2ohki6" path="res://scenes/checkpoint.tscn" id="5_alqfr"]
 [ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/coin_ui.tscn" id="6_yqkch"]
 [ext_resource type="PackedScene" uid="uid://bkopc4odunmjm" path="res://scenes/coin.tscn" id="7_6ep0u"]
 [ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="8_hrcei"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bo4dx"]
-atlas = ExtResource("2_xa7n4")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_76toy"]
-atlas = ExtResource("2_xa7n4")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8g4ke"]
-atlas = ExtResource("2_xa7n4")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_56gwk"]
-atlas = ExtResource("2_xa7n4")
-region = Rect2(0, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ve5ok"]
-atlas = ExtResource("2_xa7n4")
-region = Rect2(32, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cleqw"]
-atlas = ExtResource("2_xa7n4")
-region = Rect2(64, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wvb8j"]
-atlas = ExtResource("2_xa7n4")
-region = Rect2(0, 64, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_udkci"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bo4dx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_76toy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8g4ke")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_56gwk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ve5ok")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cleqw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wvb8j")
-}],
-"loop": 0,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="10_bo4dx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8tcn8"]
 texture = ExtResource("2_6q4t8")
@@ -229,6 +172,9 @@ texture = ExtResource("2_6q4t8")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_8tcn8")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stm8k"]
+size = Vector2(183, 122)
+
 [node name="Node" type="Node" unique_id=493559345]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1503899844]
@@ -238,14 +184,7 @@ offset_right = 6189.0
 offset_bottom = 1036.0
 texture = ExtResource("1_r40rm")
 
-[node name="chest" type="Node" parent="." unique_id=1890324522]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="chest" unique_id=1218977372]
-texture_filter = 1
-position = Vector2(1318, 401)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_udkci")
-script = ExtResource("3_bo4dx")
+[node name="chest" parent="." unique_id=1042047157 instance=ExtResource("2_xa7n4")]
 
 [node name="Checkpoint1" parent="." unique_id=89005797 instance=ExtResource("5_alqfr")]
 texture_filter = 1
@@ -295,3 +234,13 @@ texture_filter = 1
 position = Vector2(4513, 324)
 scale = Vector2(4, 4)
 texture = ExtResource("8_hrcei")
+
+[node name="tutorial" type="Node2D" parent="." unique_id=1939895927]
+
+[node name="interactable" parent="tutorial" unique_id=977272514 instance=ExtResource("10_bo4dx")]
+position = Vector2(1236, 351)
+interact_name = "Hold E for 3 secconds to open"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tutorial/interactable" unique_id=609220654]
+position = Vector2(62.5, 22)
+shape = SubResource("RectangleShape2D_stm8k")

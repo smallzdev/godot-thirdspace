@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://bghrkuwdiqxab"]
+
+[ext_resource type="Script" uid="uid://pwblqe1qci20" path="res://scripts/chest.gd" id="1_sy5e1"]
+[ext_resource type="Texture2D" uid="uid://c7n03l6gs8t5m" path="res://Resources/chest.png" id="2_gqd3d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stm8k"]
+size = Vector2(71.5, 46.5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bo4dx"]
+atlas = ExtResource("2_gqd3d")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76toy"]
+atlas = ExtResource("2_gqd3d")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8g4ke"]
+atlas = ExtResource("2_gqd3d")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_56gwk"]
+atlas = ExtResource("2_gqd3d")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ve5ok"]
+atlas = ExtResource("2_gqd3d")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cleqw"]
+atlas = ExtResource("2_gqd3d")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvb8j"]
+atlas = ExtResource("2_gqd3d")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_udkci"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bo4dx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76toy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8g4ke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_56gwk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ve5ok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cleqw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wvb8j")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="chest" type="Area2D" unique_id=1042047157]
+script = ExtResource("1_sy5e1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1312595621]
+position = Vector2(1319.5, 408.5)
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_stm8k")
+
+[node name="chestSprite2D" type="AnimatedSprite2D" parent="." unique_id=615727534]
+unique_name_in_owner = true
+texture_filter = 1
+position = Vector2(1318, 401)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_udkci")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
