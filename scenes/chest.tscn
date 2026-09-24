@@ -14,23 +14,23 @@ region = Rect2(0, 0, 32, 32)
 atlas = ExtResource("2_gqd3d")
 region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8g4ke"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_sy5e1"]
 atlas = ExtResource("2_gqd3d")
 region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_56gwk"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqd3d"]
 atlas = ExtResource("2_gqd3d")
 region = Rect2(0, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ve5ok"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_yue2o"]
 atlas = ExtResource("2_gqd3d")
 region = Rect2(32, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cleqw"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhylo"]
 atlas = ExtResource("2_gqd3d")
 region = Rect2(64, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wvb8j"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_w02o5"]
 atlas = ExtResource("2_gqd3d")
 region = Rect2(0, 64, 32, 32)
 
@@ -42,24 +42,29 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_76toy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8g4ke")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_56gwk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ve5ok")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cleqw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wvb8j")
 }],
 "loop": 0,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sy5e1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqd3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yue2o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhylo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w02o5")
+}],
+"loop": 2,
+"name": &"opened",
 "speed": 5.0
 }]
 
@@ -67,15 +72,24 @@ animations = [{
 script = ExtResource("1_sy5e1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1312595621]
-position = Vector2(1319.5, 408.5)
+position = Vector2(0.5, 0.5)
 scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_stm8k")
 
 [node name="chestSprite2D" type="AnimatedSprite2D" parent="." unique_id=615727534]
 unique_name_in_owner = true
 texture_filter = 1
-position = Vector2(1318, 401)
+position = Vector2(-1, -7)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_udkci")
+
+[node name="chestTimerLabel" type="Label" parent="." unique_id=1277964863]
+unique_name_in_owner = true
+offset_left = -52.0
+offset_top = -65.0
+offset_right = -12.0
+offset_bottom = -26.0
+theme_override_font_sizes/font_size = 28
+text = "3"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

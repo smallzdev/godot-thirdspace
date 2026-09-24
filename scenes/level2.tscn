@@ -185,6 +185,7 @@ offset_bottom = 1036.0
 texture = ExtResource("1_r40rm")
 
 [node name="chest" parent="." unique_id=1042047157 instance=ExtResource("2_xa7n4")]
+position = Vector2(1320, 410)
 
 [node name="Checkpoint1" parent="." unique_id=89005797 instance=ExtResource("5_alqfr")]
 texture_filter = 1
@@ -207,9 +208,9 @@ offset_right = 93.0
 offset_bottom = 47.0
 
 [node name="HeartUI" parent="CanvasLayer2" unique_id=1059890347 instance=ExtResource("4_yqkch")]
-offset_left = 159.0
+offset_left = 185.0
 offset_top = 49.0
-offset_right = 199.0
+offset_right = 225.0
 offset_bottom = 89.0
 script = null
 
@@ -242,5 +243,5 @@ position = Vector2(1236, 351)
 interact_name = "Hold E for 3 secconds to open"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tutorial/interactable" unique_id=609220654]
-position = Vector2(62.5, 22)
+position = Vector2(63, 21)
 shape = SubResource("RectangleShape2D_stm8k")
