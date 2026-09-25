@@ -8,11 +8,13 @@ var holdSec = 0
 var chestInteract = false
 @onready var chestSprite = %chestSprite2D
 @onready var chestTimerLabel = %chestTimerLabel
+@onready var livesLabel = $"../CanvasLayer2/HeartUI/LivesLabel"
 # Called when the node enters the scene tree for the first time.
 
 func _ready() -> void:
 	chestSprite.frame = 0
 	chestTimerLabel.visible = false
+	randomize()
 # on collision, it sets chest interaction to true
 func _on_body_entered(body: Node2D) -> void:
 	if (body.name == "CharacterBody2D"):
@@ -47,7 +49,27 @@ func _process(delta) -> void:
 		# doesn't start spamming the console ;-;
 	if Input.is_action_pressed("loot") and chestSprite.animation == "opened":
 		print("Opened chest")
-		Global.add_coins(3)
+		var lootRng = randi() % 100
+		print("RNG rolled ", lootRng)
+		# the following code checks the rng, and awards stuff
+		# based on the number rolled. To change the RNG prizes,
+		# simply do some maths and edit the > < values.
+		
+		# numbers 0 - 9 (technically 10 numbers)
+		if lootRng <= 9:
+			Global.add_coins(6)
+			print("Awarded 6 coins from a chest.")
+			
+		# numbers 10 - 30
+		elif lootRng <= 30 and lootRng >= 9:
+			Global.lives += 1
+			print("Awarded 1 life from a chest.")
+			livesLabel.text = str(Global.lives)
+			
+		# Anything else, so at the moment 31 - 99
+		else:
+			Global.add_coins(3)
+			print("Awarded 3 coins from a chest.")
 		chestSprite.animation = "looted"
 		chestTimerLabel.visible = false
 		# planning something here shortly, for now just print

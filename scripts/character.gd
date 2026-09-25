@@ -5,7 +5,6 @@ class_name CharacterBody
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -950.0
-var lives = 3
 var gameoverscene = preload("res://scenes/game_over.tscn")
 
 @onready var mainSprite = %MainCharacter
@@ -36,12 +35,12 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor() and global_position.y > 1000:
 		Global.remove_all_coins(amount)
 		var spawnposition: Vector2
-		if lives == 1:
+		if Global.lives == 1:
 			print("All lives used, game over D:")
 			get_tree().change_scene_to_packed(gameoverscene)
-		lives -= 1
-		livesLabel.text = str(lives)
-		print("lives: ", lives)
+		Global.lives -= 1
+		livesLabel.text = str(Global.lives)
+		print("lives: ", Global.lives)
 		if Global.checkpointNumber == 0:
 			global_position = spawnposition
 		elif Global.checkpointNumber == 1:

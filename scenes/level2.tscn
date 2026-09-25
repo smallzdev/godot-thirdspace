@@ -4,12 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://2v1y4vx7jcu6" path="res://Resources/Terrain (16x16).png" id="2_6q4t8"]
 [ext_resource type="PackedScene" uid="uid://bghrkuwdiqxab" path="res://scenes/chest.tscn" id="2_xa7n4"]
 [ext_resource type="PackedScene" uid="uid://ji2ahpa1peus" path="res://scenes/character.tscn" id="3_6q4t8"]
-[ext_resource type="PackedScene" uid="uid://cxl6teqw120nq" path="res://scenes/lives_ui.tscn" id="4_yqkch"]
 [ext_resource type="PackedScene" uid="uid://b81aq5w2ohki6" path="res://scenes/checkpoint.tscn" id="5_alqfr"]
+[ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="5_bo4dx"]
 [ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/coin_ui.tscn" id="6_yqkch"]
 [ext_resource type="PackedScene" uid="uid://bkopc4odunmjm" path="res://scenes/coin.tscn" id="7_6ep0u"]
 [ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="8_hrcei"]
 [ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="10_bo4dx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_oa1go"]
+font_size = 50
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8tcn8"]
 texture = ExtResource("2_6q4t8")
@@ -207,12 +212,37 @@ offset_top = 25.0
 offset_right = 93.0
 offset_bottom = 47.0
 
-[node name="HeartUI" parent="CanvasLayer2" unique_id=1059890347 instance=ExtResource("4_yqkch")]
+[node name="HeartUI" type="Control" parent="CanvasLayer2" unique_id=1059890347]
+layout_mode = 3
+anchors_preset = 0
 offset_left = 185.0
 offset_top = 49.0
 offset_right = 225.0
 offset_bottom = 89.0
-script = null
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer2/HeartUI" unique_id=2025442482]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -38.0
+offset_right = 43.0
+offset_bottom = -11.0
+scale = Vector2(3, 3)
+texture = ExtResource("5_bo4dx")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="LivesLabel" type="Label" parent="CanvasLayer2/HeartUI" unique_id=1051447047]
+layout_mode = 0
+offset_left = 110.0
+offset_top = -24.0
+offset_right = 139.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "3"
+label_settings = SubResource("LabelSettings_oa1go")
+horizontal_alignment = 1
 
 [node name="TileMap" type="TileMap" parent="." unique_id=708783800]
 texture_filter = 1

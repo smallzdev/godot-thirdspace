@@ -2,6 +2,7 @@ extends Node
 
 var coins = 0
 var checkpointNumber = 0
+var lives = 3
 
 func add_coins(amount: int) -> void:
 	coins+=amount
