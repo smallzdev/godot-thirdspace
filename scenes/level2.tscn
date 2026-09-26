@@ -266,12 +266,10 @@ position = Vector2(4513, 324)
 scale = Vector2(4, 4)
 texture = ExtResource("8_hrcei")
 
-[node name="tutorial" type="Node2D" parent="." unique_id=1939895927]
-
-[node name="interactable" parent="tutorial" unique_id=977272514 instance=ExtResource("10_bo4dx")]
+[node name="interactable" parent="." unique_id=977272514 instance=ExtResource("10_bo4dx")]
 position = Vector2(1236, 351)
 interact_name = "Hold E for 3 secconds to open"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="tutorial/interactable" unique_id=609220654]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactable" unique_id=609220654]
 position = Vector2(63, 21)
 shape = SubResource("RectangleShape2D_stm8k")

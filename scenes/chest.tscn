@@ -73,6 +73,11 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="LabelSettings" id="LabelSettings_76toy"]
+font_size = 28
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
 [node name="chest" type="Area2D" unique_id=1042047157]
 script = ExtResource("1_sy5e1")
 
@@ -96,5 +101,6 @@ offset_right = 31.0
 offset_bottom = -64.0
 theme_override_font_sizes/font_size = 28
 text = "3"
+label_settings = SubResource("LabelSettings_76toy")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

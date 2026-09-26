@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cx1vf4bl3t0j"]
+
+[ext_resource type="Script" uid="uid://dx6mfdqp8lg8w" path="res://receive_coin.gd" id="1_fwo5m"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4n13m"]
+load_path = "res://.godot/imported/onecoin.png-9fc30709751633d8024d4bb5d3ee2122.ctex"
+
+[sub_resource type="Curve" id="Curve_xrivr"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.08988774), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="receive_coin" type="Node2D" unique_id=666984948]
+script = ExtResource("1_fwo5m")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1443423820]
+z_index = 10
+texture_filter = 1
+emitting = false
+amount = 60
+texture = SubResource("CompressedTexture2D_4n13m")
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 230.0
+scale_amount_min = 4.0
+scale_amount_max = 4.0
+scale_amount_curve = SubResource("Curve_xrivr")

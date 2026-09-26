@@ -11,6 +11,7 @@ func _ready() -> void:
 func _on_interact(): 
 	if sprite_2d.frame == 0:
 		sprite_2d.frame = 1
+		$interactable/receive_coin/CPUParticles2D.emitting = true
 		interactable.is_interactable = false
 		Global.add_coins(amount)
 		print("harvested tree")

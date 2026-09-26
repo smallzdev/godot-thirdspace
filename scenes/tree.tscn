@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dq4k6xpn1srhi" path="res://Resources/Harvest/autumntree.png" id="1_vplca"]
 [ext_resource type="Texture2D" uid="uid://brqhle3s48hw3" path="res://Resources/Harvest/wiltedtree.png" id="2_qd6xs"]
 [ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="2_viusy"]
+[ext_resource type="PackedScene" uid="uid://cx1vf4bl3t0j" path="res://scenes/receive_coin.tscn" id="5_ake3r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_13qdw"]
 size = Vector2(189, 182)
@@ -39,6 +40,8 @@ interact_name = "[E] Harvest"
 visibility_layer = 2
 position = Vector2(3.5, 36)
 shape = SubResource("RectangleShape2D_13qdw")
+
+[node name="receive_coin" parent="interactable" unique_id=666984948 instance=ExtResource("5_ake3r")]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1774837625]
 texture_filter = 1
