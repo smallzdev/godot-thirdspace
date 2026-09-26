@@ -25,3 +25,11 @@ func _on_body_entered(body: Node2D) -> void:
 			Global.checkpointNumber = 3
 			print("checkpoint activated:", Global.checkpointNumber)
 			CheckpointSprite.frame = 1
+		elif name == "Checkpoint4" and Global.checkpointNumber < 4:
+			Global.checkpointNumber = 4
+			print("checkpoint activated:", Global.checkpointNumber)
+			CheckpointSprite.frame = 1
+# so basically, with this code it checks the name, and if
+# the checkpoint number variable is smaller than the number
+# checkpoint. This prevents people from walking backwards
+# and activating old checkpoints if that makes sense.

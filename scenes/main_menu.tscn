@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cpawa0w3mognm" path="res://Resources/Yellow.png" id="1_7vrkn"]
 [ext_resource type="Texture2D" uid="uid://cuipknqhbymjq" path="res://Resources/Play.png" id="2_fu7sn"]
 [ext_resource type="Script" uid="uid://c6h0e3ba0qupy" path="res://scripts/menubuttons.gd" id="3_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="4_wu84c"]
 
 [sub_resource type="FontFile" id="FontFile_glbon"]
 subpixel_positioning = 0
@@ -31,6 +32,11 @@ cache/0/120/0/scale = 1.0
 [sub_resource type="LabelSettings" id="LabelSettings_rkybt"]
 font_size = 120
 outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8ln24"]
+font_size = 50
+outline_size = 8
 outline_color = Color(0, 0, 0, 1)
 
 [node name="main-menu" type="Node" unique_id=1227080688]
@@ -105,3 +111,33 @@ theme_override_fonts/font = SubResource("FontFile_glbon")
 theme_override_font_sizes/font_size = 120
 text = "Main Menu"
 label_settings = SubResource("LabelSettings_rkybt")
+
+[node name="Control" type="Control" parent="." unique_id=1808792408]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect3" type="TextureRect" parent="Control" unique_id=1820929305]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1.0
+offset_top = 528.0
+offset_right = 31.666668
+offset_bottom = 559.0
+scale = Vector2(3, 3)
+texture = ExtResource("4_wu84c")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="CoinUILabel" type="Label" parent="Control" unique_id=1118206244]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 86.0
+offset_top = 542.0
+offset_right = 115.0
+offset_bottom = 611.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "0"
+label_settings = SubResource("LabelSettings_8ln24")
