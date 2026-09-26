@@ -23,7 +23,7 @@ func _on_body_entered(body: Node2D) -> void:
 
 # chest interaction
 func _process(delta) -> void:
-	if Input.is_action_pressed("Interact"):
+	if Input.is_action_pressed("Interact") and chestInteract == true:
 		holdSec += delta
 		# Countdown timer, rounds so its not crazy
 		if chestSprite.animation == "default":
@@ -45,12 +45,13 @@ func _process(delta) -> void:
 			# i plan on changing the coins to a rng thing, but later
 			chestTimerLabel.text = str("Click F to loot!")
 			
-		# Checks animation and the holdsec thing is just so it
-		# doesn't start spamming the console ;-;
+	# Checks animation and the holdsec thing is just so it
+	# doesn't start spamming the console ;-;
 	if Input.is_action_pressed("loot") and chestSprite.animation == "opened":
 		print("Opened chest")
 		var lootRng = randi() % 100
 		print("RNG rolled ", lootRng)
+		randomize()
 		# the following code checks the rng, and awards stuff
 		# based on the number rolled. To change the RNG prizes,
 		# simply do some maths and edit the > < values.
