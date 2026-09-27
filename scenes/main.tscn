@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="11_ya4ey"]
 [ext_resource type="PackedScene" uid="uid://cwqyprewtyu1i" path="res://scenes/pumpkin.tscn" id="12_eb6dy"]
 [ext_resource type="AudioStream" uid="uid://cg5ouk8pgbrbk" path="res://songs/tutorial.wav" id="13_trceg"]
+[ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/sound_button.tscn" id="14_a8y0u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
 texture = ExtResource("1_ig7tw")
@@ -246,6 +247,12 @@ texture = ExtResource("5_ya4ey")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=993562204]
 
 [node name="CoinUI" parent="CanvasLayer" unique_id=662362470 instance=ExtResource("7_272bh")]
+
+[node name="sound_button" parent="CanvasLayer" unique_id=1974950491 instance=ExtResource("14_a8y0u")]
+offset_left = 1083.0
+offset_top = 29.0
+offset_right = 1083.0
+offset_bottom = 29.0
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1992329975]
 

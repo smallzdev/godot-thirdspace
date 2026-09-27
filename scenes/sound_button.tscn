@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bp8y2jb2b5x27"]
+
+[ext_resource type="Texture2D" uid="uid://cuipknqhbymjq" path="res://Resources/Play.png" id="1_qux0v"]
+[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Restart.png" id="2_wd1j7"]
+[ext_resource type="Script" uid="uid://cygjmegxy235k" path="res://soundbutton.gd" id="3_atcyj"]
+
+[node name="sound_button" type="Control" unique_id=1974950491]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=91879235]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+toggle_mode = true
+texture_normal = ExtResource("1_qux0v")
+texture_pressed = ExtResource("2_wd1j7")
+script = ExtResource("3_atcyj")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
