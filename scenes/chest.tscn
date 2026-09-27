@@ -3,9 +3,7 @@
 [ext_resource type="Script" uid="uid://pwblqe1qci20" path="res://scripts/chest.gd" id="1_sy5e1"]
 [ext_resource type="Texture2D" uid="uid://c7n03l6gs8t5m" path="res://Resources/chest.png" id="2_gqd3d"]
 [ext_resource type="PackedScene" uid="uid://cx1vf4bl3t0j" path="res://scenes/receive_coin.tscn" id="3_gqd3d"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_stm8k"]
-size = Vector2(71.5, 46.5)
+[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="4_yue2o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bo4dx"]
 atlas = ExtResource("2_gqd3d")
@@ -79,13 +77,14 @@ font_size = 28
 outline_size = 6
 outline_color = Color(0, 0, 0, 1)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(181, 114)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stm8k"]
+size = Vector2(90, 46.5)
+
 [node name="chest" type="Area2D" unique_id=1042047157]
 script = ExtResource("1_sy5e1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1312595621]
-position = Vector2(0.5, 0.5)
-scale = Vector2(2, 2)
-shape = SubResource("RectangleShape2D_stm8k")
 
 [node name="chestSprite2D" type="AnimatedSprite2D" parent="." unique_id=615727534]
 unique_name_in_owner = true
@@ -105,6 +104,17 @@ text = "3"
 label_settings = SubResource("LabelSettings_76toy")
 
 [node name="receive_coin" parent="." unique_id=666984948 instance=ExtResource("3_gqd3d")]
-script = null
+
+[node name="interactable" parent="." unique_id=977272514 instance=ExtResource("4_yue2o")]
+interact_name = "Hold [E] for 3 seconds to open"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactable" unique_id=314372695]
+position = Vector2(3.5, -10)
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1312595621]
+position = Vector2(4, -1)
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_stm8k")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
