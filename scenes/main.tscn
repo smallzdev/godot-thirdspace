@@ -204,6 +204,9 @@ size = Vector2(115.5, 129)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_njqwk"]
 size = Vector2(260.5, 178)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wi6ju"]
+size = Vector2(356, 216)
+
 [node name="Node" type="Node" unique_id=444136582]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=820354676]
@@ -351,6 +354,13 @@ interact_name = "Harvest a tree!"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/treeharvest" unique_id=1486326482]
 position = Vector2(726, 479)
 shape = SubResource("RectangleShape2D_njqwk")
+
+[node name="jump" parent="Tutorial" unique_id=1007781790 instance=ExtResource("11_ya4ey")]
+interact_name = "Use W/Up key to jump!"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/jump" unique_id=134940293]
+position = Vector2(311, 469)
+shape = SubResource("RectangleShape2D_wi6ju")
 
 [node name="pumpkin" parent="." unique_id=1481662959 instance=ExtResource("12_eb6dy")]
 position = Vector2(2411, 50)

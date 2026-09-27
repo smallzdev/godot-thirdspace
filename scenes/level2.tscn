@@ -183,10 +183,15 @@ size = Vector2(183, 122)
 [node name="Node" type="Node" unique_id=493559345]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1503899844]
-offset_left = -613.0
-offset_top = -307.0
-offset_right = 8434.0
-offset_bottom = 1036.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -773.0
+offset_top = -838.0
+offset_right = 6326.0
+offset_bottom = 1146.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_r40rm")
 
 [node name="chest" parent="." unique_id=1042047157 instance=ExtResource("2_xa7n4")]
@@ -275,7 +280,7 @@ texture = ExtResource("8_hrcei")
 
 [node name="interactable" parent="." unique_id=977272514 instance=ExtResource("10_bo4dx")]
 position = Vector2(1236, 351)
-interact_name = "Hold E for 3 secconds to open"
+interact_name = "Hold E for 3 seconds to open"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interactable" unique_id=609220654]
 position = Vector2(63, 21)
