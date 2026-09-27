@@ -50,41 +50,40 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_7vrkn")
 
-[node name="playButton" type="Button" parent="TextureRect" unique_id=857791057]
-unique_name_in_owner = true
-texture_filter = 1
-layout_mode = 0
-offset_left = 161.0
-offset_top = 237.0
-offset_right = 325.0
-offset_bottom = 317.0
-theme_override_font_sizes/font_size = 48
-text = "Play"
-icon = ExtResource("2_fu7sn")
-expand_icon = true
-script = ExtResource("3_fu7sn")
-
 [node name="placeholderbutton" type="Button" parent="TextureRect" unique_id=1616832112]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
 offset_left = 451.00003
 offset_top = 231.0
-offset_right = 546.0
-offset_bottom = 262.0
-scale = Vector2(3, 3)
+offset_right = 564.2
+offset_bottom = 271.0
+scale = Vector2(2.5, 2.5)
 text = "/"
 icon = ExtResource("2_fu7sn")
 
-[node name="placeholderbutton2" type="Button" parent="TextureRect" unique_id=754754196]
+[node name="playButton" type="Button" parent="TextureRect" unique_id=1093861813]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
-offset_left = 790.0
-offset_top = 228.0
-offset_right = 885.0
-offset_bottom = 259.0
-scale = Vector2(3, 3)
+offset_left = 99.00003
+offset_top = 230.0
+offset_right = 212.20001
+offset_bottom = 270.0
+scale = Vector2(2.5, 2.5)
+text = "Play"
+icon = ExtResource("2_fu7sn")
+script = ExtResource("3_fu7sn")
+
+[node name="placeholderbutton2" type="Button" parent="TextureRect" unique_id=1940547896]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 795.0
+offset_top = 230.00002
+offset_right = 908.19995
+offset_bottom = 270.0
+scale = Vector2(2.5, 2.5)
 text = "/"
 icon = ExtResource("2_fu7sn")
 
