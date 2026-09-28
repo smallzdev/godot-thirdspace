@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://b6uk6psq8alyb" path="res://Resources/Harvest/carvedpumpkin.png" id="11_76toy"]
 [ext_resource type="PackedScene" uid="uid://4udyoeh15lpw" path="res://scenes/shopkeeper.tscn" id="12_8g4ke"]
 [ext_resource type="PackedScene" uid="uid://cbbf4vs6ckrsy" path="res://scenes/shop.tscn" id="13_56gwk"]
+[ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/sound_button.tscn" id="14_cleqw"]
+[ext_resource type="AudioStream" uid="uid://cmjf7c6fwvetw" path="res://songs/newlevel2.wav" id="15_cleqw"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_oa1go"]
 font_size = 50
@@ -271,6 +273,12 @@ text = "3"
 label_settings = SubResource("LabelSettings_oa1go")
 horizontal_alignment = 1
 
+[node name="sound_button" parent="CanvasLayer2" unique_id=1974950491 instance=ExtResource("14_cleqw")]
+offset_left = 1060.0
+offset_top = 19.0
+offset_right = 1060.0
+offset_bottom = 19.0
+
 [node name="TileMap" type="TileMap" parent="." unique_id=708783800]
 texture_filter = 1
 scale = Vector2(3, 3)
@@ -337,3 +345,9 @@ texture = ExtResource("11_76toy")
 position = Vector2(6267, 219.00002)
 
 [node name="Shop" parent="shopkeeper" unique_id=1104006584 instance=ExtResource("13_56gwk")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2049047590]
+stream = ExtResource("15_cleqw")
+volume_db = 2.5
+autoplay = true
+max_distance = 9.223372e+18
