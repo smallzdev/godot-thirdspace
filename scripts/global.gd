@@ -1,8 +1,14 @@
 extends Node
 
+# coins collected in a scene without finishing:
 var coins = 0
+
+# coins successfully collected:
+var coinBalance = 0
+
 var checkpointNumber = 0
 var lives = 3
+var level = 1
 
 func add_coins(amount: int) -> void:
 	Global.coins += amount

@@ -61,17 +61,22 @@ func _process(delta) -> void:
 		if lootRng <= 9:
 			Global.add_coins(6)
 			print("Awarded 6 coins from a chest.")
+			chestTimerLabel.text = str("+6 Coins!")
 			
 		# numbers 10 - 30
 		elif lootRng <= 30 and lootRng >= 9:
 			Global.lives += 1
 			print("Awarded 1 life from a chest.")
+			chestTimerLabel.text = str("+1 Life!")
 			livesLabel.text = str(Global.lives)
 			
 		# Anything else, so at the moment 31 - 99
 		else:
 			Global.add_coins(3)
 			print("Awarded 3 coins from a chest.")
+			chestTimerLabel.text = str("+3 Coins!")
 		chestSprite.animation = "looted"
+		await get_tree().create_timer(3).timeout
+		# ^^^ Waits 3s before turning the timer invisable.
 		chestTimerLabel.visible = false
 		# planning something here shortly, for now just print

@@ -50,7 +50,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_7vrkn")
 
-[node name="placeholderbutton" type="Button" parent="TextureRect" unique_id=1616832112]
+[node name="endlessButton" type="Button" parent="TextureRect" unique_id=1616832112]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
@@ -75,7 +75,7 @@ text = "Play"
 icon = ExtResource("2_fu7sn")
 script = ExtResource("3_fu7sn")
 
-[node name="placeholderbutton2" type="Button" parent="TextureRect" unique_id=1940547896]
+[node name="levelButton" type="Button" parent="TextureRect" unique_id=1940547896]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0

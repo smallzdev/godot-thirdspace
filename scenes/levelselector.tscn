@@ -1,22 +1,24 @@
 [gd_scene format=3 uid="uid://4q6dnn5nwkrv"]
 
-[ext_resource type="Texture2D" uid="uid://dk2um6s8ydgq" path="res://Resources/Green.png" id="1_rt08o"]
-[ext_resource type="Script" uid="uid://cgycb7xnlyb72" path="res://scripts/level_buttons.gd" id="2_0peen"]
-[ext_resource type="Texture2D" uid="uid://cad286ogsl5kl" path="res://Resources/Levels/01.png" id="2_m7xk7"]
-[ext_resource type="Texture2D" uid="uid://bdjfukya6rt3m" path="res://Resources/Levels/02.png" id="3_0peen"]
-[ext_resource type="Texture2D" uid="uid://bqa51t8hh5fyn" path="res://Resources/Levels/03.png" id="4_0w6ns"]
-[ext_resource type="Texture2D" uid="uid://cddaku6mkyhp7" path="res://Resources/Levels/04.png" id="5_mbyfm"]
-[ext_resource type="Texture2D" uid="uid://b2lddm7ylqndx" path="res://Resources/Levels/05.png" id="6_ova1n"]
-[ext_resource type="Texture2D" uid="uid://0ghb4oeo2pf8" path="res://Resources/Levels/06.png" id="7_frjbu"]
-[ext_resource type="Texture2D" uid="uid://t4jgj6hotbgb" path="res://Resources/Levels/07.png" id="8_sjlsg"]
-[ext_resource type="Texture2D" uid="uid://di4a3vfhyecg5" path="res://Resources/Levels/08.png" id="9_gsjrf"]
-[ext_resource type="Texture2D" uid="uid://wmtnoa1f5a61" path="res://Resources/Levels/09.png" id="10_dnf8v"]
-[ext_resource type="Texture2D" uid="uid://dblyrt70obn6" path="res://Resources/Levels/10.png" id="11_avglv"]
-[ext_resource type="Texture2D" uid="uid://cn88yp7pelvip" path="res://Resources/Levels/11.png" id="12_vjjr7"]
-[ext_resource type="Texture2D" uid="uid://ll6mvmj2c6w1" path="res://Resources/Levels/12.png" id="13_2rrym"]
-[ext_resource type="Texture2D" uid="uid://dman18y0arjdn" path="res://Resources/Levels/13.png" id="14_ljy05"]
-[ext_resource type="Texture2D" uid="uid://cvqc85rgbm7tm" path="res://Resources/Levels/14.png" id="15_jtcxt"]
-[ext_resource type="Texture2D" uid="uid://dap21h8l2edr7" path="res://Resources/Levels/15.png" id="16_qe8vy"]
+[ext_resource type="Texture2D" uid="uid://dk2um6s8ydgq" path="res://Resources/Green.png" id="1_w7ksh"]
+[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Restart.png" id="2_fhnp5"]
+[ext_resource type="Script" uid="uid://b3cx4causoa08" path="res://scripts/creditbuttons.gd" id="3_h00jk"]
+[ext_resource type="Script" uid="uid://cgycb7xnlyb72" path="res://scripts/level_buttons.gd" id="4_u6eng"]
+[ext_resource type="Texture2D" uid="uid://cad286ogsl5kl" path="res://Resources/Levels/01.png" id="5_vbh8c"]
+[ext_resource type="Texture2D" uid="uid://bdjfukya6rt3m" path="res://Resources/Levels/02.png" id="6_vv2fk"]
+[ext_resource type="Texture2D" uid="uid://bqa51t8hh5fyn" path="res://Resources/Levels/03.png" id="7_m66ex"]
+[ext_resource type="Texture2D" uid="uid://cddaku6mkyhp7" path="res://Resources/Levels/04.png" id="8_le5ya"]
+[ext_resource type="Texture2D" uid="uid://b2lddm7ylqndx" path="res://Resources/Levels/05.png" id="9_qhq7c"]
+[ext_resource type="Texture2D" uid="uid://0ghb4oeo2pf8" path="res://Resources/Levels/06.png" id="10_ffj82"]
+[ext_resource type="Texture2D" uid="uid://t4jgj6hotbgb" path="res://Resources/Levels/07.png" id="11_xq537"]
+[ext_resource type="Texture2D" uid="uid://di4a3vfhyecg5" path="res://Resources/Levels/08.png" id="12_61tmf"]
+[ext_resource type="Texture2D" uid="uid://wmtnoa1f5a61" path="res://Resources/Levels/09.png" id="13_7o8qp"]
+[ext_resource type="Texture2D" uid="uid://dblyrt70obn6" path="res://Resources/Levels/10.png" id="14_ipnst"]
+[ext_resource type="Texture2D" uid="uid://cn88yp7pelvip" path="res://Resources/Levels/11.png" id="15_qn51j"]
+[ext_resource type="Texture2D" uid="uid://ll6mvmj2c6w1" path="res://Resources/Levels/12.png" id="16_s6yfj"]
+[ext_resource type="Texture2D" uid="uid://dman18y0arjdn" path="res://Resources/Levels/13.png" id="17_ku324"]
+[ext_resource type="Texture2D" uid="uid://cvqc85rgbm7tm" path="res://Resources/Levels/14.png" id="18_h7fdd"]
+[ext_resource type="Texture2D" uid="uid://dap21h8l2edr7" path="res://Resources/Levels/15.png" id="19_2j36p"]
 
 [sub_resource type="FontFile" id="FontFile_a4o0j"]
 subpixel_positioning = 0
@@ -56,7 +58,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_rt08o")
+texture = ExtResource("1_w7ksh")
 
 [node name="Label" type="Label" parent="TextureRect" unique_id=2051894024]
 texture_filter = 1
@@ -70,8 +72,22 @@ theme_override_font_sizes/font_size = 120
 text = "Level Selector"
 label_settings = SubResource("LabelSettings_4e6ea")
 
+[node name="mainmenubutton" type="Button" parent="TextureRect" unique_id=24868642]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 938.0
+offset_top = 553.0
+offset_right = 1136.0
+offset_bottom = 628.0
+theme_override_font_sizes/font_size = 48
+text = "Menu"
+icon = ExtResource("2_fhnp5")
+expand_icon = true
+script = ExtResource("3_h00jk")
+
 [node name="LevelButtons" type="Node" parent="." unique_id=254909148]
-script = ExtResource("2_0peen")
+script = ExtResource("4_u6eng")
 
 [node name="1" type="TextureButton" parent="LevelButtons" unique_id=230739734]
 texture_filter = 1
@@ -80,7 +96,7 @@ offset_top = 193.0
 offset_right = 139.0
 offset_bottom = 210.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("2_m7xk7")
+texture_normal = ExtResource("5_vbh8c")
 
 [node name="2" type="TextureButton" parent="LevelButtons" unique_id=1166056209]
 texture_filter = 1
@@ -89,7 +105,7 @@ offset_top = 191.0
 offset_right = 338.0
 offset_bottom = 208.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("3_0peen")
+texture_normal = ExtResource("6_vv2fk")
 
 [node name="3" type="TextureButton" parent="LevelButtons" unique_id=1206525924]
 texture_filter = 1
@@ -98,7 +114,7 @@ offset_top = 186.0
 offset_right = 534.0
 offset_bottom = 203.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("4_0w6ns")
+texture_normal = ExtResource("7_m66ex")
 
 [node name="4" type="TextureButton" parent="LevelButtons" unique_id=1265304101]
 texture_filter = 1
@@ -107,7 +123,7 @@ offset_top = 183.0
 offset_right = 733.0
 offset_bottom = 200.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("5_mbyfm")
+texture_normal = ExtResource("8_le5ya")
 
 [node name="5" type="TextureButton" parent="LevelButtons" unique_id=1180079380]
 texture_filter = 1
@@ -116,7 +132,7 @@ offset_top = 180.0
 offset_right = 935.0
 offset_bottom = 197.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("6_ova1n")
+texture_normal = ExtResource("9_qhq7c")
 
 [node name="6" type="TextureButton" parent="LevelButtons" unique_id=1037033203]
 texture_filter = 1
@@ -125,7 +141,7 @@ offset_top = 311.0
 offset_right = 139.0
 offset_bottom = 328.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("7_frjbu")
+texture_normal = ExtResource("10_ffj82")
 
 [node name="7" type="TextureButton" parent="LevelButtons" unique_id=407251348]
 texture_filter = 1
@@ -134,7 +150,7 @@ offset_top = 309.0
 offset_right = 338.0
 offset_bottom = 326.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("8_sjlsg")
+texture_normal = ExtResource("11_xq537")
 
 [node name="8" type="TextureButton" parent="LevelButtons" unique_id=68890746]
 texture_filter = 1
@@ -143,7 +159,7 @@ offset_top = 304.0
 offset_right = 534.0
 offset_bottom = 321.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("9_gsjrf")
+texture_normal = ExtResource("12_61tmf")
 
 [node name="9" type="TextureButton" parent="LevelButtons" unique_id=1435101951]
 texture_filter = 1
@@ -152,7 +168,7 @@ offset_top = 301.0
 offset_right = 733.0
 offset_bottom = 318.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("10_dnf8v")
+texture_normal = ExtResource("13_7o8qp")
 
 [node name="10" type="TextureButton" parent="LevelButtons" unique_id=586420694]
 texture_filter = 1
@@ -161,7 +177,7 @@ offset_top = 298.0
 offset_right = 935.0
 offset_bottom = 315.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("11_avglv")
+texture_normal = ExtResource("14_ipnst")
 
 [node name="11" type="TextureButton" parent="LevelButtons" unique_id=2049711632]
 texture_filter = 1
@@ -170,7 +186,7 @@ offset_top = 440.0
 offset_right = 138.0
 offset_bottom = 457.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("12_vjjr7")
+texture_normal = ExtResource("15_qn51j")
 
 [node name="12" type="TextureButton" parent="LevelButtons" unique_id=640936692]
 texture_filter = 1
@@ -179,7 +195,7 @@ offset_top = 438.0
 offset_right = 337.0
 offset_bottom = 455.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("13_2rrym")
+texture_normal = ExtResource("16_s6yfj")
 
 [node name="13" type="TextureButton" parent="LevelButtons" unique_id=904711038]
 texture_filter = 1
@@ -188,7 +204,7 @@ offset_top = 433.0
 offset_right = 533.0
 offset_bottom = 450.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("14_ljy05")
+texture_normal = ExtResource("17_ku324")
 
 [node name="14" type="TextureButton" parent="LevelButtons" unique_id=1424183442]
 texture_filter = 1
@@ -197,7 +213,7 @@ offset_top = 430.0
 offset_right = 732.0
 offset_bottom = 447.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("15_jtcxt")
+texture_normal = ExtResource("18_h7fdd")
 
 [node name="15" type="TextureButton" parent="LevelButtons" unique_id=2012402851]
 texture_filter = 1
@@ -206,4 +222,4 @@ offset_top = 427.0
 offset_right = 934.0
 offset_bottom = 444.0
 scale = Vector2(6, 6)
-texture_normal = ExtResource("16_qe8vy")
+texture_normal = ExtResource("19_2j36p")
