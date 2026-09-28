@@ -10,7 +10,7 @@ Play the latest release [here!](https://vick-st3r.itch.io/week-one-harvest)
 
 Our game is a platformer game. We're only beginners, so we're learning along the way.
 
-Level 1: Tutorial: Harvest!
+Level 1: Tutorial - Harvest!
 
 Level 2: In construction at the time
 
@@ -88,9 +88,18 @@ Currently, we are looking on making a game where you have to jump as high as pos
 <details open>
 <summary></summary>
 
-Week two release [here!]()
+Week two release [here!](https://vick-st3r.itch.io/week-two-treasure)
 
-!!!NEED TO PUT IMAGES HERE!!!
+![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/level2.PNG)
+
+Some changes you can see in the image 
+- Sound on and off button
+- Removed *ugly* border
+- Added pumpkin sprite!
+
+![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/actuallylevel2.PNG)
+
+Due to the theme being treasure, Smallz added a treasure chest with a looting randomize feature! 
 
 ## What we learned
 
