@@ -59,7 +59,7 @@ offset_top = 231.0
 offset_right = 564.2
 offset_bottom = 271.0
 scale = Vector2(2.5, 2.5)
-text = "/"
+text = "Endless"
 icon = ExtResource("2_fu7sn")
 
 [node name="playButton" type="Button" parent="TextureRect" unique_id=1093861813]
@@ -84,7 +84,7 @@ offset_top = 230.00002
 offset_right = 908.19995
 offset_bottom = 270.0
 scale = Vector2(2.5, 2.5)
-text = "/"
+text = "Level"
 icon = ExtResource("2_fu7sn")
 
 [node name="creditsbutton" type="Button" parent="TextureRect" unique_id=74736462]

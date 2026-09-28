@@ -12,7 +12,7 @@ Our game is a platformer game. We're only beginners, so we're learning along the
 
 Level 1: Tutorial: Harvest!
 
-Level 2: In construction
+Level 2: Grass Lands
 
 # Week 1: Harvest
 <details open>
