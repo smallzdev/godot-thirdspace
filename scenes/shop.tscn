@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cbbf4vs6ckrsy"]
+
+[node name="Shop" type="CanvasLayer" unique_id=1104006584]
+process_mode = 3
+
+[node name="Panel" type="Panel" parent="." unique_id=507146130]
+process_mode = 3
+visible = false
+offset_left = 100.0
+offset_top = 54.0
+offset_right = 1042.0
+offset_bottom = 596.0

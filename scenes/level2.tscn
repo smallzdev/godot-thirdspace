@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="8_hrcei"]
 [ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="10_bo4dx"]
 [ext_resource type="Texture2D" uid="uid://b6uk6psq8alyb" path="res://Resources/Harvest/carvedpumpkin.png" id="11_76toy"]
+[ext_resource type="PackedScene" uid="uid://4udyoeh15lpw" path="res://scenes/shopkeeper.tscn" id="12_8g4ke"]
+[ext_resource type="PackedScene" uid="uid://cbbf4vs6ckrsy" path="res://scenes/shop.tscn" id="13_56gwk"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_oa1go"]
 font_size = 50
@@ -184,7 +186,7 @@ texture = ExtResource("2_6q4t8")
 20:10/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_stm8k"]
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 5
 sources/0 = SubResource("TileSetAtlasSource_8tcn8")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
@@ -197,10 +199,10 @@ texture_filter = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -863.0
-offset_top = -658.0
-offset_right = 6282.0
-offset_bottom = 654.0
+offset_left = -510.0
+offset_top = -823.0
+offset_right = 6635.0
+offset_bottom = 489.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_r40rm")
@@ -320,7 +322,6 @@ position = Vector2(5074, 309)
 position = Vector2(5243, 309)
 
 [node name="carvedpumpkin" type="Sprite2D" parent="." unique_id=859505763]
-show_behind_parent = true
 texture_filter = 1
 position = Vector2(601, 387)
 scale = Vector2(3, 3)
@@ -331,3 +332,8 @@ texture_filter = 1
 position = Vector2(1915.0001, 195)
 scale = Vector2(3, 3)
 texture = ExtResource("11_76toy")
+
+[node name="shopkeeper" parent="." unique_id=1417100742 instance=ExtResource("12_8g4ke")]
+position = Vector2(6267, 219.00002)
+
+[node name="Shop" parent="shopkeeper" unique_id=1104006584 instance=ExtResource("13_56gwk")]

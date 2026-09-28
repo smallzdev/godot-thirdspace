@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://djbrbptspiovg" path="res://Resources/soundon-1.png.png" id="1_qux0v"]
 [ext_resource type="Texture2D" uid="uid://0wbjjgjp88k" path="res://Resources/soundoff-1.png.png" id="2_qux0v"]
-[ext_resource type="Script" uid="uid://cygjmegxy235k" path="res://soundbutton.gd" id="3_atcyj"]
+[ext_resource type="Script" uid="uid://cygjmegxy235k" path="res://scripts/soundbutton.gd" id="3_atcyj"]
 
 [node name="sound_button" type="Control" unique_id=1974950491]
 texture_filter = 1
