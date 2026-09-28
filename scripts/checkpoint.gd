@@ -33,3 +33,6 @@ func _on_body_entered(body: Node2D) -> void:
 # the checkpoint number variable is smaller than the number
 # checkpoint. This prevents people from walking backwards
 # and activating old checkpoints if that makes sense.
+
+# When adding new checkpoints, make sure to also edit character.gd
+# otherwise itll loop spawn you in the void, until you fail.

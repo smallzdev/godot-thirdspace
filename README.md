@@ -12,7 +12,7 @@ Our game is a platformer game. We're only beginners, so we're learning along the
 
 Level 1: Tutorial: Harvest!
 
-Level 2: Grass Lands
+Level 2: In construction at the time
 
 # Week 1: Harvest
 <details open>
@@ -108,7 +108,7 @@ Smallz however was super disciplined as always! Congrats to him!!
 
 **2. Communication**
 
-Not sure if Smallz felt this way too, but I would have really liked to sit down and talk about the game. Most of the time we just send each other messages while were sleeping (14hr time difference) and read them during the morning. It feels a little awkward not knowing what I should focus on next and we're both guessing what we would like to implement.
+Not sure if Smallz felt this way too (smallz here, i do), but I would have really liked to sit down and talk about the game. Most of the time we just send each other messages while were sleeping (14hr time difference) and read them during the morning. It feels a little awkward not knowing what I should focus on next and we're both guessing what we would like to implement.
 
 **3. Subtle cues in game development**
 

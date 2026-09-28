@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://cqw2h8dl4iu2r"]
+
+[ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/coin_ui.tscn" id="1_qrujo"]
+[ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="2_5lcx6"]
+[ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/sound_button.tscn" id="3_an40m"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mu84n"]
+font_size = 50
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Node" type="Node" unique_id=1947336095]
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1535797749]
+
+[node name="CoinUI" parent="CanvasLayer2" unique_id=662362470 instance=ExtResource("1_qrujo")]
+offset_left = 54.0
+offset_top = 25.0
+offset_right = 93.0
+offset_bottom = 47.0
+
+[node name="HeartUI" type="Control" parent="CanvasLayer2" unique_id=1407062834]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 185.0
+offset_top = 49.0
+offset_right = 225.0
+offset_bottom = 89.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer2/HeartUI" unique_id=1217801509]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -38.0
+offset_right = 43.0
+offset_bottom = -11.0
+scale = Vector2(3, 3)
+texture = ExtResource("2_5lcx6")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="LivesLabel" type="Label" parent="CanvasLayer2/HeartUI" unique_id=1379659825]
+layout_mode = 0
+offset_left = 110.0
+offset_top = -24.0
+offset_right = 139.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "3"
+label_settings = SubResource("LabelSettings_mu84n")
+horizontal_alignment = 1
+
+[node name="sound_button" parent="CanvasLayer2" unique_id=1974950491 instance=ExtResource("3_an40m")]
+offset_left = 1060.0
+offset_top = 19.0
+offset_right = 1060.0
+offset_bottom = 19.0

@@ -40,7 +40,7 @@ func _physics_process(delta: float) -> void:
 		mainSprite.animation = "default"
 		
 	# lives and checkpoint script
-	if not is_on_floor() and global_position.y > 1000:
+	if not is_on_floor() and global_position.y > 1500:
 		Global.remove_all_coins(amount)
 		var spawnposition: Vector2
 		
@@ -66,6 +66,14 @@ func _physics_process(delta: float) -> void:
 			
 		elif Global.checkpointNumber == 2:
 			global_position = $"../Checkpoint2".global_position
+			
+		elif Global.checkpointNumber == 3:
+			global_position = $"../Checkpoint3".global_position
+		
+		elif Global.checkpointNumber == 4:
+			global_position = $"../Checkpoint4".global_position
+			
+# ^^ if you or I add morre checkpoints, remember to update this
 	
 	# something to do with the character moving
 	move_and_slide()
