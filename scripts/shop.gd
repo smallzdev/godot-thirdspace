@@ -11,6 +11,8 @@ extends CanvasLayer
 @onready var ProductIconAnimation = $Panel/ProductIcon.animation.to_int()
 @onready var coinBalanceLabel = %CoinUILabel
 @onready var livesLabel = $"../../CanvasLayer2/HeartUI/LivesLabel"
+@onready var errorPanel = $Panel/ErrrorPopup
+@onready var errorTitle = $Panel/ErrrorPopup/ErrorTitle
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,12 +21,14 @@ func _ready() -> void:
 	var nextLeftButton = $Panel/NextLeft
 	var nextRightButton = $Panel/NextRight
 	var purchaseButton = $Panel/PurchaseButton
+	var ErrorButton = $Panel/ErrrorPopup/CloseErrorButton
 	
 	# detects if a button is pressed, and then activates the func.
 	shopcloseButton.pressed.connect(shopcloseButton_pressed)
 	nextLeftButton.pressed.connect(nextleft_button_pressed)
 	nextRightButton.pressed.connect(nextright_button_pressed)
 	purchaseButton.pressed.connect(purchase_activated)
+	ErrorButton.pressed.connect(error_dismissed)
 	
 	# temporary for now, moving soon.
 	coinBalanceLabel.text = str(Global.coinBalance)
@@ -82,12 +86,24 @@ func nextright_button_pressed():
 
 # Shop purchasing system and button
 func purchase_activated():
-	if ProductIconAnimation == 1 and Global.coinBalance >= 15:
-		Global.coinBalance -= 15
-		Global.lives += 1
-		livesLabel.text = str(Global.lives)
-		coinBalanceLabel = str(Global.coinBalance)
+	if ProductIconAnimation == 1:
+		if Global.coinBalance >= 15:
+			Global.coinBalance -= 15
+			Global.lives += 1
+			livesLabel.text = str(Global.lives)
+			coinBalanceLabel.text = str(Global.coinBalance)
+		else:
+			errorPanel.visible = true
 	if ProductIconAnimation == 2:
-		pass
+		errorPanel.visible = true
+		errorTitle.text = "Under Costruction"
+		# its currently a placeholder so nothings here
 	if ProductIconAnimation == 3:
-		pass
+		errorPanel.visible = true
+		errorTitle.text = "Under Construction"
+		# its currently a placeholder so nothings here
+
+func error_dismissed():
+	errorPanel.visible = false
+	# resseting to default text:
+	errorTitle.text = "Insufficient Balance"

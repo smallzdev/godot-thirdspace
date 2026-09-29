@@ -50,13 +50,19 @@ font_size = 50
 outline_size = 8
 outline_color = Color(0, 0, 0, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_stm8k"]
+bg_color = Color(0.92577744, 0.3672625, 0.6464009, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
 [node name="Shop" type="CanvasLayer" unique_id=1104006584]
 process_mode = 3
 script = ExtResource("1_xfvoa")
 
 [node name="Panel" type="Panel" parent="." unique_id=507146130]
 process_mode = 3
-visible = false
 offset_left = 100.0
 offset_top = 54.0
 offset_right = 1042.0
@@ -177,3 +183,40 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "0"
 label_settings = SubResource("LabelSettings_2fc2m")
+
+[node name="ErrrorPopup" type="Panel" parent="Panel" unique_id=291530414]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 159.0
+offset_right = 706.0
+offset_bottom = 375.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_stm8k")
+
+[node name="ErrorTitle" type="Label" parent="Panel/ErrrorPopup" unique_id=814237291]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 6.0
+offset_right = 354.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 26
+text = "Insufficient Balance."
+
+[node name="Label" type="Label" parent="Panel/ErrrorPopup" unique_id=419802516]
+layout_mode = 0
+offset_left = -239.0
+offset_top = 56.0
+offset_right = 680.0
+offset_bottom = 131.0
+text = "You do not have enough coins to complete this
+transaction. Coins are only usable once you complete a
+level with them."
+horizontal_alignment = 1
+
+[node name="CloseErrorButton" type="Button" parent="Panel/ErrrorPopup" unique_id=478912172]
+layout_mode = 0
+offset_left = 171.0
+offset_top = 149.0
+offset_right = 281.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 19
+text = "Dismiss"

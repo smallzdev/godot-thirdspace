@@ -162,3 +162,11 @@ I also get super carried away..
 - Polish on a few features of the game
 - Call with Smallz soon to figure out what the future of this game!
 </details>
+
+# Week 3: Adventure
+
+## Feature List:
+- Working shop found in level 2.
+    - Error popup message if you don't have enough coins or the products under construction.
+	- Deducts coins from your global account balance. I plan on adding a tutorial to help understand this better, but basically if you finish a level with coins that ammount of coins gets added into your account. You can't purchase shop items with the coins you've just gotten without finishing.
+	- The title, and cost labels update when viewing each product.
