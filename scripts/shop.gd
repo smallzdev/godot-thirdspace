@@ -10,6 +10,7 @@ extends CanvasLayer
 @onready var ProductCostLabel = $Panel/CostLabel
 @onready var ProductIconAnimation = $Panel/ProductIcon.animation.to_int()
 @onready var coinBalanceLabel = %CoinUILabel
+@onready var livesLabel = $"../../CanvasLayer2/HeartUI/LivesLabel"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -76,18 +77,17 @@ func nextright_button_pressed():
 		if ProductIconAnimation == 3:
 			ProductLabel.text = "Placeholder 2"
 			ProductCostLabel.text = "Cost: 2 Coins"
+		else:
+			print("Error, product ", ProductIconAnimation, " not found..")
 
 # Shop purchasing system and button
 func purchase_activated():
-	if ProductIconAnimation == 1:
-		ProductCostLabel.text = "Cost: 15 Coins"
-		ProductLabel.text = "Temp Heart"
+	if ProductIconAnimation == 1 and Global.coinBalance >= 15:
+		Global.coinBalance -= 15
+		Global.lives += 1
+		livesLabel.text = str(Global.lives)
+		coinBalanceLabel = str(Global.coinBalance)
 	if ProductIconAnimation == 2:
-		ProductLabel.text = "Placeholder 1"
-		ProductCostLabel.text = "Cost: 16 Coins"
+		pass
 	if ProductIconAnimation == 3:
-		ProductLabel.text = "Placeholder 2"
-		ProductCostLabel.text = "Cost: 2 Coins"
-	else:
-		print("Error, product ", ProductIconAnimation, " not found.")
-	# ill do this later
+		pass

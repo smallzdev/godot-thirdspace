@@ -126,7 +126,7 @@ offset_top = 381.0
 offset_right = 599.0
 offset_bottom = 432.0
 theme_override_font_sizes/font_size = 37
-text = "Cost: 25 Coins"
+text = "Cost: 15 Coins"
 
 [node name="ItemNameLabel" type="Label" parent="Panel" unique_id=890669928]
 layout_mode = 0
