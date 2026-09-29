@@ -48,6 +48,7 @@ func _physics_process(delta: float) -> void:
 # scene.
 		if Global.lives < 2:
 			print("All lives used, game over D:")
+			Global.checkpointNumber = 0
 			get_tree().change_scene_to_packed(gameoverscene)
 		
 # decreases the lives once it goes bellow a certain level.

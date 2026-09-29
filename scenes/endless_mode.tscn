@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://6takoqjtagoc"]
+
+[ext_resource type="Texture2D" uid="uid://cpawa0w3mognm" path="res://Resources/Yellow.png" id="1_47ka5"]
+[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="2_qcjw3"]
+[ext_resource type="Script" uid="uid://b3cx4causoa08" path="res://scripts/creditbuttons.gd" id="3_tmrko"]
+
+[node name="TextureRect" type="TextureRect" unique_id=58292189]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_47ka5")
+
+[node name="Label" type="Label" parent="." unique_id=46132895]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 238.0
+offset_right = 1066.0
+offset_bottom = 409.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 125
+text = "Coming Soon...."
+
+[node name="mainmenubutton" type="Button" parent="." unique_id=92412720]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 900.0
+offset_top = 524.0
+offset_right = 1098.0
+offset_bottom = 599.0
+theme_override_font_sizes/font_size = 48
+text = "Menu"
+icon = ExtResource("2_qcjw3")
+expand_icon = true
+script = ExtResource("3_tmrko")

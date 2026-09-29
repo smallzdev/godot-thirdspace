@@ -5,6 +5,13 @@
 [ext_resource type="Texture2D" uid="uid://btjom1i7le5ab" path="res://Resources/heartanimated.png" id="3_1l46r"]
 [ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="4_032fp"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1g0bf"]
+bg_color = Color(0.49207765, 0.59762806, 0.8232277, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_032fp"]
 atlas = ExtResource("3_1l46r")
 region = Rect2(0, 0, 32, 32)
@@ -129,13 +136,13 @@ script = ExtResource("1_xfvoa")
 
 [node name="Panel" type="Panel" parent="." unique_id=507146130]
 process_mode = 3
-visible = false
 offset_left = 100.0
 offset_top = 54.0
 offset_right = 1042.0
 offset_bottom = 596.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1g0bf")
 
-[node name="Label" type="Label" parent="Panel" unique_id=589197523]
+[node name="ShopHeaderLabel" type="Label" parent="Panel" unique_id=589197523]
 layout_mode = 0
 offset_top = 2.0
 offset_right = 943.0
@@ -146,7 +153,7 @@ text = "Shop"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureButton" type="TextureButton" parent="Panel" unique_id=1404907946]
+[node name="XButton" type="TextureButton" parent="Panel" unique_id=1404907946]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
@@ -157,7 +164,7 @@ offset_bottom = 45.0
 scale = Vector2(2, 2)
 texture_normal = ExtResource("2_1l46r")
 
-[node name="Button" type="Button" parent="Panel" unique_id=430309534]
+[node name="PurchaseButton" type="Button" parent="Panel" unique_id=430309534]
 layout_mode = 0
 offset_left = 373.0
 offset_top = 435.0
@@ -166,13 +173,13 @@ offset_bottom = 502.0
 theme_override_font_sizes/font_size = 43
 text = "Purchase"
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=481084768]
+[node name="ProductIcon" type="AnimatedSprite2D" parent="Panel" unique_id=481084768]
 texture_filter = 1
 position = Vector2(469, 251)
 scale = Vector2(8, 8)
 sprite_frames = SubResource("SpriteFrames_stm8k")
 
-[node name="Button2" type="Button" parent="Panel" unique_id=643228487]
+[node name="NextLeft" type="Button" parent="Panel" unique_id=643228487]
 layout_mode = 0
 offset_left = 276.0
 offset_top = 206.0
@@ -181,7 +188,7 @@ offset_bottom = 306.0
 theme_override_font_sizes/font_size = 67
 text = "<"
 
-[node name="Button3" type="Button" parent="Panel" unique_id=131995584]
+[node name="NextRight" type="Button" parent="Panel" unique_id=131995584]
 layout_mode = 0
 offset_left = 625.0
 offset_top = 211.0
@@ -190,7 +197,7 @@ offset_bottom = 311.0
 theme_override_font_sizes/font_size = 67
 text = ">"
 
-[node name="Label2" type="Label" parent="Panel" unique_id=721967192]
+[node name="CostLabel" type="Label" parent="Panel" unique_id=721967192]
 layout_mode = 0
 offset_left = 351.0
 offset_top = 381.0
@@ -199,7 +206,7 @@ offset_bottom = 432.0
 theme_override_font_sizes/font_size = 37
 text = "Cost: 25 Coins"
 
-[node name="Label3" type="Label" parent="Panel" unique_id=890669928]
+[node name="ItemNameLabel" type="Label" parent="Panel" unique_id=890669928]
 layout_mode = 0
 offset_left = 350.0
 offset_top = 100.0

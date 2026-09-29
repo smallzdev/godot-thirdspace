@@ -49,6 +49,13 @@ font_size = 120
 outline_size = 15
 outline_color = Color(0, 0, 0, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w7ksh"]
+bg_color = Color(0.71333176, 0.5847474, 0.2153948, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
 [node name="Node" type="Node" unique_id=343210777]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1169043542]
@@ -223,3 +230,47 @@ offset_right = 934.0
 offset_bottom = 444.0
 scale = Vector2(6, 6)
 texture_normal = ExtResource("19_2j36p")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=302242389]
+
+[node name="constructionPanel" type="Panel" parent="CanvasLayer" unique_id=1435338634]
+visible = false
+offset_left = 108.0
+offset_top = 55.0
+offset_right = 1043.0
+offset_bottom = 590.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_w7ksh")
+
+[node name="PanelTitle" type="Label" parent="CanvasLayer/constructionPanel" unique_id=1448220448]
+layout_mode = 0
+offset_left = 239.0
+offset_top = 7.0
+offset_right = 664.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 67
+text = "Coming Soon"
+
+[node name="conInfo" type="Label" parent="CanvasLayer/constructionPanel" unique_id=1067142797]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 114.0
+offset_right = 2076.0
+offset_bottom = 554.0
+theme_override_font_sizes/font_size = 35
+text = "This level is still currently under construction, please 
+be patient. For now, you may play levels 1 through to
+ 3 as those are the only levels at this time.
+
+
+
+
+ Hope you enjoy!"
+
+[node name="conContinueButton" type="Button" parent="CanvasLayer/constructionPanel" unique_id=460764305]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 346.0
+offset_right = 579.0
+offset_bottom = 405.0
+theme_override_font_sizes/font_size = 37
+text = "Continue"

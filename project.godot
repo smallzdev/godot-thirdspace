@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="third space"
-run/main_scene="uid://dtfmq4tyy5op7"
+run/main_scene="uid://d1xj64thgqt81"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://Resources/icon.svg"
 
