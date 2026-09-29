@@ -1,5 +1,33 @@
 [gd_scene format=3 uid="uid://bw6b44lp5bonw"]
 
+[ext_resource type="Texture2D" uid="uid://12f6b5nlvln" path="res://Resources/Text Boxes/cyan-textbox.png" id="1_wscpg"]
+[ext_resource type="Script" uid="uid://bt32fx488554d" path="res://scenes/text_box.gd" id="2_dyarx"]
+
 [node name="MarginContainer" type="MarginContainer" unique_id=1869612282]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 6.0
+offset_top = 10.0
+offset_right = 44.0
+offset_bottom = 48.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=262206293]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("1_wscpg")
+region_rect = Rect2(0, 0, 32, 32)
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2139667693]
+layout_mode = 2
+theme_override_constants/margin_left = 7
+theme_override_constants/margin_right = 7
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=296850467]
+layout_mode = 2
+tooltip_text = "67 omg"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_dyarx")
