@@ -3,7 +3,9 @@
 [ext_resource type="Script" uid="uid://l361ejfg77k5" path="res://scripts/shop.gd" id="1_xfvoa"]
 [ext_resource type="Texture2D" uid="uid://ded3kfdn6njhu" path="res://Resources/Gui Buttons/X/x.png" id="2_1l46r"]
 [ext_resource type="Texture2D" uid="uid://btjom1i7le5ab" path="res://Resources/heartanimated.png" id="3_1l46r"]
+[ext_resource type="Texture2D" uid="uid://bfkj700jw6m6m" path="res://Resources/Gui Buttons/whitetext-orange1.png" id="4_2fc2m"]
 [ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="4_032fp"]
+[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="5_8r1wq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1g0bf"]
 bg_color = Color(0.49207765, 0.59762806, 0.8232277, 1)
@@ -16,112 +18,30 @@ corner_radius_bottom_left = 25
 atlas = ExtResource("3_1l46r")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2fc2m"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8r1wq"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ajxib"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_y6sft"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(0, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m4ofw"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(32, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_heatd"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(64, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1v8qu"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(96, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_44xle"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(0, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_24it5"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(32, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7mqwv"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(64, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gobkm"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(96, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_j14q8"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(0, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5u241"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(32, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pqync"]
-atlas = ExtResource("3_1l46r")
-region = Rect2(64, 96, 32, 32)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_stm8k"]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_032fp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2fc2m")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8r1wq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ajxib")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_y6sft")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m4ofw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_heatd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1v8qu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_44xle")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_24it5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7mqwv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gobkm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j14q8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5u241")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pqync")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_2fc2m")
+}],
+"loop": 1,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_8r1wq")
+}],
+"loop": 1,
+"name": &"3",
 "speed": 5.0
 }]
 
@@ -136,6 +56,7 @@ script = ExtResource("1_xfvoa")
 
 [node name="Panel" type="Panel" parent="." unique_id=507146130]
 process_mode = 3
+visible = false
 offset_left = 100.0
 offset_top = 54.0
 offset_right = 1042.0
@@ -175,9 +96,10 @@ text = "Purchase"
 
 [node name="ProductIcon" type="AnimatedSprite2D" parent="Panel" unique_id=481084768]
 texture_filter = 1
-position = Vector2(469, 251)
+position = Vector2(475, 257)
 scale = Vector2(8, 8)
 sprite_frames = SubResource("SpriteFrames_stm8k")
+animation = &"1"
 
 [node name="NextLeft" type="Button" parent="Panel" unique_id=643228487]
 layout_mode = 0
