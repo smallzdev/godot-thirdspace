@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c4007121q1xqh"]
 
 [ext_resource type="Texture2D" uid="uid://cpawa0w3mognm" path="res://Resources/Yellow.png" id="1_0bpdh"]
-[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Restart.png" id="2_2ckv8"]
-[ext_resource type="Script" uid="uid://b3cx4causoa08" path="res://scenes/creditbuttons.gd" id="3_0ctdu"]
+[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="2_2ckv8"]
+[ext_resource type="Script" uid="uid://b3cx4causoa08" path="res://scripts/creditbuttons.gd" id="3_0ctdu"]
 
 [sub_resource type="FontFile" id="FontFile_2ckv8"]
 subpixel_positioning = 0

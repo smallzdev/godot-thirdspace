@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://copqbgx1v0cee"]
 
-[ext_resource type="Script" uid="uid://c7oelha8n2d6q" path="res://scenes/tree.gd" id="1_viusy"]
+[ext_resource type="Script" uid="uid://c7oelha8n2d6q" path="res://scripts/tree.gd" id="1_viusy"]
 [ext_resource type="Texture2D" uid="uid://dq4k6xpn1srhi" path="res://Resources/Harvest/autumntree.png" id="1_vplca"]
 [ext_resource type="Texture2D" uid="uid://brqhle3s48hw3" path="res://Resources/Harvest/wiltedtree.png" id="2_qd6xs"]
 [ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="2_viusy"]

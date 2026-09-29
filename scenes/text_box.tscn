@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bw6b44lp5bonw"]
 
 [ext_resource type="Texture2D" uid="uid://12f6b5nlvln" path="res://Resources/Text Boxes/cyan-textbox.png" id="1_wscpg"]
-[ext_resource type="Script" uid="uid://bt32fx488554d" path="res://scenes/text_box.gd" id="2_dyarx"]
+[ext_resource type="Script" uid="uid://bt32fx488554d" path="res://scripts/text_box.gd" id="2_dyarx"]
 
 [node name="MarginContainer" type="MarginContainer" unique_id=1869612282]
 offset_left = 6.0
