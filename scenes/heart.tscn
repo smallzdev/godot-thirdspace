@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://4kmuygfucw11"]
 
-[ext_resource type="Script" uid="uid://cnrydxnyb3ob6" path="res://scenes/heart.gd" id="1_v30as"]
+[ext_resource type="Script" uid="uid://cnrydxnyb3ob6" path="res://scripts/heart.gd" id="1_v30as"]
 [ext_resource type="Texture2D" uid="uid://btjom1i7le5ab" path="res://Resources/heartanimated.png" id="2_ycbwg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_krgnv"]

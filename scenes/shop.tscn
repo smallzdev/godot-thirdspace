@@ -1,10 +1,135 @@
 [gd_scene format=3 uid="uid://cbbf4vs6ckrsy"]
 
+[ext_resource type="Script" uid="uid://l361ejfg77k5" path="res://scripts/shop.gd" id="1_xfvoa"]
+[ext_resource type="Texture2D" uid="uid://ded3kfdn6njhu" path="res://Resources/Gui Buttons/X/x.png" id="2_1l46r"]
+[ext_resource type="Texture2D" uid="uid://btjom1i7le5ab" path="res://Resources/heartanimated.png" id="3_1l46r"]
+[ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="4_032fp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_032fp"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2fc2m"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8r1wq"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajxib"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6sft"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4ofw"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_heatd"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v8qu"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44xle"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24it5"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7mqwv"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gobkm"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j14q8"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5u241"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqync"]
+atlas = ExtResource("3_1l46r")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_stm8k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_032fp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2fc2m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8r1wq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ajxib")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6sft")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4ofw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_heatd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1v8qu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44xle")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24it5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7mqwv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gobkm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j14q8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5u241")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqync")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2fc2m"]
+font_size = 50
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
 [node name="Shop" type="CanvasLayer" unique_id=1104006584]
 process_mode = 3
+script = ExtResource("1_xfvoa")
 
 [node name="Panel" type="Panel" parent="." unique_id=507146130]
 process_mode = 3
+visible = false
 offset_left = 100.0
 offset_top = 54.0
 offset_right = 1042.0
@@ -20,3 +145,106 @@ theme_override_font_sizes/font_size = 67
 text = "Shop"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="Panel" unique_id=1404907946]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 865.0
+offset_top = 11.0
+offset_right = 897.5
+offset_bottom = 45.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("2_1l46r")
+
+[node name="Button" type="Button" parent="Panel" unique_id=430309534]
+layout_mode = 0
+offset_left = 373.0
+offset_top = 435.0
+offset_right = 573.0
+offset_bottom = 502.0
+theme_override_font_sizes/font_size = 43
+text = "Purchase"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=481084768]
+texture_filter = 1
+position = Vector2(469, 251)
+scale = Vector2(8, 8)
+sprite_frames = SubResource("SpriteFrames_stm8k")
+
+[node name="Button2" type="Button" parent="Panel" unique_id=643228487]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 206.0
+offset_right = 322.0
+offset_bottom = 306.0
+theme_override_font_sizes/font_size = 67
+text = "<"
+
+[node name="Button3" type="Button" parent="Panel" unique_id=131995584]
+layout_mode = 0
+offset_left = 625.0
+offset_top = 211.0
+offset_right = 671.0
+offset_bottom = 311.0
+theme_override_font_sizes/font_size = 67
+text = ">"
+
+[node name="Label2" type="Label" parent="Panel" unique_id=721967192]
+layout_mode = 0
+offset_left = 351.0
+offset_top = 381.0
+offset_right = 599.0
+offset_bottom = 432.0
+theme_override_font_sizes/font_size = 37
+text = "Cost: 25 Coins"
+
+[node name="Label3" type="Label" parent="Panel" unique_id=890669928]
+layout_mode = 0
+offset_left = 350.0
+offset_top = 100.0
+offset_right = 598.0
+offset_bottom = 151.0
+theme_override_font_sizes/font_size = 37
+text = "1 Temp Heart"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="Panel" unique_id=1087879889]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 436.0
+offset_right = 77.0
+offset_bottom = 459.0
+theme_override_font_sizes/font_size = 18
+text = "Balance:"
+
+[node name="Control" type="Control" parent="Panel" unique_id=126736351]
+anchors_preset = 0
+offset_left = -4.0
+offset_top = -79.0
+offset_right = 36.0
+offset_bottom = -39.0
+
+[node name="TextureRect3" type="TextureRect" parent="Panel/Control" unique_id=1464917657]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1.0
+offset_top = 528.0
+offset_right = 31.666668
+offset_bottom = 559.0
+scale = Vector2(3, 3)
+texture = ExtResource("4_032fp")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="CoinUILabel" type="Label" parent="Panel/Control" unique_id=299214141]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 86.0
+offset_top = 542.0
+offset_right = 115.0
+offset_bottom = 611.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "0"
+label_settings = SubResource("LabelSettings_2fc2m")
