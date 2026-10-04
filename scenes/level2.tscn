@@ -214,10 +214,10 @@ grow_vertical = 2
 texture = ExtResource("1_r40rm")
 
 [node name="chest" parent="." unique_id=1042047157 instance=ExtResource("2_xa7n4")]
-position = Vector2(1446, 264)
+position = Vector2(1455, 248)
 
 [node name="chest2" parent="." unique_id=1181985792 instance=ExtResource("2_xa7n4")]
-position = Vector2(4633, 551)
+position = Vector2(4636, 536)
 
 [node name="Checkpoint1" parent="." unique_id=89005797 instance=ExtResource("5_alqfr")]
 texture_filter = 1

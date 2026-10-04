@@ -14,6 +14,33 @@ extends CanvasLayer
 @onready var errorPanel = $Panel/ErrrorPopup
 @onready var errorTitle = $Panel/ErrrorPopup/ErrorTitle
 
+#need to have a limit on buying items
+#or make it more expensive next time 
+#player decides to buy something
+
+var shop_items = {
+	"extra_life": {
+		"name": "Extra Life",
+		"price": 15
+	},
+	"extra_jump": {
+		"name": "Double Jump",
+		"price": 8
+	},
+	"placeholder": {
+		"name": "placeholder",
+		"price": 3
+	}
+}
+
+var item1: int = 15
+var item2: int = 8
+var item3: int = 3
+
+var first_item = "Extra Life"
+var second_item = "Double Jump"
+var third_item = "placeholder"
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# all da button variables
@@ -57,14 +84,14 @@ func nextleft_button_pressed():
 		
 		# GUI Updating
 		if ProductIconAnimation == 1:
-			ProductCostLabel.text = "Cost: 15 Coins"
-			ProductLabel.text = "Temp Heart"
+			ProductLabel.text = shop_items["extra_life"]["name"]
+			ProductCostLabel.text = "Cost: %d Coins" % shop_items["extra_life"]["price"]
 		if ProductIconAnimation == 2:
-			ProductLabel.text = "Placeholder 1"
-			ProductCostLabel.text = "Cost: 1 Coins"
+			ProductLabel.text = shop_items["extra_jump"]["name"]
+			ProductCostLabel.text = "Cost: %d Coins" % shop_items["extra_jump"]["price"]
 		if ProductIconAnimation == 3:
-			ProductLabel.text = "Placeholder 2"
-			ProductCostLabel.text = "Cost: 2 Coins"
+			ProductLabel.text = shop_items["placeholder"]["name"]
+			ProductCostLabel.text = "Cost: %d Coins" % shop_items["placeholder"]["price"]
 
 func nextright_button_pressed():
 	if ProductIconAnimation == 3:
@@ -75,30 +102,30 @@ func nextright_button_pressed():
 		
 		# GUI Updating for each product.
 		if ProductIconAnimation == 1:
-			ProductCostLabel.text = "Cost: 15 Coins"
-			ProductLabel.text = "Temp Heart"
+			ProductLabel.text = shop_items["extra_life"]["name"]
+			ProductCostLabel.text = "Cost: %d Coins" % shop_items["extra_life"]["price"]
 		if ProductIconAnimation == 2:
-			ProductLabel.text = "Placeholder 1"
-			ProductCostLabel.text = "Cost: 1 Coins"
+			ProductLabel.text = shop_items["extra_jump"]["name"]
+			ProductCostLabel.text = "Cost: %d Coins" % shop_items["extra_jump"]["price"]
 		if ProductIconAnimation == 3:
-			ProductLabel.text = "Placeholder 2"
-			ProductCostLabel.text = "Cost: 2 Coins"
+			ProductLabel.text = shop_items["placeholder"]["name"]
+			ProductCostLabel.text = "Cost: %d Coins" % shop_items["placeholder"]["price"]
 		else:
 			print("Error, product ", ProductIconAnimation, " not found..")
 
 # Shop purchasing system and button
 func purchase_activated():
 	if ProductIconAnimation == 1:
-		if Global.coinBalance >= 15:
-			Global.coinBalance -= 15
+		if Global.coinBalance >= shop_items["extra_life"]["price"]:
+			Global.coinBalance -= shop_items["extra_life"]["price"]
 			Global.lives += 1
 			livesLabel.text = str(Global.lives)
 			coinBalanceLabel.text = str(Global.coinBalance)
 		else:
 			errorPanel.visible = true
 	if ProductIconAnimation == 2:
-		if Global.coinBalance >= 1:
-			Global.coinBalance -= 1
+		if Global.coinBalance >= shop_items["extra_jump"]["price"]:
+			Global.coinBalance -= shop_items["extra_jump"]["price"]
 			Global.max_jump += 1
 			livesLabel.text = str(Global.lives)
 			coinBalanceLabel.text = str(Global.coinBalance)
