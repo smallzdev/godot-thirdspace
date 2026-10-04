@@ -229,6 +229,7 @@ layer_0/tile_data = PackedInt32Array(786422, 393216, 4, 786423, 458752, 4, 78642
 visibility_layer = 2
 z_index = 1
 position = Vector2(-386, 415)
+amount = null
 
 [node name="Finish" type="Area2D" parent="." unique_id=995221132]
 script = ExtResource("5_7mycd")

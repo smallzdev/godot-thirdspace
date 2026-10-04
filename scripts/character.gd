@@ -1,11 +1,12 @@
 extends CharacterBody2D
 class_name CharacterBody
 
-@export var amount = 1
+@export var amount: int = 1
 
 # edit these to alter speed and gravity.
 const SPEED = 300.0
 const JUMP_VELOCITY = -950.0
+var jump_count = 0
 
 # preloads the gameover screen to avoid lag.
 var gameoverscene = preload("res://scenes/game_over.tscn")
@@ -22,9 +23,12 @@ func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+	else: 
+		jump_count = 0
 
-	# Handle jump.
-	if Input.is_action_just_pressed("Jump") and is_on_floor():
+	# Handle jump. + Double jump!!
+	if Input.is_action_just_pressed("Jump") and jump_count < Global.max_jump:
+		jump_count += 1
 		velocity.y = JUMP_VELOCITY
 		mainSprite.animation = "jumping"
 

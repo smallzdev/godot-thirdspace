@@ -59,7 +59,7 @@ func nextleft_button_pressed():
 			ProductLabel.text = "Temp Heart"
 		if ProductIconAnimation == 2:
 			ProductLabel.text = "Placeholder 1"
-			ProductCostLabel.text = "Cost: 16 Coins"
+			ProductCostLabel.text = "Cost: 1 Coins"
 		if ProductIconAnimation == 3:
 			ProductLabel.text = "Placeholder 2"
 			ProductCostLabel.text = "Cost: 2 Coins"
@@ -77,7 +77,7 @@ func nextright_button_pressed():
 			ProductLabel.text = "Temp Heart"
 		if ProductIconAnimation == 2:
 			ProductLabel.text = "Placeholder 1"
-			ProductCostLabel.text = "Cost: 16 Coins"
+			ProductCostLabel.text = "Cost: 1 Coins"
 		if ProductIconAnimation == 3:
 			ProductLabel.text = "Placeholder 2"
 			ProductCostLabel.text = "Cost: 2 Coins"
@@ -95,9 +95,15 @@ func purchase_activated():
 		else:
 			errorPanel.visible = true
 	if ProductIconAnimation == 2:
-		errorPanel.visible = true
-		errorTitle.text = "Under Costruction"
-		# its currently a placeholder so nothings here
+		if Global.coinBalance >= 1:
+			Global.coinBalance -= 1
+			Global.max_jump += 1
+			livesLabel.text = str(Global.lives)
+			coinBalanceLabel.text = str(Global.coinBalance)
+			# need to remove option to buy again
+			# or increase price after bought
+		else:
+			errorPanel.visible = true
 	if ProductIconAnimation == 3:
 		errorPanel.visible = true
 		errorTitle.text = "Under Construction"

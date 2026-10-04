@@ -10,6 +10,9 @@ var checkpointNumber = 0
 var lives = 3
 var level = 1
 
+#for double jump and stuff
+var max_jump = 1
+
 func add_coins(amount: int) -> void:
 	Global.coins += amount
 	print("# Coins: ", Global.coins)
