@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://csnptq28nbrg6"]
+
+[ext_resource type="Texture2D" uid="uid://dsixheo4jhe0h" path="res://Resources/sign.png.png" id="1_shbub"]
+
+[node name="sign" type="Sprite2D" unique_id=1772053692]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_shbub")

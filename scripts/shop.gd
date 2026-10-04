@@ -14,9 +14,9 @@ extends CanvasLayer
 @onready var errorPanel = $Panel/ErrrorPopup
 @onready var errorTitle = $Panel/ErrrorPopup/ErrorTitle
 
-#need to have a limit on buying items
-#or make it more expensive next time 
-#player decides to buy something
+## need to have a limit on buying items
+## or make it more expensive next time 
+## player decides to buy something
 
 var shop_items = {
 	"extra_life": {
@@ -32,14 +32,6 @@ var shop_items = {
 		"price": 3
 	}
 }
-
-var item1: int = 15
-var item2: int = 8
-var item3: int = 3
-
-var first_item = "Extra Life"
-var second_item = "Double Jump"
-var third_item = "placeholder"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

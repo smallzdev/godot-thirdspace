@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="5_8r1wq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1g0bf"]
-bg_color = Color(0.59339947, 0.43495813, 0.3320121, 1)
+bg_color = Color(0.48814636, 0.35164845, 0.26260212, 1)
 corner_radius_top_left = 25
 corner_radius_top_right = 25
 corner_radius_bottom_right = 25

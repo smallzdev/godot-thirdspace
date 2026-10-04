@@ -16,6 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://cbbf4vs6ckrsy" path="res://scenes/shop.tscn" id="13_56gwk"]
 [ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/sound_button.tscn" id="14_cleqw"]
 [ext_resource type="AudioStream" uid="uid://cmjf7c6fwvetw" path="res://songs/newlevel2.wav" id="15_cleqw"]
+[ext_resource type="PackedScene" uid="uid://csnptq28nbrg6" path="res://scenes/sign.tscn" id="17_g8vcy"]
+[ext_resource type="PackedScene" uid="uid://copqbgx1v0cee" path="res://scenes/tree.tscn" id="17_o3sye"]
+[ext_resource type="PackedScene" uid="uid://cwqyprewtyu1i" path="res://scenes/pumpkin.tscn" id="18_24ks5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_oa1go"]
 font_size = 50
@@ -205,10 +208,10 @@ texture_filter = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1216.0
-offset_top = -591.0
-offset_right = 6635.0
-offset_bottom = 1274.0
+offset_left = -980.0
+offset_top = -906.0
+offset_right = 6923.0
+offset_bottom = 1340.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_r40rm")
@@ -354,6 +357,12 @@ position = Vector2(5074, 309)
 [node name="Coin7" parent="." unique_id=2123364467 instance=ExtResource("7_6ep0u")]
 position = Vector2(5243, 309)
 
+[node name="Coin9" parent="." unique_id=135344791 instance=ExtResource("7_6ep0u")]
+position = Vector2(5556, 217)
+
+[node name="Coin10" parent="." unique_id=1459499519 instance=ExtResource("7_6ep0u")]
+position = Vector2(6260, 125)
+
 [node name="shopkeeper" parent="." unique_id=1417100742 instance=ExtResource("12_8g4ke")]
 texture_filter = 1
 position = Vector2(7029.0005, -164)
@@ -365,6 +374,15 @@ stream = ExtResource("15_cleqw")
 volume_db = 2.5
 autoplay = true
 max_distance = 9.223372e+18
+
+[node name="Sprite2D" parent="." unique_id=1772053692 instance=ExtResource("17_g8vcy")]
+position = Vector2(6459, 130)
+
+[node name="Tree" parent="." unique_id=862735303 instance=ExtResource("17_o3sye")]
+position = Vector2(5984, 162)
+
+[node name="pumpkin" parent="." unique_id=1481662959 instance=ExtResource("18_24ks5")]
+position = Vector2(5738, 243.00002)
 
 [node name="CharacterBody2D" parent="." unique_id=177745067 instance=ExtResource("3_6q4t8")]
 position = Vector2(70, 397)
