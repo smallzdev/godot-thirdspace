@@ -23,6 +23,8 @@ func _ready() -> void:
 	var purchaseButton = $Panel/PurchaseButton
 	var ErrorButton = $Panel/ErrrorPopup/CloseErrorButton
 	
+	get_node("Panel/ErrrorPopup").hide()
+	
 	# detects if a button is pressed, and then activates the func.
 	shopcloseButton.pressed.connect(shopcloseButton_pressed)
 	nextLeftButton.pressed.connect(nextleft_button_pressed)

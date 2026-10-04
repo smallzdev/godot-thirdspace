@@ -14,6 +14,11 @@ corner_radius_top_right = 25
 corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 
+[sub_resource type="LabelSettings" id="LabelSettings_ajxib"]
+font_size = 70
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_032fp"]
 atlas = ExtResource("3_1l46r")
 region = Rect2(0, 0, 32, 32)
@@ -57,6 +62,17 @@ corner_radius_top_right = 25
 corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 
+[sub_resource type="LabelSettings" id="LabelSettings_muem4"]
+font_size = 28
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jkv2x"]
+line_spacing = -1.0
+font_size = 17
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+
 [node name="Shop" type="CanvasLayer" unique_id=1104006584]
 process_mode = 3
 script = ExtResource("1_xfvoa")
@@ -71,12 +87,14 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_1g0bf")
 
 [node name="ShopHeaderLabel" type="Label" parent="Panel" unique_id=589197523]
 layout_mode = 0
-offset_top = 2.0
-offset_right = 943.0
-offset_bottom = 94.0
+offset_left = 10.0
+offset_top = 4.0
+offset_right = 953.0
+offset_bottom = 100.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 67
 text = "Shop"
+label_settings = SubResource("LabelSettings_ajxib")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -194,22 +212,24 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_stm8k")
 
 [node name="ErrorTitle" type="Label" parent="Panel/ErrrorPopup" unique_id=814237291]
 layout_mode = 0
-offset_left = 99.0
-offset_top = 6.0
-offset_right = 354.0
-offset_bottom = 42.0
+offset_left = 96.0
+offset_top = 11.0
+offset_right = 363.0
+offset_bottom = 50.0
 theme_override_font_sizes/font_size = 26
-text = "Insufficient Balance."
+text = "Insufficient Balance"
+label_settings = SubResource("LabelSettings_muem4")
 
 [node name="Label" type="Label" parent="Panel/ErrrorPopup" unique_id=419802516]
 layout_mode = 0
-offset_left = -239.0
-offset_top = 56.0
-offset_right = 680.0
-offset_bottom = 131.0
+offset_left = -4.0
+offset_top = 55.0
+offset_right = 448.0
+offset_bottom = 182.0
 text = "You do not have enough coins to complete this
-transaction. Coins are only usable once you complete a
-level with them."
+transaction. Coins are only usable 
+once you complete a level with them."
+label_settings = SubResource("LabelSettings_jkv2x")
 horizontal_alignment = 1
 
 [node name="CloseErrorButton" type="Button" parent="Panel/ErrrorPopup" unique_id=478912172]
