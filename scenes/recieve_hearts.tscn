@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://d0q5uby1yc5f0"]
+
+[ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="1_d01vk"]
+
+[sub_resource type="Curve" id="Curve_rb0sr"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.08988774), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="recieve_hearts" type="Node2D" unique_id=1694427855]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1707293517]
+z_index = 10
+texture_filter = 1
+emitting = false
+amount = 60
+texture = ExtResource("1_d01vk")
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 230.0
+scale_amount_min = 4.0
+scale_amount_max = 4.0
+scale_amount_curve = SubResource("Curve_rb0sr")

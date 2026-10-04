@@ -65,6 +65,8 @@ func _process(delta) -> void:
 			
 		# numbers 10 - 30
 		elif lootRng <= 30 and lootRng >= 9:
+			# chestSprite.play("hearts")
+			$recieve_hearts/CPUParticles2D.emitting = true
 			Global.lives += 1
 			print("Awarded 1 life from a chest.")
 			chestTimerLabel.text = str("+1 Life!")
