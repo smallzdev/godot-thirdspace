@@ -51,7 +51,6 @@ func _process(delta) -> void:
 		print("Opened chest")
 		var lootRng = randi() % 100
 		print("RNG rolled ", lootRng)
-		$receive_coin/CPUParticles2D.emitting = true
 		randomize()
 		# the following code checks the rng, and awards stuff
 		# based on the number rolled. To change the RNG prizes,
@@ -59,6 +58,7 @@ func _process(delta) -> void:
 		
 		# numbers 0 - 9 (technically 10 numbers)
 		if lootRng <= 9:
+			$receive_coin/CPUParticles2D.emitting = true
 			Global.add_coins(6)
 			print("Awarded 6 coins from a chest.")
 			chestTimerLabel.text = str("+6 Coins!")
@@ -72,6 +72,7 @@ func _process(delta) -> void:
 			
 		# Anything else, so at the moment 31 - 99
 		else:
+			$receive_coin/CPUParticles2D.emitting = true
 			Global.add_coins(3)
 			print("Awarded 3 coins from a chest.")
 			chestTimerLabel.text = str("+3 Coins!")
