@@ -1,6 +1,6 @@
 extends Button
 
-var mainMenuScene = preload("res://scenes/main_menu.tscn")
+var mainMenuScene = preload("res://scenes/menus/main_menu.tscn")
 
 func _ready():
 	# Game Over Screen Buttons
@@ -13,7 +13,7 @@ func _ready():
 # game over screen buttons
 func _resume_button_pressed():
 	Global.checkpointNumber = 0
-	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/main.tscn")
 
 func _mainMenu_button_pressed():
 	get_tree().change_scene_to_packed(mainMenuScene)

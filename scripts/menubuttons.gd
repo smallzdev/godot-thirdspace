@@ -18,14 +18,14 @@ func _ready():
 # game over screen buttons
 func menuPlay_button_pressed():
 	Global.checkpointNumber = 0
-	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/level1.tscn")
 	
 func credit_button_pressed():
-	get_tree().change_scene_to_file("res://scenes/credits.tscn")
+	get_tree().change_scene_to_file("res://scenes/menus/credits.tscn")
 	
 func level_button_pressed():
-	get_tree().change_scene_to_file("res://scenes/levelselector.tscn")
+	get_tree().change_scene_to_file("res://scenes/menus/levelselector.tscn")
 	
 func endlessbutton_pressed():
-	get_tree().change_scene_to_file("res://scenes/endless_mode.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/endless_mode.tscn")
 	

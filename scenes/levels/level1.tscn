@@ -1,22 +1,22 @@
 [gd_scene format=3 uid="uid://dtfmq4tyy5op7"]
 
-[ext_resource type="Texture2D" uid="uid://yi82pyg4ria0" path="res://Resources/Blue.png" id="1_h2yge"]
-[ext_resource type="Texture2D" uid="uid://2v1y4vx7jcu6" path="res://Resources/Terrain (16x16).png" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://ji2ahpa1peus" path="res://scenes/character.tscn" id="3_h2yge"]
-[ext_resource type="Script" uid="uid://ue72iyrjftst" path="res://scripts/finish.gd" id="5_7mycd"]
-[ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="5_ya4ey"]
-[ext_resource type="PackedScene" uid="uid://bkopc4odunmjm" path="res://scenes/coin.tscn" id="7_5vw27"]
-[ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/coin_ui.tscn" id="7_272bh"]
-[ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="7_kek77"]
-[ext_resource type="PackedScene" uid="uid://copqbgx1v0cee" path="res://scenes/tree.tscn" id="9_85g3d"]
-[ext_resource type="PackedScene" uid="uid://b81aq5w2ohki6" path="res://scenes/checkpoint.tscn" id="10_choun"]
-[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="11_ya4ey"]
-[ext_resource type="PackedScene" uid="uid://cwqyprewtyu1i" path="res://scenes/pumpkin.tscn" id="12_eb6dy"]
-[ext_resource type="AudioStream" uid="uid://cg5ouk8pgbrbk" path="res://songs/tutorial.wav" id="13_trceg"]
-[ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/sound_button.tscn" id="14_a8y0u"]
+[ext_resource type="Texture2D" uid="uid://yi82pyg4ria0" path="res://Resources/Blue.png" id="1_jprdt"]
+[ext_resource type="Texture2D" uid="uid://2v1y4vx7jcu6" path="res://Resources/Terrain (16x16).png" id="2_ps2vj"]
+[ext_resource type="PackedScene" uid="uid://ji2ahpa1peus" path="res://scenes/other/character.tscn" id="3_sbmf2"]
+[ext_resource type="Script" uid="uid://ue72iyrjftst" path="res://scripts/finish.gd" id="4_1xax6"]
+[ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="5_g7tkf"]
+[ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/other/coin_ui.tscn" id="6_4fww7"]
+[ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/other/sound_button.tscn" id="7_gvm5i"]
+[ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="8_jrfo0"]
+[ext_resource type="PackedScene" uid="uid://bkopc4odunmjm" path="res://scenes/other/coin.tscn" id="9_db1r7"]
+[ext_resource type="PackedScene" uid="uid://copqbgx1v0cee" path="res://scenes/other/tree.tscn" id="10_6gwlt"]
+[ext_resource type="PackedScene" uid="uid://b81aq5w2ohki6" path="res://scenes/other/checkpoint.tscn" id="11_c2nc4"]
+[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/other/interactable.tscn" id="12_vhxpm"]
+[ext_resource type="PackedScene" uid="uid://cwqyprewtyu1i" path="res://scenes/other/pumpkin.tscn" id="13_arkx4"]
+[ext_resource type="AudioStream" uid="uid://cg5ouk8pgbrbk" path="res://songs/tutorial.wav" id="14_jqv5m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
-texture = ExtResource("1_ig7tw")
+texture = ExtResource("2_ps2vj")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -216,7 +216,7 @@ offset_left = -479.99997
 offset_right = 1312.9758
 offset_bottom = 706.0
 scale = Vector2(2.184636, 1.015305)
-texture = ExtResource("1_h2yge")
+texture = ExtResource("1_jprdt")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1433433652]
 texture_filter = 1
@@ -225,14 +225,14 @@ tile_set = SubResource("TileSet_stm8k")
 format = 2
 layer_0/tile_data = PackedInt32Array(786422, 393216, 4, 786423, 458752, 4, 786424, 458752, 4, 786425, 458752, 4, 786426, 458752, 4, 786427, 458752, 4, 786428, 458752, 4, 786429, 458752, 4, 786430, 458752, 4, 786433, 458752, 4, 786434, 458752, 4, 786435, 458752, 4, 786436, 458752, 4, 786437, 458752, 4, 786438, 524288, 4, 851974, 524288, 5, 851973, 458752, 5, 851972, 458752, 5, 851971, 458752, 5, 851970, 458752, 5, 851969, 458752, 5, 851968, 458752, 5, 917503, 458752, 5, 851967, 458752, 5, 851966, 458752, 5, 851965, 458752, 5, 851964, 458752, 5, 851963, 458752, 5, 851962, 458752, 5, 851961, 458752, 5, 851960, 458752, 5, 851959, 458752, 5, 917495, 458752, 5, 917496, 458752, 5, 917497, 458752, 5, 917498, 458752, 5, 917499, 458752, 5, 917500, 458752, 5, 917501, 458752, 5, 917502, 458752, 5, 851958, 393216, 5, 917494, 393216, 5, 983030, 393216, 6, 983031, 458752, 6, 983032, 458752, 6, 983033, 458752, 6, 983034, 458752, 6, 983035, 458752, 6, 983036, 458752, 6, 983037, 458752, 6, 983038, 458752, 6, 983039, 458752, 6, 917504, 458752, 6, 917505, 458752, 6, 917506, 458752, 6, 917507, 458752, 6, 917508, 458752, 6, 917509, 458752, 6, 917510, 524288, 6, 655368, 393216, 4, 655369, 524288, 4, 720904, 393216, 6, 720905, 524288, 6, 786444, 393216, 4, 786452, 524288, 4, 786445, 458752, 4, 786446, 458752, 4, 786447, 458752, 4, 786448, 458752, 4, 786449, 458752, 4, 786450, 458752, 4, 786451, 458752, 4, 851980, 393216, 6, 851981, 458752, 6, 851982, 458752, 6, 851983, 458752, 6, 851984, 458752, 6, 851985, 458752, 6, 851986, 458752, 6, 851987, 458752, 6, 851988, 524288, 6, 655382, 393216, 4, 655383, 458752, 4, 655384, 524288, 4, 720918, 393216, 6, 720919, 458752, 6, 720920, 524288, 6, 524314, 393216, 4, 524315, 458752, 4, 524316, 524288, 4, 589850, 393216, 6, 589851, 458752, 6, 589852, 524288, 6, 393246, 393216, 4, 458782, 393216, 6, 393247, 458752, 4, 393248, 524288, 4, 458783, 458752, 6, 458784, 524288, 6, 262178, 393216, 4, 262179, 458752, 4, 262180, 524288, 4, 327714, 393216, 6, 327715, 458752, 6, 327716, 524288, 6, 131110, 393216, 4, 196646, 393216, 6, 131111, 458752, 4, 131112, 458752, 4, 131113, 458752, 4, 131114, 458752, 4, 131115, 458752, 4, 131116, 458752, 4, 131117, 458752, 4, 131118, 458752, 4, 131119, 458752, 4, 131120, 458752, 4, 131121, 458752, 4, 131122, 458752, 4, 131123, 458752, 4, 131124, 458752, 4, 131125, 458752, 4, 131126, 458752, 4, 131127, 458752, 4, 131128, 458752, 4, 131129, 458752, 4, 131130, 458752, 4, 131131, 458752, 4, 131132, 458752, 4, 131133, 458752, 4, 131134, 458752, 4, 131135, 524288, 4, 262210, 393216, 4, 262211, 458752, 4, 262212, 458752, 4, 262213, 458752, 4, 262214, 524288, 4, 327750, 524288, 5, 327746, 393216, 5, 327747, 458752, 5, 327748, 458752, 5, 327749, 458752, 5, 393282, 393216, 6, 393283, 458752, 6, 393284, 458752, 6, 393285, 458752, 6, 393286, 524288, 6, 196647, 458752, 6, 196648, 458752, 6, 196649, 458752, 6, 196650, 458752, 6, 196651, 458752, 6, 196652, 458752, 6, 196653, 458752, 6, 196654, 458752, 6, 196655, 458752, 6, 196656, 458752, 6, 196657, 458752, 6, 196658, 458752, 6, 196659, 458752, 6, 196660, 458752, 6, 196663, 458752, 6, 196664, 458752, 6, 196665, 458752, 6, 196666, 458752, 6, 196667, 458752, 6, 196668, 458752, 6, 196669, 458752, 6, 196670, 458752, 6, 196661, 458752, 6, 196662, 458752, 6, 196671, 524288, 6, 786431, 524288, 4, 786432, 393216, 4)
 
-[node name="CharacterBody2D" parent="." unique_id=177745067 instance=ExtResource("3_h2yge")]
+[node name="CharacterBody2D" parent="." unique_id=177745067 instance=ExtResource("3_sbmf2")]
 visibility_layer = 2
 z_index = 1
 position = Vector2(-386, 415)
 amount = null
 
 [node name="Finish" type="Area2D" parent="." unique_id=995221132]
-script = ExtResource("5_7mycd")
+script = ExtResource("4_1xax6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Finish" unique_id=1947181208]
 position = Vector2(3355.0002, 143)
@@ -243,13 +243,13 @@ shape = SubResource("RectangleShape2D_stm8k")
 texture_filter = 1
 position = Vector2(3356, 130)
 scale = Vector2(4, 4)
-texture = ExtResource("5_ya4ey")
+texture = ExtResource("5_g7tkf")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=993562204]
 
-[node name="CoinUI" parent="CanvasLayer" unique_id=662362470 instance=ExtResource("7_272bh")]
+[node name="CoinUI" parent="CanvasLayer" unique_id=662362470 instance=ExtResource("6_4fww7")]
 
-[node name="sound_button" parent="CanvasLayer" unique_id=1974950491 instance=ExtResource("14_a8y0u")]
+[node name="sound_button" parent="CanvasLayer" unique_id=1974950491 instance=ExtResource("7_gvm5i")]
 offset_left = 1055.0
 offset_top = 24.0
 offset_right = 1055.0
@@ -274,7 +274,7 @@ offset_top = -18.0
 offset_right = 168.0
 offset_bottom = 9.0
 scale = Vector2(3, 3)
-texture = ExtResource("7_kek77")
+texture = ExtResource("8_jrfo0")
 expand_mode = 1
 stretch_mode = 1
 
@@ -290,97 +290,97 @@ text = "3"
 label_settings = SubResource("LabelSettings_7m3ot")
 horizontal_alignment = 1
 
-[node name="Coin" parent="." unique_id=1389673919 instance=ExtResource("7_5vw27")]
+[node name="Coin" parent="." unique_id=1389673919 instance=ExtResource("9_db1r7")]
 position = Vector2(-1, 424)
 
-[node name="Coin2" parent="." unique_id=234341811 instance=ExtResource("7_5vw27")]
+[node name="Coin2" parent="." unique_id=234341811 instance=ExtResource("9_db1r7")]
 position = Vector2(61, 423)
 
-[node name="Coin3" parent="." unique_id=1729357214 instance=ExtResource("7_5vw27")]
+[node name="Coin3" parent="." unique_id=1729357214 instance=ExtResource("9_db1r7")]
 position = Vector2(430, 421)
 
-[node name="Coin4" parent="." unique_id=1321849626 instance=ExtResource("7_5vw27")]
+[node name="Coin4" parent="." unique_id=1321849626 instance=ExtResource("9_db1r7")]
 position = Vector2(635, 528)
 
-[node name="Coin5" parent="." unique_id=1463650716 instance=ExtResource("7_5vw27")]
+[node name="Coin5" parent="." unique_id=1463650716 instance=ExtResource("9_db1r7")]
 position = Vector2(218, 520)
 
-[node name="Coin6" parent="." unique_id=45339988 instance=ExtResource("7_5vw27")]
+[node name="Coin6" parent="." unique_id=45339988 instance=ExtResource("9_db1r7")]
 position = Vector2(1325, 315)
 
-[node name="Coin7" parent="." unique_id=1382988838 instance=ExtResource("7_5vw27")]
+[node name="Coin7" parent="." unique_id=1382988838 instance=ExtResource("9_db1r7")]
 position = Vector2(1704, 134)
 
-[node name="Tree" parent="." unique_id=862735303 instance=ExtResource("9_85g3d")]
+[node name="Tree" parent="." unique_id=862735303 instance=ExtResource("10_6gwlt")]
 position = Vector2(928, 448)
 
-[node name="Checkpoint1" parent="." unique_id=89005797 instance=ExtResource("10_choun")]
+[node name="Checkpoint1" parent="." unique_id=89005797 instance=ExtResource("11_c2nc4")]
 texture_filter = 1
 position = Vector2(1514, 241)
 
-[node name="Tree2" parent="." unique_id=351346538 instance=ExtResource("9_85g3d")]
+[node name="Tree2" parent="." unique_id=351346538 instance=ExtResource("10_6gwlt")]
 position = Vector2(2069, -31)
 
-[node name="Tree3" parent="." unique_id=1348892300 instance=ExtResource("9_85g3d")]
+[node name="Tree3" parent="." unique_id=1348892300 instance=ExtResource("10_6gwlt")]
 position = Vector2(2810, -30)
 
-[node name="Coin8" parent="." unique_id=642358902 instance=ExtResource("7_5vw27")]
+[node name="Coin8" parent="." unique_id=642358902 instance=ExtResource("9_db1r7")]
 position = Vector2(2257, 44)
 
-[node name="Coin9" parent="." unique_id=1643438166 instance=ExtResource("7_5vw27")]
+[node name="Coin9" parent="." unique_id=1643438166 instance=ExtResource("9_db1r7")]
 position = Vector2(3036, 48)
 
-[node name="Coin10" parent="." unique_id=1765118 instance=ExtResource("7_5vw27")]
+[node name="Coin10" parent="." unique_id=1765118 instance=ExtResource("9_db1r7")]
 position = Vector2(3355, 54)
 
 [node name="Tutorial" type="Node2D" parent="." unique_id=1892005916]
 
-[node name="intro" parent="Tutorial" unique_id=977272514 instance=ExtResource("11_ya4ey")]
+[node name="intro" parent="Tutorial" unique_id=977272514 instance=ExtResource("12_vhxpm")]
 interact_name = "It's Harvest Season"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/intro" unique_id=1681030151]
 position = Vector2(-216, 465)
 shape = SubResource("RectangleShape2D_13qdw")
 
-[node name="movement" parent="Tutorial" unique_id=1484343657 instance=ExtResource("11_ya4ey")]
+[node name="movement" parent="Tutorial" unique_id=1484343657 instance=ExtResource("12_vhxpm")]
 interact_name = "Set a new spawnpoint!"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/movement" unique_id=178699992]
 position = Vector2(1417.125, 237.25)
 shape = SubResource("RectangleShape2D_xrivr")
 
-[node name="spawnpoint" parent="Tutorial" unique_id=1951233641 instance=ExtResource("11_ya4ey")]
+[node name="spawnpoint" parent="Tutorial" unique_id=1951233641 instance=ExtResource("12_vhxpm")]
 interact_name = "Use WASD/arrow keys to move"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/spawnpoint" unique_id=1701431883]
 position = Vector2(-446, 458)
 shape = SubResource("RectangleShape2D_b1lj4")
 
-[node name="treeharvest" parent="Tutorial" unique_id=1613636860 instance=ExtResource("11_ya4ey")]
+[node name="treeharvest" parent="Tutorial" unique_id=1613636860 instance=ExtResource("12_vhxpm")]
 interact_name = "Harvest a tree!"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/treeharvest" unique_id=1486326482]
 position = Vector2(726, 479)
 shape = SubResource("RectangleShape2D_njqwk")
 
-[node name="jump" parent="Tutorial" unique_id=1007781790 instance=ExtResource("11_ya4ey")]
+[node name="jump" parent="Tutorial" unique_id=1007781790 instance=ExtResource("12_vhxpm")]
 interact_name = "Use W/Up key to jump!"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/jump" unique_id=134940293]
 position = Vector2(311, 469)
 shape = SubResource("RectangleShape2D_wi6ju")
 
-[node name="pumpkin" parent="." unique_id=1481662959 instance=ExtResource("12_eb6dy")]
+[node name="pumpkin" parent="." unique_id=1481662959 instance=ExtResource("13_arkx4")]
 position = Vector2(2411, 50)
 
-[node name="pumpkin3" parent="." unique_id=1701114122 instance=ExtResource("12_eb6dy")]
+[node name="pumpkin3" parent="." unique_id=1701114122 instance=ExtResource("13_arkx4")]
 position = Vector2(1159, 435.00003)
 
-[node name="pumpkin2" parent="." unique_id=1230960114 instance=ExtResource("12_eb6dy")]
+[node name="pumpkin2" parent="." unique_id=1230960114 instance=ExtResource("13_arkx4")]
 position = Vector2(-87.00001, 483.00003)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=884681074]
-stream = ExtResource("13_trceg")
+stream = ExtResource("14_jqv5m")
 autoplay = true
 max_distance = 9.223372e+18
 

@@ -9,7 +9,7 @@ const JUMP_VELOCITY = -950.0
 var jump_count = 0
 
 # preloads the gameover screen to avoid lag.
-var gameoverscene = preload("res://scenes/game_over.tscn")
+var gameoverscene = preload("res://scenes/menus/game_over.tscn")
 
 @onready var mainSprite = %MainCharacter
 @onready var livesLabel = $"../CanvasLayer2/HeartUI/LivesLabel"

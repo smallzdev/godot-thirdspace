@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://cbbf4vs6ckrsy"]
 
-[ext_resource type="Script" uid="uid://l361ejfg77k5" path="res://scripts/shop.gd" id="1_xfvoa"]
-[ext_resource type="Texture2D" uid="uid://ded3kfdn6njhu" path="res://Resources/Gui Buttons/X/x.png" id="2_1l46r"]
-[ext_resource type="Texture2D" uid="uid://btjom1i7le5ab" path="res://Resources/heartanimated.png" id="3_1l46r"]
-[ext_resource type="Texture2D" uid="uid://bfkj700jw6m6m" path="res://Resources/Gui Buttons/whitetext-orange1.png" id="4_2fc2m"]
-[ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="4_032fp"]
-[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="5_8r1wq"]
+[ext_resource type="Script" uid="uid://l361ejfg77k5" path="res://scripts/shop.gd" id="1_57vbv"]
+[ext_resource type="Texture2D" uid="uid://ded3kfdn6njhu" path="res://Resources/Gui Buttons/X/x.png" id="2_t4xh0"]
+[ext_resource type="Texture2D" uid="uid://btjom1i7le5ab" path="res://Resources/heartanimated.png" id="3_jtdbi"]
+[ext_resource type="Texture2D" uid="uid://bfkj700jw6m6m" path="res://Resources/Gui Buttons/whitetext-orange1.png" id="4_nij1w"]
+[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="5_3q5jh"]
+[ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="6_ktbn2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1g0bf"]
 bg_color = Color(0.48814636, 0.35164845, 0.26260212, 1)
@@ -20,7 +20,7 @@ outline_size = 10
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_032fp"]
-atlas = ExtResource("3_1l46r")
+atlas = ExtResource("3_jtdbi")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_stm8k"]
@@ -35,7 +35,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_2fc2m")
+"texture": ExtResource("4_nij1w")
 }],
 "loop": 1,
 "name": &"2",
@@ -43,7 +43,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_8r1wq")
+"texture": ExtResource("5_3q5jh")
 }],
 "loop": 1,
 "name": &"3",
@@ -85,10 +85,11 @@ outline_color = Color(0, 0, 0, 1)
 
 [node name="Shop" type="CanvasLayer" unique_id=1104006584]
 process_mode = 3
-script = ExtResource("1_xfvoa")
+script = ExtResource("1_57vbv")
 
 [node name="Panel" type="Panel" parent="." unique_id=507146130]
 process_mode = 3
+visible = false
 offset_left = 100.0
 offset_top = 54.0
 offset_right = 1042.0
@@ -117,7 +118,7 @@ offset_top = 11.0
 offset_right = 897.5
 offset_bottom = 45.0
 scale = Vector2(2, 2)
-texture_normal = ExtResource("2_1l46r")
+texture_normal = ExtResource("2_t4xh0")
 
 [node name="PurchaseButton" type="Button" parent="Panel" unique_id=430309534]
 layout_mode = 0
@@ -198,7 +199,7 @@ offset_top = 528.0
 offset_right = 31.666668
 offset_bottom = 559.0
 scale = Vector2(3, 3)
-texture = ExtResource("4_032fp")
+texture = ExtResource("6_ktbn2")
 expand_mode = 1
 stretch_mode = 1
 

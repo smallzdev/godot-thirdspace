@@ -26,15 +26,15 @@ func _ready() -> void:
 
 # Bunch of functions for detecting the button presses
 func level1Pressed():
-	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/level1.tscn")
 	Global.level = 1
 	
 func level2Pressed():
-	get_tree().change_scene_to_file("res://scenes/level2.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/level2.tscn")
 	Global.level = 2
 
 func level3Pressed():
-	get_tree().change_scene_to_file("res://scenes/level3.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/level3.tscn")
 	Global.level = 3
 
 func ConTinuePressed():

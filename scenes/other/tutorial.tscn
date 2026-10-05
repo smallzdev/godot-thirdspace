@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ds5wpo1ol86a2"]
 
-[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="1_c13y7"]
+[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/other/interactable.tscn" id="1_c13y7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_njqwk"]
 size = Vector2(221.5, 141)

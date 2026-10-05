@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bsmalncs6hh2b"]
 
-[ext_resource type="Texture2D" uid="uid://dvtg7ekox62r5" path="res://Resources/Purple.png" id="1_ugiyx"]
-[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="2_pvonl"]
-[ext_resource type="Script" uid="uid://b3cx4causoa08" path="res://scripts/creditbuttons.gd" id="3_o8qs6"]
-[ext_resource type="Script" uid="uid://bg3tad3du1xt4" path="res://level_button.gd" id="4_h304g"]
-[ext_resource type="Texture2D" uid="uid://cuipknqhbymjq" path="res://Resources/Gui Buttons/Play.png" id="5_3gmsq"]
-[ext_resource type="Script" uid="uid://xf853tx3i2ba" path="res://nextlevelbutton.gd" id="6_ayf18"]
+[ext_resource type="Texture2D" uid="uid://dvtg7ekox62r5" path="res://Resources/Purple.png" id="1_xwx5q"]
+[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="2_10chf"]
+[ext_resource type="Script" uid="uid://b3cx4causoa08" path="res://scripts/creditbuttons.gd" id="3_so5ar"]
+[ext_resource type="Script" uid="uid://bg3tad3du1xt4" path="res://level_button.gd" id="4_ehygs"]
+[ext_resource type="Texture2D" uid="uid://cuipknqhbymjq" path="res://Resources/Gui Buttons/Play.png" id="5_cngin"]
+[ext_resource type="Script" uid="uid://xf853tx3i2ba" path="res://nextlevelbutton.gd" id="6_lhibs"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xrivr"]
 font_size = 120
@@ -26,7 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_ugiyx")
+texture = ExtResource("1_xwx5q")
 
 [node name="maintext" type="Label" parent="TextureRect" unique_id=1428639407]
 layout_mode = 0
@@ -56,9 +56,9 @@ offset_right = 294.0
 offset_bottom = 579.0
 theme_override_font_sizes/font_size = 48
 text = "Menu"
-icon = ExtResource("2_pvonl")
+icon = ExtResource("2_10chf")
 expand_icon = true
-script = ExtResource("3_o8qs6")
+script = ExtResource("3_so5ar")
 
 [node name="levelButton" type="Button" parent="TextureRect" unique_id=456366817]
 unique_name_in_owner = true
@@ -70,9 +70,9 @@ offset_right = 689.0
 offset_bottom = 579.0
 theme_override_font_sizes/font_size = 48
 text = "Levels"
-icon = ExtResource("2_pvonl")
+icon = ExtResource("2_10chf")
 expand_icon = true
-script = ExtResource("4_h304g")
+script = ExtResource("4_ehygs")
 
 [node name="nextlevelbutton" type="Button" parent="TextureRect" unique_id=214039608]
 unique_name_in_owner = true
@@ -84,6 +84,6 @@ offset_right = 1052.0
 offset_bottom = 581.0
 theme_override_font_sizes/font_size = 48
 text = "Next "
-icon = ExtResource("5_3gmsq")
+icon = ExtResource("5_cngin")
 expand_icon = true
-script = ExtResource("6_ayf18")
+script = ExtResource("6_lhibs")

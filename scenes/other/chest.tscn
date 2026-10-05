@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://pwblqe1qci20" path="res://scripts/chest.gd" id="1_sy5e1"]
 [ext_resource type="Texture2D" uid="uid://c7n03l6gs8t5m" path="res://Resources/chest.png" id="2_gqd3d"]
-[ext_resource type="PackedScene" uid="uid://d0q5uby1yc5f0" path="res://scenes/recieve_hearts.tscn" id="2_w02o5"]
-[ext_resource type="PackedScene" uid="uid://cx1vf4bl3t0j" path="res://scenes/receive_coin.tscn" id="3_gqd3d"]
+[ext_resource type="PackedScene" uid="uid://d0q5uby1yc5f0" path="res://scenes/other/recieve_hearts.tscn" id="2_w02o5"]
+[ext_resource type="PackedScene" uid="uid://cx1vf4bl3t0j" path="res://scenes/other/receive_coin.tscn" id="3_gqd3d"]
 [ext_resource type="Texture2D" uid="uid://qrw5jvn4kpvg" path="res://Resources/chesthearts.png" id="3_yhylo"]
-[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/interactable.tscn" id="4_yue2o"]
+[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/other/interactable.tscn" id="4_yue2o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bo4dx"]
 atlas = ExtResource("2_gqd3d")
