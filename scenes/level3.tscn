@@ -318,7 +318,6 @@ position = Vector2(-139, 227)
 position = Vector2(171, 126)
 
 [node name="Shop" parent="shopkeeper" unique_id=1104006584 instance=ExtResource("11_bradm")]
-visible = false
 
 [node name="environment" type="Node2D" parent="." unique_id=1018415290]
 

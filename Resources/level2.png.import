@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvtg7ekox62r5"
-path="res://.godot/imported/Purple.png-a3e36b883a4672be06434553581b522b.ctex"
+uid="uid://cwhovd5cp3qcp"
+path="res://.godot/imported/level2.png-6ec64663954e3ab87edc2e006214698c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PixelPack/Background/Purple.png"
-dest_files=["res://.godot/imported/Purple.png-a3e36b883a4672be06434553581b522b.ctex"]
+source_file="res://Resources/level2.png"
+dest_files=["res://.godot/imported/level2.png-6ec64663954e3ab87edc2e006214698c.ctex"]
 
 [params]
 

@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="2_fhnp5"]
 [ext_resource type="Script" uid="uid://b3cx4causoa08" path="res://scripts/creditbuttons.gd" id="3_h00jk"]
 [ext_resource type="Script" uid="uid://cgycb7xnlyb72" path="res://scripts/level_buttons.gd" id="4_u6eng"]
-[ext_resource type="Texture2D" uid="uid://cad286ogsl5kl" path="res://Resources/Levels/01.png" id="5_vbh8c"]
-[ext_resource type="Texture2D" uid="uid://bdjfukya6rt3m" path="res://Resources/Levels/02.png" id="6_vv2fk"]
-[ext_resource type="Texture2D" uid="uid://bqa51t8hh5fyn" path="res://Resources/Levels/03.png" id="7_m66ex"]
+[ext_resource type="Texture2D" uid="uid://bgcspb5353nj3" path="res://Resources/level1.png" id="5_w7ksh"]
+[ext_resource type="Texture2D" uid="uid://cwhovd5cp3qcp" path="res://Resources/level2.png" id="6_fhnp5"]
+[ext_resource type="Texture2D" uid="uid://600c4h45kr8t" path="res://Resources/level3.png" id="7_h00jk"]
 [ext_resource type="Texture2D" uid="uid://cddaku6mkyhp7" path="res://Resources/Levels/04.png" id="8_le5ya"]
 [ext_resource type="Texture2D" uid="uid://b2lddm7ylqndx" path="res://Resources/Levels/05.png" id="9_qhq7c"]
 [ext_resource type="Texture2D" uid="uid://0ghb4oeo2pf8" path="res://Resources/Levels/06.png" id="10_ffj82"]
@@ -83,10 +83,10 @@ label_settings = SubResource("LabelSettings_4e6ea")
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
-offset_left = 938.0
-offset_top = 553.0
-offset_right = 1136.0
-offset_bottom = 628.0
+offset_left = 884.0
+offset_top = 520.0
+offset_right = 1082.0
+offset_bottom = 595.0
 theme_override_font_sizes/font_size = 48
 text = "Menu"
 icon = ExtResource("2_fhnp5")
@@ -98,136 +98,136 @@ script = ExtResource("4_u6eng")
 
 [node name="1" type="TextureButton" parent="LevelButtons" unique_id=230739734]
 texture_filter = 1
-offset_left = 120.00001
-offset_top = 193.0
-offset_right = 139.0
-offset_bottom = 210.0
-scale = Vector2(6, 6)
-texture_normal = ExtResource("5_vbh8c")
+offset_left = 106.0
+offset_top = 182.0
+offset_right = 138.0
+offset_bottom = 214.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("5_w7ksh")
 
 [node name="2" type="TextureButton" parent="LevelButtons" unique_id=1166056209]
 texture_filter = 1
-offset_left = 319.0
-offset_top = 191.0
-offset_right = 338.0
-offset_bottom = 208.0
-scale = Vector2(6, 6)
-texture_normal = ExtResource("6_vv2fk")
+offset_left = 262.0
+offset_top = 183.0
+offset_right = 294.0
+offset_bottom = 215.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("6_fhnp5")
 
 [node name="3" type="TextureButton" parent="LevelButtons" unique_id=1206525924]
 texture_filter = 1
-offset_left = 515.0
-offset_top = 186.0
-offset_right = 534.0
-offset_bottom = 203.0
-scale = Vector2(6, 6)
-texture_normal = ExtResource("7_m66ex")
+offset_left = 418.0
+offset_top = 183.0
+offset_right = 450.0
+offset_bottom = 215.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("7_h00jk")
 
 [node name="4" type="TextureButton" parent="LevelButtons" unique_id=1265304101]
 texture_filter = 1
-offset_left = 714.0
-offset_top = 183.0
-offset_right = 733.0
-offset_bottom = 200.0
+offset_left = 566.0
+offset_top = 209.0
+offset_right = 585.0
+offset_bottom = 226.0
 scale = Vector2(6, 6)
 texture_normal = ExtResource("8_le5ya")
 
 [node name="5" type="TextureButton" parent="LevelButtons" unique_id=1180079380]
 texture_filter = 1
-offset_left = 916.0
-offset_top = 180.0
-offset_right = 935.0
-offset_bottom = 197.0
+offset_left = 688.0
+offset_top = 208.0
+offset_right = 707.0
+offset_bottom = 225.0
 scale = Vector2(6, 6)
 texture_normal = ExtResource("9_qhq7c")
 
 [node name="6" type="TextureButton" parent="LevelButtons" unique_id=1037033203]
 texture_filter = 1
-offset_left = 120.00001
-offset_top = 311.0
-offset_right = 139.0
-offset_bottom = 328.0
+offset_left = 808.0
+offset_top = 209.0
+offset_right = 827.0
+offset_bottom = 226.0
 scale = Vector2(6, 6)
 texture_normal = ExtResource("10_ffj82")
 
 [node name="7" type="TextureButton" parent="LevelButtons" unique_id=407251348]
 texture_filter = 1
-offset_left = 319.0
-offset_top = 309.0
-offset_right = 338.0
-offset_bottom = 326.0
+offset_left = 102.0
+offset_top = 328.00003
+offset_right = 121.0
+offset_bottom = 345.00003
 scale = Vector2(6, 6)
 texture_normal = ExtResource("11_xq537")
 
 [node name="8" type="TextureButton" parent="LevelButtons" unique_id=68890746]
 texture_filter = 1
-offset_left = 515.0
-offset_top = 304.0
-offset_right = 534.0
-offset_bottom = 321.0
+offset_left = 227.00003
+offset_top = 328.00003
+offset_right = 246.00003
+offset_bottom = 345.00003
 scale = Vector2(6, 6)
 texture_normal = ExtResource("12_61tmf")
 
 [node name="9" type="TextureButton" parent="LevelButtons" unique_id=1435101951]
 texture_filter = 1
-offset_left = 714.0
-offset_top = 301.0
-offset_right = 733.0
-offset_bottom = 318.0
+offset_left = 347.0
+offset_top = 329.0
+offset_right = 366.0
+offset_bottom = 346.0
 scale = Vector2(6, 6)
 texture_normal = ExtResource("13_7o8qp")
 
 [node name="10" type="TextureButton" parent="LevelButtons" unique_id=586420694]
 texture_filter = 1
-offset_left = 916.0
-offset_top = 298.0
-offset_right = 935.0
-offset_bottom = 315.0
+offset_left = 466.0
+offset_top = 328.00003
+offset_right = 485.0
+offset_bottom = 345.00003
 scale = Vector2(6, 6)
 texture_normal = ExtResource("14_ipnst")
 
 [node name="11" type="TextureButton" parent="LevelButtons" unique_id=2049711632]
 texture_filter = 1
-offset_left = 119.00001
-offset_top = 440.0
-offset_right = 138.0
-offset_bottom = 457.0
+offset_left = 583.0
+offset_top = 329.00003
+offset_right = 602.0
+offset_bottom = 346.00003
 scale = Vector2(6, 6)
 texture_normal = ExtResource("15_qn51j")
 
 [node name="12" type="TextureButton" parent="LevelButtons" unique_id=640936692]
 texture_filter = 1
-offset_left = 318.0
-offset_top = 438.0
-offset_right = 337.0
-offset_bottom = 455.0
+offset_left = 702.0
+offset_top = 329.00003
+offset_right = 721.0
+offset_bottom = 346.00003
 scale = Vector2(6, 6)
 texture_normal = ExtResource("16_s6yfj")
 
 [node name="13" type="TextureButton" parent="LevelButtons" unique_id=904711038]
 texture_filter = 1
-offset_left = 514.0
-offset_top = 433.0
-offset_right = 533.0
-offset_bottom = 450.0
+offset_left = 818.0
+offset_top = 331.0
+offset_right = 837.0
+offset_bottom = 348.0
 scale = Vector2(6, 6)
 texture_normal = ExtResource("17_ku324")
 
 [node name="14" type="TextureButton" parent="LevelButtons" unique_id=1424183442]
 texture_filter = 1
-offset_left = 713.0
-offset_top = 430.0
-offset_right = 732.0
-offset_bottom = 447.0
+offset_left = 98.0
+offset_top = 440.0
+offset_right = 117.0
+offset_bottom = 457.0
 scale = Vector2(6, 6)
 texture_normal = ExtResource("18_h7fdd")
 
 [node name="15" type="TextureButton" parent="LevelButtons" unique_id=2012402851]
 texture_filter = 1
-offset_left = 915.0
-offset_top = 427.0
-offset_right = 934.0
-offset_bottom = 444.0
+offset_left = 227.00006
+offset_top = 440.0
+offset_right = 246.00006
+offset_bottom = 457.0
 scale = Vector2(6, 6)
 texture_normal = ExtResource("19_2j36p")
 
