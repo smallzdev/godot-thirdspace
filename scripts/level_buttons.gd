@@ -5,15 +5,14 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var level1Button = $"1"
-	var level2Button = $"2"
-	var level3Button = $"3"
-	var otherLevelButtons = [$"4", $"5", $"6", $"7", $"8", $"9", $"10", $"11", $"12", $"13", $"14", $"15"]
+	var otherLevelButtons = [$"6", $"7", $"8", $"9", $"10", $"11", $"12", $"13", $"14", $"15"]
 	var ConTinue = $"../CanvasLayer/constructionPanel/conContinueButton"
 	# ^ Con (as in construction) tinue (as in continue) :D
-	level1Button.pressed.connect(level1Pressed)
-	level2Button.pressed.connect(level2Pressed)
-	level3Button.pressed.connect(level3Pressed)
+	$"1".pressed.connect(level1Pressed)
+	$"2".pressed.connect(level2Pressed)
+	$"3".pressed.connect(level3Pressed)
+	$"4".pressed.connect(level4Pressed)
+	$"5".pressed.connect(level5Pressed)
 	ConTinue.pressed.connect(ConTinuePressed)
 	
 	for button in otherLevelButtons:
@@ -36,7 +35,15 @@ func level2Pressed():
 func level3Pressed():
 	get_tree().change_scene_to_file("res://scenes/levels/level3.tscn")
 	Global.level = 3
+	
+func level4Pressed():
+	get_tree().change_scene_to_file("res://scenes/levels/level4.tscn")
+	Global.level = 4
 
+func level5Pressed():
+	get_tree().change_scene_to_file("res://scenes/levels/level5.tscn")
+	Global.level = 5
+	
 func ConTinuePressed():
 	conPanel.visible = false
 	
