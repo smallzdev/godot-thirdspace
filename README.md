@@ -4,7 +4,7 @@ This is our first submission to a [Hack Club](https://hackclub.com/) Program cal
 
 Made with <3 and Godot by [Smallz](https://github.com/smallzdev) and [Vick-St3r](https://github.com/Vick-St3r)
 
-Play the latest release [here!](https://vick-st3r.itch.io/week-one-harvest)
+Play the latest release [here!](https://vick-st3r.itch.io/week-three-adventure)
 
 # About our game
 

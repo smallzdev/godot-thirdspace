@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://copqbgx1v0cee" path="res://scenes/other/tree.tscn" id="12_got4s"]
 [ext_resource type="PackedScene" uid="uid://cwqyprewtyu1i" path="res://scenes/other/pumpkin.tscn" id="13_e40mx"]
 [ext_resource type="AudioStream" uid="uid://c0wa8kljiwcly" path="res://songs/level3fixed.wav" id="15_e40mx"]
+[ext_resource type="Script" uid="uid://ue72iyrjftst" path="res://scripts/finish.gd" id="16_ahaer"]
+[ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="17_wt4k6"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mu84n"]
 font_size = 50
@@ -190,6 +192,9 @@ texture = ExtResource("5_6lxtr")
 [sub_resource type="TileSet" id="TileSet_stm8k"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_b72m1")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wo5bm"]
+size = Vector2(45.44928, 46.459267)
 
 [node name="Node" type="Node" unique_id=1947336095]
 
@@ -373,3 +378,20 @@ position = Vector2(442, 383)
 stream = ExtResource("15_e40mx")
 volume_db = -2.5
 autoplay = true
+
+[node name="Finish" type="Area2D" parent="." unique_id=301759009]
+position = Vector2(5097, -1542)
+script = ExtResource("16_ahaer")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish" unique_id=451567923]
+position = Vector2(7484.0005, 1110)
+scale = Vector2(2.15625, 2.109375)
+shape = SubResource("RectangleShape2D_wo5bm")
+
+[node name="FinishSprite2D" type="Sprite2D" parent="Finish" unique_id=1972049166]
+texture_filter = 1
+position = Vector2(7484, 1097)
+scale = Vector2(4, 4)
+texture = ExtResource("17_wt4k6")
+
+[connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]

@@ -29,6 +29,16 @@ func _on_body_entered(body: Node2D) -> void:
 			Global.checkpointNumber = 4
 			print("checkpoint activated:", Global.checkpointNumber)
 			CheckpointSprite.frame = 1
+		elif name == "Checkpoint5" and Global.checkpointNumber < 5:
+			Global.checkpointNumber = 5
+			print("Checkpoint activated:", Global.checkpointNumber)
+			CheckpointSprite.frame = 1
+		elif name == "Checkpoint6" and Global.checkpointNumber < 6:
+			Global.checkpointNumber = 6
+			print('Checkpoint activated:', Global.checkpointNumber)
+			CheckpointSprite.frame = 1
+		else:
+			print("Checkpoint already activated or the script doesn't yet handle that number of checkpoints. Make sure to add more in the script if needed.")
 # so basically, with this code it checks the name, and if
 # the checkpoint number variable is smaller than the number
 # checkpoint. This prevents people from walking backwards
