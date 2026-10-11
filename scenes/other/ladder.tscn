@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://beat4l6abfygn"]
+
+[ext_resource type="Script" uid="uid://0on2nasbgxlp" path="res://scripts/ladder.gd" id="1_ghu8j"]
+[ext_resource type="Texture2D" uid="uid://dwgundcngf61q" path="res://Resources/Ladders/ladder_4.png" id="1_xe8yx"]
+[ext_resource type="Texture2D" uid="uid://cawdkv76xb3nx" path="res://Resources/Ladders/ladder_7.png" id="2_745gx"]
+[ext_resource type="Texture2D" uid="uid://itkeyk4dhnof" path="res://Resources/Ladders/bottom-ladder-end.png" id="3_30pc6"]
+
+[node name="ladder" type="Area2D" unique_id=1685065472]
+script = ExtResource("1_ghu8j")
+
+[node name="Ladder7" type="TextureRect" parent="." unique_id=571281296]
+texture_filter = 1
+offset_left = 12078.001
+offset_top = 950.0
+offset_right = 12078.001
+offset_bottom = 950.0
+scale = Vector2(2.4999998, 2.4999998)
+texture = ExtResource("2_745gx")
+
+[node name="Ladder4" type="TextureRect" parent="." unique_id=1435847206]
+texture_filter = 1
+offset_left = 12078.0
+offset_top = 880.0
+offset_right = 12078.0
+offset_bottom = 880.0
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("1_xe8yx")
+
+[node name="BottomLadderEnd" type="TextureRect" parent="." unique_id=1063554622]
+texture_filter = 1
+offset_left = 12078.0
+offset_top = 967.0
+offset_right = 12078.0
+offset_bottom = 967.0
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("3_30pc6")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

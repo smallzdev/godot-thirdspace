@@ -5,10 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://ji2ahpa1peus" path="res://scenes/other/character.tscn" id="3_sbmf2"]
 [ext_resource type="Script" uid="uid://ue72iyrjftst" path="res://scripts/finish.gd" id="4_1xax6"]
 [ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="5_g7tkf"]
-[ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/other/coin_ui.tscn" id="6_4fww7"]
+[ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/other/Coins/coin_ui.tscn" id="6_4fww7"]
 [ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/other/sound_button.tscn" id="7_gvm5i"]
 [ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="8_jrfo0"]
-[ext_resource type="PackedScene" uid="uid://bkopc4odunmjm" path="res://scenes/other/coin.tscn" id="9_db1r7"]
+[ext_resource type="PackedScene" uid="uid://bkopc4odunmjm" path="res://scenes/other/Coins/coin.tscn" id="9_db1r7"]
 [ext_resource type="PackedScene" uid="uid://copqbgx1v0cee" path="res://scenes/other/tree.tscn" id="10_6gwlt"]
 [ext_resource type="PackedScene" uid="uid://b81aq5w2ohki6" path="res://scenes/other/checkpoint.tscn" id="11_c2nc4"]
 [ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/other/interactable.tscn" id="12_vhxpm"]
@@ -229,7 +229,6 @@ layer_0/tile_data = PackedInt32Array(786422, 393216, 4, 786423, 458752, 4, 78642
 visibility_layer = 2
 z_index = 1
 position = Vector2(-386, 415)
-amount = null
 
 [node name="Finish" type="Area2D" parent="." unique_id=995221132]
 script = ExtResource("4_1xax6")

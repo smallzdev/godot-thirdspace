@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dc13ryclhqkbi"]
+
+[ext_resource type="Texture2D" uid="uid://g5py4r5w6jif" path="res://Resources/Spikes/big-spike.png" id="1_26idq"]
+[ext_resource type="Script" uid="uid://bko2wf25agubn" path="res://scenes/other/Spikes/spike.gd" id="1_lpx6q"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_stm8k"]
+radius = 4.5
+height = 13.0
+
+[node name="BigSpike1" type="Area2D" unique_id=1923426142]
+texture_filter = 1
+script = ExtResource("1_lpx6q")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1034729642]
+scale = Vector2(4, 4)
+texture = ExtResource("1_26idq")
+
+[node name="SpikeCollision" type="CollisionShape2D" parent="." unique_id=784622726]
+position = Vector2(-2.5, 41.5)
+scale = Vector2(4, 4)
+shape = SubResource("CapsuleShape2D_stm8k")
+
+[connection signal="body_entered" from="." to="." method="_on_bigspike_body_entered"]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c46l7rgkkyaor"]
+
+[ext_resource type="Texture2D" uid="uid://bfxwcy5rrsla1" path="res://Resources/Spikes/small-spike.png" id="1_amt31"]
+[ext_resource type="Script" uid="uid://bko2wf25agubn" path="res://scenes/other/Spikes/spike.gd" id="1_k8gu6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_stm8k"]
+radius = 4.0
+height = 11.0
+
+[node name="SmallSpike1" type="Area2D" unique_id=531880838]
+script = ExtResource("1_k8gu6")
+
+[node name="SmallSpikeSprite" type="Sprite2D" parent="." unique_id=1254367892]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_amt31")
+
+[node name="smallSpikeCollision" type="CollisionShape2D" parent="." unique_id=768707733]
+position = Vector2(-2, 47)
+scale = Vector2(4, 4)
+shape = SubResource("CapsuleShape2D_stm8k")
+
+[connection signal="body_entered" from="." to="." method="_on_smallspike_body_entered"]

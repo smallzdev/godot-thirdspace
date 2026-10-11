@@ -8,6 +8,11 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -950.0
 var jump_count = 0
 
+# ladder climbspeed
+const climbspeed = 200.0
+# onLadder variable is referenced in scripts/ladder.gd
+var onLadder = false
+
 # preloads the gameover screen to avoid lag.
 var gameoverscene = preload("res://scenes/menus/game_over.tscn")
 
@@ -21,13 +26,16 @@ func _ready() -> void:
 	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
-	if not is_on_floor():
+	if onLadder == false and not is_on_floor():
 		velocity += get_gravity() * delta
 	else: 
 		jump_count = 0
+		
+	if onLadder == true and Input.is_action_pressed("Jump"):
+		global_position.y -= climbspeed * delta
 
 	# Handle jump. + Double jump!!
-	if Input.is_action_just_pressed("Jump") and jump_count < Global.max_jump:
+	if Input.is_action_just_pressed("Jump") and jump_count < Global.max_jump and onLadder == false:
 		jump_count += 1
 		velocity.y = JUMP_VELOCITY
 		mainSprite.animation = "jumping"
@@ -84,6 +92,12 @@ func _physics_process(delta: float) -> void:
 		
 		elif Global.checkpointNumber == 4:
 			global_position = $"../Checkpoint4".global_position
+		
+		elif Global.checkpointNumber == 5:
+			global_position = $"../Checkpoint5".global_position
+		
+		elif Global.checkpointNumber == 6:
+			global_position = $"../Checkpoint6".global_position
 			
 # ^^ if you or I add morre checkpoints, remember to update this
 	
@@ -93,4 +107,3 @@ func _physics_process(delta: float) -> void:
 	# Animation for left and right
 	var isLeft = velocity.x < 0
 	mainSprite.flip_h = isLeft
-	
