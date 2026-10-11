@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://bg3tad3du1xt4" path="res://level_button.gd" id="4_ehygs"]
 [ext_resource type="Texture2D" uid="uid://cuipknqhbymjq" path="res://Resources/Gui Buttons/Play.png" id="5_cngin"]
 [ext_resource type="Script" uid="uid://xf853tx3i2ba" path="res://nextlevelbutton.gd" id="6_lhibs"]
+[ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="7_10chf"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xrivr"]
 font_size = 120
@@ -13,6 +14,11 @@ outline_size = 12
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_13qdw"]
+font_size = 82
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_6bivr"]
 font_size = 82
 outline_size = 10
 outline_color = Color(0, 0, 0, 1)
@@ -87,3 +93,27 @@ text = "Next "
 icon = ExtResource("5_cngin")
 expand_icon = true
 script = ExtResource("6_lhibs")
+
+[node name="CoinUILabel" type="Label" parent="TextureRect" unique_id=1332535538]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 720.0
+offset_top = 258.0
+offset_right = 767.0
+offset_bottom = 371.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "0"
+label_settings = SubResource("LabelSettings_6bivr")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect" unique_id=28230535]
+texture_filter = 1
+layout_mode = 0
+offset_left = 571.0
+offset_top = 230.0
+offset_right = 601.6667
+offset_bottom = 261.0
+scale = Vector2(5, 5)
+texture = ExtResource("7_10chf")
+expand_mode = 1
+stretch_mode = 1
