@@ -173,9 +173,19 @@ I also get super carried away..
 <details open>
 <summary></summary>
 
-Week three release [here!]()
+Week three release [here!](https://vick-st3r.itch.io/week-three-adventure)
 
-NEED TO PUT SCREENSHOTS HERE
+![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/week3shop.PNG)
+
+A cat!
+
+![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/week3buy.PNG)
+
+Buy an extra life!
+
+![image](https://github.com/smallzdev/godot-thirdspace/blob/main/screenshots/week3level3.PNG)
+
+Level 3: Where to next...
 
 Adventure is a hard theme to implement... but our whole game can interpreted as an adventure? Does that count? 
 
@@ -185,35 +195,34 @@ Adventure is a hard theme to implement... but our whole game can interpreted as 
 
 By far this week has been the best communication wise. As soon as week two ended, Smallz and I got on call together and talked about what we wanted next for the game. It was super helpful as he is on Spring break (pretty crazy, because the leaves are starting to turn red here) and was going on a road trip. Something interesting to note that is not super relevant... driving = road trip in Australian. We were able to come up with some pretty good ideas together and figure out what comes next :]
 
-
 Off topic ramble: 
-Super excited to see the finished project! Althought the more that I think about it... our game isnt super technical... Ever since I started third spaces, Ive been more and more interested in game developpment and my entire Youtube feed has been effected... I was watching these people make 24hr games, game jams and so much more... its super cool to see what other people make 
+Super excited to see the finished project! Although the more that I think about it... our game isn't super technical... Ever since I started third spaces, I've been more and more interested in game development and my entire Youtube feed has been affected... I was watching these people make 24hr games, game jams and so much more... its super cool to see what other people make 
 
 **2. Improvement, Improvement, Improvement**
 
-I only really started programming last year and learned most of my knowledge through courses online. However, most of it was through C... not very useful here... but one thing I was trying to implement was the double jump feature. Side ramble: so much more easier than I thought... I cant believe I couldnt think of it myself (although that is probably due to Smallz starting up the entire game + player movement). I was pleasently surprised that I already knew how to add this to shop with a global variable. 
+I only really started programming last year and learned most of my knowledge through courses online. However, most of it was through C... not very useful here... but one thing I was trying to implement was the double jump feature. Side ramble: so much more easier than I thought... I can't believe I couldn't think of it myself (although that is probably due to Smallz starting up the entire game + player movement). I was pleasantly surprised that I already knew how to add this to shop with a global variable. 
 
-Looking at the shops code however... it was kinda a mess.... (no offense!) there were lots of hard coded numbers... so I just decided I should dedicate sometime on fixing that. I first I was just going to do var item1 =... etc. and then I realized arent there like structs in python? 
+Looking at the shops code however... it was kinda a mess.... (no offense!) there were lots of hard coded numbers... so I just decided I should dedicate some time on fixing that. I first I was just going to do var item1 =... etc. and then I realized aren't there like structs in python? 
 
-Luckily for me, due to competitive programming (something like that I guess, Im still really bad) I have python sheets printed out and taped to my wall...!!! So I was immediately able to find out they were called dicts in python and implemented them to the shop. 
+Luckily for me, due to [future self: this is just lies] competitive programming (something like that I guess, I'm still really bad) I have python sheets printed out and taped to my wall...!!! So I was immediately able to find out they were called dicts in python and implemented them to the shop. 
 
 Something I was pretty proud of :D 
 
 **3. time.... management... again**
 
-I cant believe every week it gets worse for me... but like the past two weeks Smallz is super locked in. Even when hes driving. This week was a below average week for me and it was hard to get started this weekend. A lot of stuff happend and I wasnt in a really good mood to code for 10 hours :|, so I basically started everything on Sunday. I HOPE next week will actually be MANAGED properly :( being a discord mod for a whole weekend is something... and really this is the latest Ive ever gotten. 
+I can't believe every week it gets worse for me... but like the past two weeks Smallz is super locked in. Even when he's driving. This week was a below average week for me and it was hard to get started this weekend. A lot of stuff happened and I wasn't in a really good mood to code for 10 hours :|, so I basically started everything on Sunday. I HOPE next week will actually be MANAGED properly :( being a discord mod for a whole weekend is something... and really this is the latest I've ever gotten. 
 
-As time passes on... I get more and more busy, but I really just need to push through even when Im tired... the grind never stops.... Speaking of, there is a hackathon I really wanna go to in October, which means that my entire weekend will be booked. That means I will have to code 10hrs/5 days = 2 hours a day. It doesnt seem like much but as soon someone who loves just going through the 10 hours in a short period of time, this will be super challenging for me... im thinking of dedicating 2 days where I do 4 hours and somehow power through those remaining 2 hours. 
+As time passes on... I get more and more busy, but I really just need to push through even when I'm tired... the grind never stops.... Speaking of, there is a hackathon I really wanna go to in October, which means that my entire weekend will be booked. That means I will have to code 10hrs/5 days = 2 hours a day. It doesn't seem like much but as soon someone who loves just going through the 10 hours in a short period of time, this will be super challenging for me... I'm thinking of dedicating 2 days where I do 4 hours and somehow power through those remaining 2 hours. 
 
 **4. Music!!**
 
-It was super hard to get my creative juices flowing this week... especially for the scene that are the most vibey? If that makes sense. This week I composed a level song, main menu and the shop. The main menu and the shop were the hardest. One thing I do to help composing is opening up the level and playing through it to see what other melody I would add... I tried to do that for the main menu and shop but.. uhh I had to use a lot of my imagination here... For every song I compose, Im luckily able to come up with a Toby Fox song I would put -- which was able to help me imagine more what I wanted my songs to sound like..? When composing my the main menu song, I wanted it to be like Green Room from Toby Fox! Very chill with a crystal type sound... The song came out... a little more different... I suppose... but I think Im still proud of it... As for the shop sound - I wanted it to sound like the new shop theme in chapter 5! I also wanted the silly instrument from the same level sound track to be in it... Again it turned out a lot more differently then I expected, but I was also able to put in quarter note (I believe...) very successfully! I think they sounded much better than I expected.
+It was super hard to get my creative juices flowing this week... especially for the scene that are the most vibey? If that makes sense. This week I composed a level song, main menu and the shop. The main menu and the shop were the hardest. One thing I do to help composing is opening up the level and playing through it to see what it would sound like... I tried to do that for the main menu and shop but.. uhh I had to use a lot of my imagination here... For every song I compose, I'm luckily able to come up with a Toby Fox song I would put -- which was able to help me imagine more what I wanted my songs to sound like..? When composing my the main menu song, I wanted it to be like Green Room from Toby Fox! Very chill with a crystal type sound... The song came out... a little more different... I suppose... but I think I'm still proud of it... As for the shop sound - I wanted it to sound like the new shop theme in chapter 5! I also wanted the silly instrument from the same level sound track to be in it... Again it turned out a lot more differently then I expected, but I was also able to put in quarter note (I believe...) very successfully! I think they sounded much better than I expected.
 
-More notes on composition 
+Notes on composition 
 
 Level 3: 
 
-Level twos music was more... not quite sure how to describe this in words but similiar to that one song in Earthbound with the dinosaurs. More quirky. I guess it was due to the colour of the sky. I really love how sometimes you jump along to the beats of the song. As for level threes soundtrack, it was much more cheerful. I wanted a contrast within the two levels, but I also wanted it to be a bit quirky still. The level design is very much more quirky, with how you have to trust in yourself *hope* you fall onto the correct platforms. 
+Level twos music was more... not quite sure how to describe this in words but similar to that one song in Earthbound with the dinosaurs. More quirky. I guess it was due to the colour of the sky. I really love how sometimes you jump along to the beats of the song. As for level threes soundtrack, it was much more cheerful. I wanted a contrast within the two levels, but I also wanted it to be a bit quirky still. The level design is very much more quirky, with how you have to trust in yourself and *hope* you fall onto the correct platforms. 
 
 Main menu: 
 
@@ -228,17 +237,17 @@ Overall, I wish I could have more music theory knowledge... but oh well....
 
 **5. Future of the game...**
 
-Its pretty crazy but as time passes by our game is slowly closer to getting finished. After that chat, I can invision how our final product would look like. Next week would be week 4 of third spaces and wow. Basically a month of third spaces is done... (cope) and our first week is no where near done :.) 
+It's pretty crazy but as time passes by our game is slowly closer to getting finished. After that chat, I can envision how our final product would look like. Next week would be week 4 of third spaces and wow. Basically a month of third spaces is done... and our first week is no where near done :.) 
 
-Besides this game, I look forward to attending my first jame gam/game jam soon! I cant wait to make more ,mobile, ,attention span, type games.... As mentioned above, I was looking online for more inspiration.
+Besides this game, I look forward to attending my first jame gam/game jam soon! I cant wait to make more "mobile", "attention span", type games.... As mentioned above, I was looking online for more inspiration.
 
-Im looking towards making some typical indie horror mascot game... (they look super cool! despite like half of them being cash grabs)
+I'm looking towards making some typical indie horror mascot game... (they look super cool! despite like half of them being cash grabs)
 
-A/N: My quotation mark key/apstrophe key is broken on my keyboard. Im typing this in such a rush, I didnt even have time to copy paste them like I usual do. So, ignore the poor grammar... (I hate it so much)
+A/N: My quotation mark key/apostrophe key is broken on my keyboard. I'm typing this in such a rush, I didn't even have time to copy paste them like I usual do. So, ignore the poor grammar... (I hate it so much)
 
-Another interesting fact is the amount of art thats ours in the game. When adding my sign in the game, (need to fix that... it looks a little questionable icl) I stopped and thought about our game and a huge majority of the assets are ours :D 
+Another thing I noticed is the amount of art thats ours in the game. When adding my sign in the game, (need to fix that... it looks a little questionable icl) I stopped and thought about our game and a huge majority of the assets are ours :D 
 
-Despite what I said about the music I composed this week, Im still super proud! I am really only used to consumming the music others have made and its very interesting going into sound myself. I really wanted to get some feedback for my first song... but I havent found the time to ask others I know... maybe this week!!
+Despite what I said about the music I composed this week, I'm still super proud! I am really only used to consuming the music others have made and it's very interesting going into sound myself. I really wanted to get some feedback for my first song... but I haven't found the time to ask others I know... maybe this week!!
 
 Another very long ramble... a lot can happen in a week 
 
@@ -258,8 +267,8 @@ Another very long ramble... a lot can happen in a week
 
 ## Future Outlook: 
 
-I look forward to completing this game soon... as much as I love the little green guy... his time is running up. I need something else for my dying attention span
+I look forward to completing this game soon... as much as I love the little green guy... his time is running up. I need something else for my dying attention span.
 
-Im also looking at sfx to add in our game... The double jump is super satisfying but its not quite complete without some special effects.
+I'm also looking at SFX to add in our game... The double jump is super satisfying but it's not quite complete without some special effects.
 
 </details>
