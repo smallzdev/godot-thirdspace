@@ -24,12 +24,17 @@ var shop_items = {
 		"price": 15
 	},
 	"extra_jump": {
-		"name": "Double Jump",
-		"price": 8
+		"name": "Extra Jump",
+		"price": 10
 	},
 	"placeholder": {
 		"name": "placeholder",
 		"price": 3
+	},
+	"multipliers": {
+		"life": 1,
+		"jump": 1,
+		"placeholder": 1
 	}
 }
 
@@ -77,10 +82,10 @@ func nextleft_button_pressed():
 		# GUI Updating
 		if ProductIconAnimation == 1:
 			ProductLabel.text = shop_items["extra_life"]["name"]
-			ProductCostLabel.text = "Cost: %d Coins" % shop_items["extra_life"]["price"]
+			ProductCostLabel.text = "Cost: %d Coins" % (shop_items["extra_life"]["price"]*shop_items["multipliers"]["life"])
 		if ProductIconAnimation == 2:
 			ProductLabel.text = shop_items["extra_jump"]["name"]
-			ProductCostLabel.text = "Cost: %d Coins" % shop_items["extra_jump"]["price"]
+			ProductCostLabel.text = "Cost: %d Coins" % (shop_items["extra_jump"]["price"]*shop_items["multipliers"]["jump"])
 		if ProductIconAnimation == 3:
 			ProductLabel.text = shop_items["placeholder"]["name"]
 			ProductCostLabel.text = "Cost: %d Coins" % shop_items["placeholder"]["price"]
@@ -95,10 +100,10 @@ func nextright_button_pressed():
 		# GUI Updating for each product.
 		if ProductIconAnimation == 1:
 			ProductLabel.text = shop_items["extra_life"]["name"]
-			ProductCostLabel.text = "Cost: %d Coins" % shop_items["extra_life"]["price"]
+			ProductCostLabel.text = "Cost: %d Coins" % (shop_items["extra_life"]["price"]*shop_items["multipliers"]["life"])
 		if ProductIconAnimation == 2:
 			ProductLabel.text = shop_items["extra_jump"]["name"]
-			ProductCostLabel.text = "Cost: %d Coins" % shop_items["extra_jump"]["price"]
+			ProductCostLabel.text = "Cost: %d Coins" % (shop_items["extra_jump"]["price"]*shop_items["multipliers"]["jump"])
 		if ProductIconAnimation == 3:
 			ProductLabel.text = shop_items["placeholder"]["name"]
 			ProductCostLabel.text = "Cost: %d Coins" % shop_items["placeholder"]["price"]
@@ -108,16 +113,18 @@ func nextright_button_pressed():
 # Shop purchasing system and button
 func purchase_activated():
 	if ProductIconAnimation == 1:
-		if Global.coinBalance >= shop_items["extra_life"]["price"]:
-			Global.coinBalance -= shop_items["extra_life"]["price"]
+		if Global.coinBalance >= (shop_items["extra_life"]["price"]*shop_items["multipliers"]["life"]):
+			Global.coinBalance -= (shop_items["extra_life"]["price"]*shop_items["multipliers"]["life"])
+			shop_items["multipliers"]["life"]+=1
 			Global.lives += 1
 			livesLabel.text = str(Global.lives)
 			coinBalanceLabel.text = str(Global.coinBalance)
 		else:
 			errorPanel.visible = true
 	if ProductIconAnimation == 2:
-		if Global.coinBalance >= shop_items["extra_jump"]["price"]:
-			Global.coinBalance -= shop_items["extra_jump"]["price"]
+		if Global.coinBalance >= (shop_items["extra_jump"]["price"]*shop_items["multipliers"]["jump"]):
+			Global.coinBalance -= (shop_items["extra_jump"]["price"]*shop_items["multipliers"]["jump"])
+			shop_items["multipliers"]["jump"]+=1
 			Global.max_jump += 1
 			livesLabel.text = str(Global.lives)
 			coinBalanceLabel.text = str(Global.coinBalance)
