@@ -10,7 +10,9 @@ var scene4 = preload("res://scenes/levels/level4.tscn")
 var scene5 = preload("res://scenes/levels/level5.tscn")
 
 func _on_body_entered(body: Node2D) -> void:
+	print("trohy script ", body.name)
 	if (body.name == "CharacterBody2D"):
+		print("player detected")
 		# does a bunch of things and resets / edits variables
 		Global.checkpointNumber = 0
 		Global.lives = 3
@@ -19,6 +21,7 @@ func _on_body_entered(body: Node2D) -> void:
 		
 		if Global.level >= 1 and Global.level <= 4:
 			Global.level += 1
+			print("level after: ", Global.level)
 			# ^^^^ increases level for next scene
 			get_tree().change_scene_to_file("res://scenes/menus/levelcomplete.tscn")
 			# get_tree().change_scene_to_file("res://scenes/levels/level" + str(Global.level) + ".tscn")

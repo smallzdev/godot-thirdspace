@@ -21,11 +21,11 @@ extends CanvasLayer
 var shop_items = {
 	"extra_life": {
 		"name": "Extra Life",
-		"price": 15
+		"price": 12
 	},
 	"extra_jump": {
 		"name": "Extra Jump",
-		"price": 10
+		"price": 15
 	},
 	"placeholder": {
 		"name": "placeholder",

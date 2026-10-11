@@ -13,8 +13,17 @@ const climbspeed = 200.0
 # onLadder variable is referenced in scripts/ladder.gd
 var onLadder = false
 
+# the higher dashspeed is - the lower u want
+# dash length to be - balancing
+const dashspeed = 2000
+#time dash will last
+const dashlength = .3
+
+@onready var dash = $Dash
+
 # preloads the gameover screen to avoid lag.
 var gameoverscene = preload("res://scenes/menus/game_over.tscn")
+var completelevel = preload("res://scenes/menus/levelcomplete.tscn")
 
 @onready var mainSprite = %MainCharacter
 @onready var livesLabel = %LivesLabel

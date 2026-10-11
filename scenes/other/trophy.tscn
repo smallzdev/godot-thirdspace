@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dkwdp55qoy54c"]
+
+[ext_resource type="Script" uid="uid://ue72iyrjftst" path="res://scripts/finish.gd" id="1_3sl0x"]
+[ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="2_fbxgh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(101, 101)
+
+[node name="finish" type="Node2D" unique_id=1769864097]
+
+[node name="Finish" type="Area2D" parent="." unique_id=743293964]
+script = ExtResource("1_3sl0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish" unique_id=1861309706]
+position = Vector2(-0.5, 13.5)
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=703317626]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("2_fbxgh")
+
+[connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]

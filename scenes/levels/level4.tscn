@@ -9,8 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="7_4vryo"]
 [ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/other/sound_button.tscn" id="8_g1ckg"]
 [ext_resource type="PackedScene" uid="uid://4kmuygfucw11" path="res://scenes/other/Lives/heart.tscn" id="9_4vryo"]
-[ext_resource type="Script" uid="uid://ue72iyrjftst" path="res://scripts/finish.gd" id="10_t7v7a"]
-[ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="11_xx6b8"]
+[ext_resource type="PackedScene" uid="uid://dkwdp55qoy54c" path="res://scenes/other/trophy.tscn" id="9_y3vdi"]
 [ext_resource type="Texture2D" uid="uid://c6sefra2c277u" path="res://Resources/Lava/topsquare.png" id="13_5sfmg"]
 [ext_resource type="Texture2D" uid="uid://bldqkeu77ftha" path="res://Resources/Lava/fullsquare.png" id="14_tsmbm"]
 [ext_resource type="PackedScene" uid="uid://beat4l6abfygn" path="res://scenes/other/ladder.tscn" id="14_y3vdi"]
@@ -210,9 +209,6 @@ font_size = 50
 outline_size = 8
 outline_color = Color(0, 0, 0, 1)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f62st"]
-size = Vector2(45.44928, 46.459267)
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_irrt8"]
 texture = ExtResource("13_5sfmg")
 0:1/0 = 0
@@ -285,10 +281,10 @@ position = Vector2(5831.0005, 292)
 position = Vector2(7922, 289)
 
 [node name="Checkpoint5" parent="." unique_id=1768955624 instance=ExtResource("4_o34q2")]
-position = Vector2(10894, 239)
+position = Vector2(10897, 241.00002)
 
 [node name="Checkpoint6" parent="." unique_id=727213817 instance=ExtResource("4_o34q2")]
-position = Vector2(14562.001, 959)
+position = Vector2(14564.001, 960.00006)
 
 [node name="chest" parent="." unique_id=1042047157 instance=ExtResource("5_rdsj4")]
 position = Vector2(8503, 632)
@@ -346,20 +342,8 @@ position = Vector2(14710, -272)
 [node name="chest2" parent="." unique_id=2093795478 instance=ExtResource("5_rdsj4")]
 position = Vector2(9317, -38)
 
-[node name="Finish" type="Area2D" parent="." unique_id=1742378458]
-position = Vector2(4614, -582)
-script = ExtResource("10_t7v7a")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish" unique_id=823159522]
-position = Vector2(7484.0005, 1110)
-scale = Vector2(2.15625, 2.109375)
-shape = SubResource("RectangleShape2D_f62st")
-
-[node name="FinishSprite2D" type="Sprite2D" parent="Finish" unique_id=599562043]
-texture_filter = 1
-position = Vector2(7484, 1097)
-scale = Vector2(4, 4)
-texture = ExtResource("11_xx6b8")
+[node name="finish" parent="." unique_id=1769864097 instance=ExtResource("9_y3vdi")]
+position = Vector2(12120, 512)
 
 [node name="LaveTilemap" type="TileMap" parent="." unique_id=1955704062]
 texture_filter = 1
@@ -511,7 +495,6 @@ position = Vector2(13969, 944)
 unique_name_in_owner = true
 position = Vector2(100, 454)
 
-[connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]
 [connection signal="body_entered" from="Lava Hitboxes/Lava1" to="Lava Hitboxes/Lava1" method="_on_body_entered"]
 [connection signal="body_entered" from="Lava Hitboxes/Lava2" to="Checkpoint1" method="_on_lava_2_body_entered"]
 [connection signal="body_entered" from="Lava Hitboxes/Lava2" to="Lava Hitboxes/Lava2" method="_on_lava2_body_entered"]

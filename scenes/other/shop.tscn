@@ -79,8 +79,8 @@ outline_size = 4
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_jkv2x"]
-line_spacing = -1.0
-font_size = 17
+line_spacing = -9.0
+font_size = 20
 outline_size = 2
 outline_color = Color(0, 0, 0, 1)
 
@@ -236,13 +236,13 @@ label_settings = SubResource("LabelSettings_muem4")
 
 [node name="Label" type="Label" parent="Panel/ErrrorPopup" unique_id=419802516]
 layout_mode = 0
-offset_left = -4.0
-offset_top = 55.0
-offset_right = 448.0
-offset_bottom = 182.0
-text = "You do not have enough coins to complete this
-transaction. Coins are only usable 
-once you complete a level with them."
+offset_left = -63.0
+offset_top = 58.0
+offset_right = 524.0
+offset_bottom = 185.0
+text = "You do not have enough coins to complete 
+this transaction. Coins are only usable once 
+you complete a level with them."
 label_settings = SubResource("LabelSettings_jkv2x")
 horizontal_alignment = 1
 

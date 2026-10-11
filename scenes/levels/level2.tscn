@@ -8,8 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="5_bo4dx"]
 [ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/other/Coins/coin_ui.tscn" id="6_yqkch"]
 [ext_resource type="PackedScene" uid="uid://bkopc4odunmjm" path="res://scenes/other/Coins/coin.tscn" id="7_6ep0u"]
-[ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="8_hrcei"]
-[ext_resource type="Script" uid="uid://ue72iyrjftst" path="res://scripts/finish.gd" id="9_wvb8j"]
+[ext_resource type="PackedScene" uid="uid://dkwdp55qoy54c" path="res://scenes/other/trophy.tscn" id="9_yhrca"]
 [ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/other/interactable.tscn" id="10_bo4dx"]
 [ext_resource type="Texture2D" uid="uid://b6uk6psq8alyb" path="res://Resources/Harvest/carvedpumpkin.png" id="11_76toy"]
 [ext_resource type="PackedScene" uid="uid://4udyoeh15lpw" path="res://scenes/other/shopkeeper.tscn" id="12_8g4ke"]
@@ -195,9 +194,6 @@ texture = ExtResource("2_6q4t8")
 physics_layer_0/collision_layer = 5
 sources/0 = SubResource("TileSetAtlasSource_8tcn8")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g8vcy"]
-size = Vector2(45.44928, 46.459267)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
 size = Vector2(307, 137.5)
 
@@ -215,6 +211,10 @@ offset_bottom = 1340.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_r40rm")
+
+[node name="finish" parent="." unique_id=1769864097 instance=ExtResource("9_yhrca")]
+z_index = 1
+position = Vector2(6981, 273)
 
 [node name="chest" parent="." unique_id=1042047157 instance=ExtResource("2_xa7n4")]
 position = Vector2(1455, 248)
@@ -306,21 +306,6 @@ position = Vector2(601, 387)
 scale = Vector2(3, 3)
 texture = ExtResource("11_76toy")
 
-[node name="Finish" type="Area2D" parent="." unique_id=2004711981]
-position = Vector2(-510, -823)
-script = ExtResource("9_wvb8j")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish" unique_id=1074766142]
-position = Vector2(7484.0005, 1110)
-scale = Vector2(2.15625, 2.109375)
-shape = SubResource("RectangleShape2D_g8vcy")
-
-[node name="FinishSprite2D" type="Sprite2D" parent="Finish" unique_id=425930042]
-texture_filter = 1
-position = Vector2(7484, 1097)
-scale = Vector2(4, 4)
-texture = ExtResource("8_hrcei")
-
 [node name="Coin" parent="." unique_id=1389673919 instance=ExtResource("7_6ep0u")]
 position = Vector2(269, 439)
 
@@ -366,7 +351,7 @@ position = Vector2(6260, 125)
 
 [node name="shopkeeper" parent="." unique_id=1417100742 instance=ExtResource("12_8g4ke")]
 texture_filter = 1
-position = Vector2(7029.0005, -164)
+position = Vector2(7030.0005, -162)
 
 [node name="Shop" parent="shopkeeper" unique_id=1104006584 instance=ExtResource("13_56gwk")]
 
@@ -388,5 +373,3 @@ position = Vector2(5738, 243.00002)
 [node name="CharacterBody2D" parent="." unique_id=177745067 instance=ExtResource("3_6q4t8")]
 unique_name_in_owner = true
 position = Vector2(70, 397)
-
-[connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]

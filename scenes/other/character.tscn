@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dc886yuxils0" path="res://Resources/MainCharacter/Idle (32x32).png" id="2_pjt0s"]
 [ext_resource type="Texture2D" uid="uid://bjrnb5q6xwlkp" path="res://Resources/MainCharacter/Run (32x32).png" id="4_wfnr8"]
 [ext_resource type="PackedScene" uid="uid://qu41r5de8b2" path="res://scenes/other/interacting_component.tscn" id="5_dp8ca"]
+[ext_resource type="PackedScene" uid="uid://bh8xf5rphyaem" path="res://scenes/other/dash.tscn" id="6_54t62"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_stm8k"]
 radius = 5.389477
@@ -218,3 +219,5 @@ position = Vector2(1, -6)
 [node name="InteractingComponent" parent="." unique_id=818544180 instance=ExtResource("5_dp8ca")]
 visibility_layer = 2
 position = Vector2(-2, -1)
+
+[node name="Dash" parent="." unique_id=883574112 instance=ExtResource("6_54t62")]

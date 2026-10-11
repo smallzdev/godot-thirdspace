@@ -3,8 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://yi82pyg4ria0" path="res://Resources/Blue.png" id="1_jprdt"]
 [ext_resource type="Texture2D" uid="uid://2v1y4vx7jcu6" path="res://Resources/Terrain (16x16).png" id="2_ps2vj"]
 [ext_resource type="PackedScene" uid="uid://ji2ahpa1peus" path="res://scenes/other/character.tscn" id="3_sbmf2"]
-[ext_resource type="Script" uid="uid://ue72iyrjftst" path="res://scripts/finish.gd" id="4_1xax6"]
-[ext_resource type="Texture2D" uid="uid://b8xye23xbi2e4" path="res://Resources/trophy.png" id="5_g7tkf"]
+[ext_resource type="PackedScene" uid="uid://dkwdp55qoy54c" path="res://scenes/other/trophy.tscn" id="4_lgguw"]
 [ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/other/Coins/coin_ui.tscn" id="6_4fww7"]
 [ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/other/sound_button.tscn" id="7_gvm5i"]
 [ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="8_jrfo0"]
@@ -185,9 +184,6 @@ texture = ExtResource("2_ps2vj")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_0xm2m")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_stm8k"]
-size = Vector2(45.44928, 46.459267)
-
 [sub_resource type="LabelSettings" id="LabelSettings_7m3ot"]
 font_size = 50
 outline_size = 8
@@ -231,19 +227,8 @@ visibility_layer = 2
 z_index = 1
 position = Vector2(-386, 415)
 
-[node name="Finish" type="Area2D" parent="." unique_id=995221132]
-script = ExtResource("4_1xax6")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish" unique_id=1947181208]
-position = Vector2(3355.0002, 143)
-scale = Vector2(2.15625, 2.109375)
-shape = SubResource("RectangleShape2D_stm8k")
-
-[node name="FinishSprite2D" type="Sprite2D" parent="Finish" unique_id=877657192]
-texture_filter = 1
-position = Vector2(3356, 130)
-scale = Vector2(4, 4)
-texture = ExtResource("5_g7tkf")
+[node name="finish" parent="." unique_id=1769864097 instance=ExtResource("4_lgguw")]
+position = Vector2(3356, 131)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=993562204]
 
@@ -384,5 +369,3 @@ position = Vector2(-87.00001, 483.00003)
 stream = ExtResource("14_jqv5m")
 autoplay = true
 max_distance = 9.223372e+18
-
-[connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]
