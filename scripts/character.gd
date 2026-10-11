@@ -4,7 +4,7 @@ class_name CharacterBody
 @export var amount: int = 1
 
 # edit these to alter speed and gravity.
-const SPEED = 300.0
+const normalSPEED = 300.0
 const JUMP_VELOCITY = -950.0
 var jump_count = 0
 
@@ -15,9 +15,9 @@ var onLadder = false
 
 # the higher dashspeed is - the lower u want
 # dash length to be - balancing
-const dashspeed = 2000
+const dashspeed = 1500
 #time dash will last
-const dashlength = .3
+const dashlength = .15
 
 @onready var dash = $Dash
 
@@ -42,6 +42,10 @@ func _physics_process(delta: float) -> void:
 		
 	if onLadder == true and Input.is_action_pressed("Jump"):
 		global_position.y -= climbspeed * delta
+	
+	if Input.is_action_just_pressed("dash"):
+		dash.startdash(dashlength)
+	var SPEED = dashspeed if dash.isdashing() else normalSPEED
 
 	# Handle jump. + Double jump!!
 	if Input.is_action_just_pressed("Jump") and jump_count < Global.max_jump and onLadder == false:
