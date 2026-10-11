@@ -254,16 +254,13 @@ layer_0/tile_data = PackedInt32Array(720896, 458752, 4, 720897, 458752, 4, 72090
 [node name="Heart" parent="." unique_id=1280220303 instance=ExtResource("8_rupth")]
 position = Vector2(1004, 597)
 
-[node name="Checkpoint1" parent="." unique_id=89005797 instance=ExtResource("9_rupth")]
-position = Vector2(437.00003, 384.00003)
-
-[node name="Checkpoint2" parent="." unique_id=53881383 instance=ExtResource("9_rupth")]
+[node name="Checkpoint1" parent="." unique_id=53881383 instance=ExtResource("9_rupth")]
 position = Vector2(3166.0002, 288)
 
-[node name="Checkpoint3" parent="." unique_id=1516238956 instance=ExtResource("9_rupth")]
+[node name="Checkpoint2" parent="." unique_id=1516238956 instance=ExtResource("9_rupth")]
 position = Vector2(6718, 144)
 
-[node name="Checkpoint4" parent="." unique_id=1921506798 instance=ExtResource("9_rupth")]
+[node name="Checkpoint3" parent="." unique_id=1921506798 instance=ExtResource("9_rupth")]
 position = Vector2(9206, 97)
 
 [node name="Coins" type="Node2D" parent="." unique_id=1091322428]
