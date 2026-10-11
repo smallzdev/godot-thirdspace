@@ -1,6 +1,6 @@
 extends Area2D
 
-# Currently only works for level 4 i think.
+# should work for all levels now :D
 
 @onready var character2D = %CharacterBody2D
 

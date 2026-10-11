@@ -17,7 +17,7 @@ var onLadder = false
 var gameoverscene = preload("res://scenes/menus/game_over.tscn")
 
 @onready var mainSprite = %MainCharacter
-@onready var livesLabel = $"../CanvasLayer2/HeartUI/LivesLabel"
+@onready var livesLabel = %LivesLabel
 
 # Fetches the current startposition :D
 func _ready() -> void:

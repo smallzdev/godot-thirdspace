@@ -5,11 +5,6 @@ extends Area2D
 func _ready() -> void:
 	get_node("../shopkeeper/Shop/Panel").hide()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 func _on_body_entered(body: Node2D) -> void:
 	print("Shop entered: ", body.name)
 	if body.name == "CharacterBody2D":

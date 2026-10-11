@@ -269,6 +269,7 @@ expand_mode = 1
 stretch_mode = 1
 
 [node name="LivesLabel" type="Label" parent="CanvasLayer2/HeartUI" unique_id=1051447047]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 110.0
 offset_top = -24.0
@@ -385,6 +386,7 @@ position = Vector2(5984, 162)
 position = Vector2(5738, 243.00002)
 
 [node name="CharacterBody2D" parent="." unique_id=177745067 instance=ExtResource("3_6q4t8")]
+unique_name_in_owner = true
 position = Vector2(70, 397)
 
 [connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]

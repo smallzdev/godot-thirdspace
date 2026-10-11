@@ -322,6 +322,7 @@ expand_mode = 1
 stretch_mode = 1
 
 [node name="LivesLabel" type="Label" parent="CanvasLayer2/HeartUI" unique_id=726887230]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 110.0
 offset_top = -24.0

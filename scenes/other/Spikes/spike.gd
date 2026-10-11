@@ -1,7 +1,7 @@
 extends Area2D
 # for both the small spike and big spike.
 
-# currently only works for level 4
+# should work for all levels now
 
 @onready var CharBodySprite = %CharacterBody2D
 
