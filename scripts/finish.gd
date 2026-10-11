@@ -4,10 +4,10 @@ extends Area2D
 # and preloading the next scene to avoid lag, but this will do 4
 # now. 
 
-var nextScene = preload("res://scenes/levels/level2.tscn")
-var scene3 = preload("res://scenes/levels/level3.tscn")
-var scene4 = preload("res://scenes/levels/level4.tscn")
-var scene5 = preload("res://scenes/levels/level5.tscn")
+#var nextScene = preload("res://scenes/levels/level2.tscn")
+#var scene3 = preload("res://scenes/levels/level3.tscn")
+#var scene4 = preload("res://scenes/levels/level4.tscn")
+#var scene5 = preload("res://scenes/levels/level5.tscn")
 
 func _on_body_entered(body: Node2D) -> void:
 	print("trohy script ", body.name)

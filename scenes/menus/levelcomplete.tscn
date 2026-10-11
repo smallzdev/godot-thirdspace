@@ -49,7 +49,7 @@ offset_left = 114.0
 offset_top = 248.0
 offset_right = 610.0
 offset_bottom = 361.0
-text = "You earned: "
+text = "You have: "
 label_settings = SubResource("LabelSettings_13qdw")
 
 [node name="mainmenubutton" type="Button" parent="TextureRect" unique_id=778300603]
@@ -97,10 +97,10 @@ script = ExtResource("6_lhibs")
 [node name="CoinUILabel" type="Label" parent="TextureRect" unique_id=1332535538]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 720.0
-offset_top = 258.0
-offset_right = 767.0
-offset_bottom = 371.0
+offset_left = 632.0
+offset_top = 256.0
+offset_right = 679.0
+offset_bottom = 369.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "0"
@@ -109,9 +109,9 @@ label_settings = SubResource("LabelSettings_6bivr")
 [node name="TextureRect3" type="TextureRect" parent="TextureRect" unique_id=28230535]
 texture_filter = 1
 layout_mode = 0
-offset_left = 571.0
+offset_left = 489.00006
 offset_top = 230.0
-offset_right = 601.6667
+offset_right = 519.66675
 offset_bottom = 261.0
 scale = Vector2(5, 5)
 texture = ExtResource("7_10chf")
