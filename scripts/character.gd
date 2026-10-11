@@ -31,7 +31,14 @@ func _physics_process(delta: float) -> void:
 		jump_count += 1
 		velocity.y = JUMP_VELOCITY
 		mainSprite.animation = "jumping"
-
+		
+	# crawling and crouching.
+	if Input.is_action_just_pressed("crawl"):
+		if rotation == 0:
+			rotation = deg_to_rad(92)
+		else:
+			rotation = 0
+		
 	var direction := Input.get_axis("Left", "Right")
 	# uses input map ^
 	
