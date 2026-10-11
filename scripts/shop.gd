@@ -23,20 +23,19 @@ var dashbought = false
 var shop_items = {
 	"extra_life": {
 		"name": "Extra Life",
-		"price": 12
+		"price": 8
 	},
 	"extra_jump": {
 		"name": "Extra Jump",
 		"price": 15
 	},
 	"placeholder": {
-		"name": "placeholder",
-		"price": 3
+		"name": "Dash",
+		"price": 15
 	},
 	"multipliers": {
 		"life": 1,
-		"jump": 1,
-		"placeholder": 1
+		"jump": 1
 	}
 }
 
@@ -143,8 +142,8 @@ func purchase_activated():
 		else:
 			errorPanel.visible = true
 	if ProductIconAnimation == 3:
-		if Global.coinBalance >= (shop_items["placeholder"]["price"]*shop_items["multipliers"]["placeholder"]):
-			Global.coinBalance -= (shop_items["placeholder"]["price"]*shop_items["multipliers"]["placeholder"])
+		if Global.coinBalance >= (shop_items["placeholder"]["price"]):
+			Global.coinBalance -= (shop_items["placeholder"]["price"])
 			Global.boughtdash = true
 			livesLabel.text = str(Global.lives)
 			coinBalanceLabel.text = str(Global.coinBalance)

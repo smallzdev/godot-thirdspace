@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bom8its4285pp"]
+
+[ext_resource type="Texture2D" uid="uid://brqhle3s48hw3" path="res://Resources/Harvest/wiltedtree.png" id="1_qyw8j"]
+
+[node name="wiltedtree" type="Node2D" unique_id=2006807280]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2101287585]
+texture_filter = 1
+scale = Vector2(8, 8)
+texture = ExtResource("1_qyw8j")
