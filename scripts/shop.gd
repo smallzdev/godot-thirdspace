@@ -18,6 +18,8 @@ extends CanvasLayer
 ## or make it more expensive next time 
 ## player decides to buy something
 
+var dashbought = false
+
 var shop_items = {
 	"extra_life": {
 		"name": "Extra Life",
@@ -83,12 +85,16 @@ func nextleft_button_pressed():
 		if ProductIconAnimation == 1:
 			ProductLabel.text = shop_items["extra_life"]["name"]
 			ProductCostLabel.text = "Cost: %d Coins" % (shop_items["extra_life"]["price"]*shop_items["multipliers"]["life"])
+			$Panel/PurchaseButton.disabled = false
 		if ProductIconAnimation == 2:
 			ProductLabel.text = shop_items["extra_jump"]["name"]
 			ProductCostLabel.text = "Cost: %d Coins" % (shop_items["extra_jump"]["price"]*shop_items["multipliers"]["jump"])
+			$Panel/PurchaseButton.disabled = false
 		if ProductIconAnimation == 3:
 			ProductLabel.text = shop_items["placeholder"]["name"]
 			ProductCostLabel.text = "Cost: %d Coins" % shop_items["placeholder"]["price"]
+			if dashbought == true:
+				$Panel/PurchaseButton.disabled = true
 
 func nextright_button_pressed():
 	if ProductIconAnimation == 3:
@@ -101,12 +107,16 @@ func nextright_button_pressed():
 		if ProductIconAnimation == 1:
 			ProductLabel.text = shop_items["extra_life"]["name"]
 			ProductCostLabel.text = "Cost: %d Coins" % (shop_items["extra_life"]["price"]*shop_items["multipliers"]["life"])
+			$Panel/PurchaseButton.disabled = false
 		if ProductIconAnimation == 2:
 			ProductLabel.text = shop_items["extra_jump"]["name"]
 			ProductCostLabel.text = "Cost: %d Coins" % (shop_items["extra_jump"]["price"]*shop_items["multipliers"]["jump"])
+			$Panel/PurchaseButton.disabled = false
 		if ProductIconAnimation == 3:
 			ProductLabel.text = shop_items["placeholder"]["name"]
 			ProductCostLabel.text = "Cost: %d Coins" % shop_items["placeholder"]["price"]
+			if dashbought == true:
+				$Panel/PurchaseButton.disabled = true
 		else:
 			print("Error, product ", ProductIconAnimation, " not found..")
 
@@ -119,6 +129,7 @@ func purchase_activated():
 			Global.lives += 1
 			livesLabel.text = str(Global.lives)
 			coinBalanceLabel.text = str(Global.coinBalance)
+			$Panel/PurchaseButton.disabled = false
 		else:
 			errorPanel.visible = true
 	if ProductIconAnimation == 2:
@@ -128,8 +139,7 @@ func purchase_activated():
 			Global.max_jump += 1
 			livesLabel.text = str(Global.lives)
 			coinBalanceLabel.text = str(Global.coinBalance)
-			# need to remove option to buy again
-			# or increase price after bought
+			$Panel/PurchaseButton.disabled = false
 		else:
 			errorPanel.visible = true
 	if ProductIconAnimation == 3:
@@ -138,6 +148,10 @@ func purchase_activated():
 			Global.boughtdash = true
 			livesLabel.text = str(Global.lives)
 			coinBalanceLabel.text = str(Global.coinBalance)
+			dashbought = true
+			$Panel/PurchaseButton.disabled = true
+		else: 
+			errorPanel.visible = true
 
 func error_dismissed():
 	errorPanel.visible = false
