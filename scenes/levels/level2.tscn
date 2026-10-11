@@ -282,10 +282,10 @@ label_settings = SubResource("LabelSettings_oa1go")
 horizontal_alignment = 1
 
 [node name="sound_button" parent="CanvasLayer2" unique_id=1974950491 instance=ExtResource("14_cleqw")]
-offset_left = 1060.0
-offset_top = 19.0
-offset_right = 1060.0
-offset_bottom = 19.0
+offset_left = 1052.0
+offset_top = 30.0
+offset_right = 1052.0
+offset_bottom = 30.0
 
 [node name="TileMap" type="TileMap" parent="." unique_id=708783800]
 texture_filter = 1

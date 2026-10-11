@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bfkj700jw6m6m" path="res://Resources/Gui Buttons/whitetext-orange1.png" id="4_nij1w"]
 [ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="5_3q5jh"]
 [ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="6_ktbn2"]
+[ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/other/sound_button.tscn" id="7_t4xh0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1g0bf"]
 bg_color = Color(0.48814636, 0.35164845, 0.26260212, 1)
@@ -253,3 +254,11 @@ offset_right = 281.0
 offset_bottom = 195.0
 theme_override_font_sizes/font_size = 19
 text = "Dismiss"
+
+[node name="sound_button" parent="Panel" unique_id=1974950491 instance=ExtResource("7_t4xh0")]
+process_mode = 3
+layout_mode = 1
+offset_left = 952.0
+offset_top = -24.0
+offset_right = 952.0
+offset_bottom = -24.0

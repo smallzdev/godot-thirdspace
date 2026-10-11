@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cnoqtlin3pa6i" path="res://Resources/shop.png" id="2_jwwv3"]
 [ext_resource type="Texture2D" uid="uid://tlvriaji08jr" path="res://Resources/characters/cat.png" id="3_2fhco"]
 [ext_resource type="PackedScene" uid="uid://bw6b44lp5bonw" path="res://scenes/other/text_box.tscn" id="4_f244q"]
+[ext_resource type="AudioStream" uid="uid://k5t35gxlwvtp" path="res://songs/bettershop.wav" id="5_jwwv3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_13qdw"]
 animations = [{
@@ -59,4 +60,9 @@ offset_top = 23.666666
 offset_right = 19.333334
 offset_bottom = 51.0
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1525114010]
+stream = ExtResource("5_jwwv3")
+autoplay = true
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

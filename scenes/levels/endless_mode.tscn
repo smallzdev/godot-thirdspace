@@ -4,6 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="2_qcjw3"]
 [ext_resource type="Script" uid="uid://b3cx4causoa08" path="res://scripts/creditbuttons.gd" id="3_tmrko"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_10chf"]
+font_size = 125
+outline_size = 12
+outline_color = Color(0, 0, 0, 1)
+
 [node name="TextureRect" type="TextureRect" unique_id=58292189]
 texture_filter = 1
 anchors_preset = 15
@@ -22,6 +27,7 @@ offset_bottom = 409.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 125
 text = "Coming Soon...."
+label_settings = SubResource("LabelSettings_10chf")
 
 [node name="mainmenubutton" type="Button" parent="." unique_id=92412720]
 unique_name_in_owner = true
