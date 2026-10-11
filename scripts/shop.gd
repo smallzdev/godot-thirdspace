@@ -133,9 +133,11 @@ func purchase_activated():
 		else:
 			errorPanel.visible = true
 	if ProductIconAnimation == 3:
-		errorPanel.visible = true
-		errorTitle.text = "Under Construction"
-		# its currently a placeholder so nothings here
+		if Global.coinBalance >= (shop_items["placeholder"]["price"]*shop_items["multipliers"]["placeholder"]):
+			Global.coinBalance -= (shop_items["placeholder"]["price"]*shop_items["multipliers"]["placeholder"])
+			Global.boughtdash = true
+			livesLabel.text = str(Global.lives)
+			coinBalanceLabel.text = str(Global.coinBalance)
 
 func error_dismissed():
 	errorPanel.visible = false

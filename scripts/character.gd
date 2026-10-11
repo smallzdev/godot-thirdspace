@@ -43,8 +43,9 @@ func _physics_process(delta: float) -> void:
 	if onLadder == true and Input.is_action_pressed("Jump"):
 		global_position.y -= climbspeed * delta
 	
-	if Input.is_action_just_pressed("dash"):
-		dash.startdash(dashlength)
+	if Global.boughtdash == true:
+		if Input.is_action_just_pressed("dash"):
+			dash.startdash(dashlength)
 	var SPEED = dashspeed if dash.isdashing() else normalSPEED
 
 	# Handle jump. + Double jump!!

@@ -199,6 +199,7 @@ animations = [{
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=177745067]
 script = ExtResource("1_pjt0s")
+amount = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1406975777]
 position = Vector2(7.6293945e-06, 2.0000305)
