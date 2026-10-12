@@ -7,6 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://cwqyprewtyu1i" path="res://scenes/other/pumpkin.tscn" id="5_qsj6i"]
 [ext_resource type="PackedScene" uid="uid://copqbgx1v0cee" path="res://scenes/other/tree.tscn" id="6_dju2a"]
 [ext_resource type="PackedScene" uid="uid://bghrkuwdiqxab" path="res://scenes/other/chest.tscn" id="7_v0vb7"]
+[ext_resource type="PackedScene" uid="uid://b81aq5w2ohki6" path="res://scenes/other/checkpoint.tscn" id="8_dju2a"]
+[ext_resource type="PackedScene" uid="uid://do62venya66n5" path="res://scenes/other/Coins/coin_ui.tscn" id="9_sd6f7"]
+[ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/other/sound_button.tscn" id="10_vnf24"]
+[ext_resource type="Texture2D" uid="uid://x5oxchaw6erh" path="res://Resources/heart.png" id="11_pm1y0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7um5s"]
 texture = ExtResource("2_5yen4")
@@ -175,6 +179,11 @@ texture = ExtResource("2_5yen4")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7um5s")
 
+[sub_resource type="LabelSettings" id="LabelSettings_2eb3b"]
+font_size = 50
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
 [node name="Node" type="Node" unique_id=26550863]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1957210772]
@@ -213,3 +222,52 @@ position = Vector2(8047, 305)
 
 [node name="chest" parent="." unique_id=1042047157 instance=ExtResource("7_v0vb7")]
 position = Vector2(4988, 101)
+
+[node name="Checkpoint1" parent="." unique_id=89005797 instance=ExtResource("8_dju2a")]
+position = Vector2(5571, 291)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=992313253]
+
+[node name="CoinUI" parent="CanvasLayer" unique_id=662362470 instance=ExtResource("9_sd6f7")]
+
+[node name="sound_button" parent="CanvasLayer" unique_id=1974950491 instance=ExtResource("10_vnf24")]
+offset_left = 1055.0
+offset_top = 24.0
+offset_right = 1055.0
+offset_bottom = 24.0
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1721445441]
+
+[node name="HeartUI" type="Control" parent="CanvasLayer2" unique_id=26246849]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = 23.0
+offset_top = 33.0
+offset_right = 63.0
+offset_bottom = 73.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer2/HeartUI" unique_id=2121443720]
+texture_filter = 1
+layout_mode = 0
+offset_left = 142.0
+offset_top = -18.0
+offset_right = 168.0
+offset_bottom = 9.0
+scale = Vector2(3, 3)
+texture = ExtResource("11_pm1y0")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="LivesLabel" type="Label" parent="CanvasLayer2/HeartUI" unique_id=543519862]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 239.0
+offset_top = -5.0
+offset_right = 268.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "3"
+label_settings = SubResource("LabelSettings_2eb3b")
+horizontal_alignment = 1

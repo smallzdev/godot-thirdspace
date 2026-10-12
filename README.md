@@ -159,7 +159,7 @@ I also get super carried away..
 
 ## Feature List
 - Chest feature 
-    - Randomizes what you get from the chest! (super cool Smallz!!! really enjoyed the animation too :D)
+	- Randomizes what you get from the chest! (super cool Smallz!!! really enjoyed the animation too :D)
 - Level 2 completed!
 - Credits 
 - Added mute + unmute buttons for soundtrack
@@ -256,7 +256,7 @@ Another very long ramble... a lot can happen in a week
 ## Feature List:
 
 - Working shop found in level 2.
-    - Error popup message if you don't have enough coins or the products under construction.
+	- Error popup message if you don't have enough coins or the products under construction.
 	- Deducts coins from your global account balance. I plan on adding a tutorial to help understand this better, but basically if you finish a level with coins that ammount of coins gets added into your account. You can't purchase shop items with the coins you've just gotten without finishing.
 	- The title, and cost labels update when viewing each product.
 - Double jump 
