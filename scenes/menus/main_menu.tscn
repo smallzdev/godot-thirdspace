@@ -56,38 +56,41 @@ texture = ExtResource("1_7vrkn")
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
-offset_left = 451.00003
-offset_top = 231.0
-offset_right = 564.2
-offset_bottom = 271.0
-scale = Vector2(2.5, 2.5)
+offset_left = 430.0
+offset_top = 328.0
+offset_right = 750.0
+offset_bottom = 419.0
+theme_override_font_sizes/font_size = 60
 text = "Endless"
 icon = ExtResource("2_fu7sn")
+expand_icon = true
 
 [node name="playButton" type="Button" parent="TextureRect" unique_id=1093861813]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
-offset_left = 99.00003
-offset_top = 230.0
-offset_right = 212.20001
-offset_bottom = 270.0
-scale = Vector2(2.5, 2.5)
+offset_left = 429.0
+offset_top = 221.0
+offset_right = 749.0
+offset_bottom = 312.0
+theme_override_font_sizes/font_size = 60
 text = "Play"
 icon = ExtResource("2_fu7sn")
+expand_icon = true
 script = ExtResource("3_fu7sn")
 
 [node name="levelButton" type="Button" parent="TextureRect" unique_id=1940547896]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
-offset_left = 795.0
-offset_top = 230.00002
-offset_right = 908.19995
-offset_bottom = 270.0
-scale = Vector2(2.5, 2.5)
+offset_left = 430.0
+offset_top = 438.0
+offset_right = 750.0
+offset_bottom = 529.0
+theme_override_font_sizes/font_size = 60
 text = "Level"
 icon = ExtResource("2_fu7sn")
+expand_icon = true
 
 [node name="creditsbutton" type="Button" parent="TextureRect" unique_id=74736462]
 unique_name_in_owner = true
@@ -104,10 +107,10 @@ expand_icon = true
 
 [node name="Label" type="Label" parent="." unique_id=541770000]
 texture_filter = 1
-offset_left = 254.0
+offset_left = 280.0
 offset_top = 23.0
-offset_right = 949.0
-offset_bottom = 296.0
+offset_right = 975.0
+offset_bottom = 191.0
 theme_override_fonts/font = SubResource("FontFile_glbon")
 theme_override_font_sizes/font_size = 120
 text = "Main Menu"
