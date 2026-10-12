@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://cwqyprewtyu1i" path="res://scenes/other/pumpkin.tscn" id="13_e40mx"]
 [ext_resource type="AudioStream" uid="uid://c0wa8kljiwcly" path="res://songs/level3fixed.wav" id="15_e40mx"]
 [ext_resource type="PackedScene" uid="uid://dkwdp55qoy54c" path="res://scenes/other/trophy.tscn" id="16_t14x3"]
+[ext_resource type="PackedScene" uid="uid://c7vmy4uccuqlu" path="res://scenes/other/interactable.tscn" id="17_ahaer"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mu84n"]
 font_size = 50
@@ -191,6 +192,9 @@ texture = ExtResource("5_6lxtr")
 [sub_resource type="TileSet" id="TileSet_stm8k"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_b72m1")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(194, 162)
 
 [node name="Node" type="Node" unique_id=1947336095]
 
@@ -376,3 +380,11 @@ autoplay = true
 
 [node name="finish" parent="." unique_id=1769864097 instance=ExtResource("16_t14x3")]
 position = Vector2(12685, -446)
+
+[node name="intro1" parent="." unique_id=977272514 instance=ExtResource("17_ahaer")]
+position = Vector2(459, 313)
+interact_name = "Seems like the only way up is down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="intro1" unique_id=638652309]
+position = Vector2(16, 23)
+shape = SubResource("RectangleShape2D_xrivr")

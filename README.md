@@ -1,10 +1,10 @@
-# It's only UP from here
+# Autumn Adventures
 
 This is our first submission to a [Hack Club](https://hackclub.com/) Program called [Third Space](https://thirdspace.hackclub.com/). Code 10 hours for 8 week with some friends and earn a $1000 USD grant to upgrade your tech! Please note this is our first time making a game :D
 
 Made with <3 and Godot by [Smallz](https://github.com/smallzdev) and [Vick-St3r](https://github.com/Vick-St3r)
 
-***Play the latest release [here!](https://vick-st3r.itch.io/week-three-adventure)***
+***Play the latest release [here!](https://vick-st3r.itch.io/autumn-adventures-1)***
 
 # About our game
 
@@ -15,6 +15,8 @@ Level 1: Tutorial - Harvest!
 Level 2: A new chatracter? - Treasure
 
 Level 3: Hidden Surprise - Adventure? 
+
+Level 4: Snakes and lava...? - Autumn
 
 # AI Declaration
 
@@ -270,5 +272,37 @@ Another very long ramble... a lot can happen in a week
 I look forward to completing this game soon... as much as I love the little green guy... his time is running up. I need something else for my dying attention span.
 
 I'm also looking at SFX to add in our game... The double jump is super satisfying but it's not quite complete without some special effects.
+
+</details>
+
+# Week 4: Autumn 
+<details open>
+<summary></summary>
+
+Week four release [here!](https://vick-st3r.itch.io/autumn-adventures-1)
+
+SCREENSHOTS HERE!!
+
+## Short Week Summary 
+
+This week went pretty great for me - both Third Spaces and in real life. This week for third spaces, I had the most motivation to finish, probably because we are wrapping up our game and I just had to add the finishing touches. I also had the chance to call Smallz for 2h 35m - very fun :D. I got to learn a lot about him, however it decreased a bit of our productivity. It didn't matter that much for me, because I am not submitting 3 minutes BEFORE the deadline XD 
+
+This ramble will be much shorter... because I'm super sleepy right now....
+
+## Feature List: 
+
+- Added Dash
+- Implemented level completion screen
+- Price increase when you buy something from the shop + removal of Dash once bought
+- Levels 4 + 5 finished (might rework them a bit in the future)
+- Spikes, Lava, Ladders
+- Press shift to crawl...
+- Lots of polish + bug fixing
+
+## Future of this game: 
+
+We both agreed that this game needs a bit more to be fully completed, so we will be adding more eventually. However, week 4 marks the end of Autumn Adventures in Third Spaces. We found that there isn't enough for us to spend 20 hours next week fixing and adding. 
+
+Stay tunned for small patch updates!
 
 </details>
