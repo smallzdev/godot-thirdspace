@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://cwqyprewtyu1i" path="res://scenes/other/pumpkin.tscn" id="20_1wpw8"]
 [ext_resource type="Texture2D" uid="uid://b6uk6psq8alyb" path="res://Resources/Harvest/carvedpumpkin.png" id="21_w1hcc"]
 [ext_resource type="PackedScene" uid="uid://bom8its4285pp" path="res://scenes/other/wiltedtree.tscn" id="23_yw4fb"]
+[ext_resource type="AudioStream" uid="uid://d4iorl72p3rv3" path="res://songs/level4.wav" id="26_1wpw8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fjlvv"]
 texture = ExtResource("2_eh8f3")
@@ -673,6 +674,11 @@ texture = ExtResource("17_ev8xs")
 [node name="CharacterBody2D" parent="." unique_id=177745067 instance=ExtResource("3_fjlvv")]
 unique_name_in_owner = true
 position = Vector2(100, 454)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1542690339]
+stream = ExtResource("26_1wpw8")
+autoplay = true
+max_distance = 10000000000.0
 
 [connection signal="body_entered" from="Lava Hitboxes/Lava1" to="Lava Hitboxes/Lava1" method="_on_body_entered"]
 [connection signal="body_entered" from="Lava Hitboxes/Lava2" to="Checkpoint1" method="_on_lava_2_body_entered"]

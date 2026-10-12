@@ -197,6 +197,15 @@ sources/0 = SubResource("TileSetAtlasSource_8tcn8")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
 size = Vector2(307, 137.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_13qdw"]
+size = Vector2(245, 195)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b1lj4"]
+size = Vector2(397, 225)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njqwk"]
+size = Vector2(191.5, 152.5)
+
 [node name="Node2" type="Node" unique_id=493559345]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1503899844]
@@ -373,3 +382,28 @@ position = Vector2(5738, 243.00002)
 [node name="CharacterBody2D" parent="." unique_id=177745067 instance=ExtResource("3_6q4t8")]
 unique_name_in_owner = true
 position = Vector2(70, 397)
+
+[node name="Tutorials" type="Node2D" parent="." unique_id=599911651]
+
+[node name="intro1" parent="Tutorials" unique_id=1308472025 instance=ExtResource("10_bo4dx")]
+position = Vector2(236, 527)
+interact_name = "It's a new dawn, it's a new life"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorials/intro1" unique_id=1213801824]
+position = Vector2(-71.5, -49.5)
+shape = SubResource("RectangleShape2D_13qdw")
+
+[node name="intro2" parent="Tutorials" unique_id=2124634902 instance=ExtResource("10_bo4dx")]
+interact_name = "And you're feeling good"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorials/intro2" unique_id=1175420128]
+position = Vector2(489.5, 329)
+shape = SubResource("RectangleShape2D_b1lj4")
+
+[node name="intro3" parent="Tutorials" unique_id=942854720 instance=ExtResource("10_bo4dx")]
+position = Vector2(6346, 72)
+interact_name = "Meows come thundering above..."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorials/intro3" unique_id=1807109491]
+position = Vector2(83.75, 45.25)
+shape = SubResource("RectangleShape2D_njqwk")
