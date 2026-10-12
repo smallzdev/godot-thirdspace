@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://l361ejfg77k5" path="res://scripts/shop.gd" id="1_57vbv"]
 [ext_resource type="Texture2D" uid="uid://ded3kfdn6njhu" path="res://Resources/Gui Buttons/X/x.png" id="2_t4xh0"]
 [ext_resource type="Texture2D" uid="uid://btjom1i7le5ab" path="res://Resources/heartanimated.png" id="3_jtdbi"]
-[ext_resource type="Texture2D" uid="uid://bfkj700jw6m6m" path="res://Resources/Gui Buttons/whitetext-orange1.png" id="4_nij1w"]
-[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="5_3q5jh"]
+[ext_resource type="Texture2D" uid="uid://dvia574luysp2" path="res://Resources/doublejump.png.png" id="4_t4xh0"]
+[ext_resource type="Texture2D" uid="uid://cduih023rp8ht" path="res://Resources/dash.png.png" id="5_jtdbi"]
 [ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="6_ktbn2"]
 [ext_resource type="PackedScene" uid="uid://bp8y2jb2b5x27" path="res://scenes/other/sound_button.tscn" id="7_t4xh0"]
 
@@ -36,7 +36,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_nij1w")
+"texture": ExtResource("4_t4xh0")
 }],
 "loop": 1,
 "name": &"2",
@@ -44,7 +44,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_3q5jh")
+"texture": ExtResource("5_jtdbi")
 }],
 "loop": 1,
 "name": &"3",
@@ -90,7 +90,6 @@ script = ExtResource("1_57vbv")
 
 [node name="Panel" type="Panel" parent="." unique_id=507146130]
 process_mode = 3
-visible = false
 offset_left = 100.0
 offset_top = 54.0
 offset_right = 1042.0
@@ -135,7 +134,7 @@ texture_filter = 1
 position = Vector2(475, 257)
 scale = Vector2(8, 8)
 sprite_frames = SubResource("SpriteFrames_stm8k")
-animation = &"1"
+animation = &"3"
 
 [node name="NextLeft" type="Button" parent="Panel" unique_id=643228487]
 layout_mode = 0

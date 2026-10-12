@@ -30,7 +30,7 @@ var shop_items = {
 		"price": 15
 	},
 	"placeholder": {
-		"name": "Dash",
+		"name": "Dash (Press K)",
 		"price": 15
 	},
 	"multipliers": {
