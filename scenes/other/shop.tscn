@@ -90,6 +90,7 @@ script = ExtResource("1_57vbv")
 
 [node name="Panel" type="Panel" parent="." unique_id=507146130]
 process_mode = 3
+visible = false
 offset_left = 100.0
 offset_top = 54.0
 offset_right = 1042.0
