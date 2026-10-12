@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://bstj7ej5y87cm"]
+
+[ext_resource type="Texture2D" uid="uid://cpawa0w3mognm" path="res://Resources/Yellow.png" id="1_p7nc7"]
+[ext_resource type="Texture2D" uid="uid://dy1dwj583kuyx" path="res://Resources/Gui Buttons/Restart.png" id="2_tieyj"]
+[ext_resource type="Script" uid="uid://b3cx4causoa08" path="res://scripts/creditbuttons.gd" id="3_ncq2j"]
+[ext_resource type="Script" uid="uid://bg3tad3du1xt4" path="res://level_button.gd" id="4_w627v"]
+[ext_resource type="Texture2D" uid="uid://bfpp67m5w4im5" path="res://Resources/Coin.png" id="7_gkauv"]
+[ext_resource type="Script" uid="uid://csscng6m6plhs" path="res://next_button.gd" id="8_0oo5n"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mgor8"]
+font_size = 82
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5gxgd"]
+font_size = 82
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Node3" type="Node" unique_id=1505421265]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1208583128]
+offset_right = 1171.0
+offset_bottom = 665.0
+texture = ExtResource("1_p7nc7")
+
+[node name="Label" type="Label" parent="TextureRect" unique_id=1805209589]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 361.0
+offset_right = 422.0
+offset_bottom = 474.0
+theme_override_font_sizes/font_size = 14
+text = "You have: "
+label_settings = SubResource("LabelSettings_mgor8")
+
+[node name="mainmenubutton" type="Button" parent="TextureRect" unique_id=713737974]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 359.0
+offset_top = 526.0
+offset_right = 557.0
+offset_bottom = 601.0
+theme_override_font_sizes/font_size = 48
+text = "Menu"
+icon = ExtResource("2_tieyj")
+expand_icon = true
+script = ExtResource("3_ncq2j")
+
+[node name="levelButton" type="Button" parent="TextureRect" unique_id=1631231683]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 565.0
+offset_top = 527.0
+offset_right = 795.0
+offset_bottom = 604.0
+theme_override_font_sizes/font_size = 48
+text = "Levels"
+icon = ExtResource("2_tieyj")
+expand_icon = true
+script = ExtResource("4_w627v")
+
+[node name="CoinUILabel" type="Label" parent="TextureRect" unique_id=1022250116]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 548.99994
+offset_top = 366.0
+offset_right = 595.99994
+offset_bottom = 479.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "0"
+label_settings = SubResource("LabelSettings_5gxgd")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect" unique_id=2044573707]
+texture_filter = 1
+layout_mode = 0
+offset_left = 406.0
+offset_top = 340.0
+offset_right = 436.6
+offset_bottom = 370.9326
+scale = Vector2(5, 5)
+texture = ExtResource("7_gkauv")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=2051175030]
+offset_left = 310.0
+offset_top = 2.0
+offset_right = 855.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 68
+text = "Congratulations!"
+
+[node name="labeltextslide" type="Label" parent="." unique_id=963275697]
+unique_name_in_owner = true
+offset_left = 8.0
+offset_top = 117.0
+offset_right = 1227.0
+offset_bottom = 306.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 44
+text = "Congratulations, you've finished the final level! 
+
+Good job!!"
+horizontal_alignment = 1
+
+[node name="nextButton" type="Button" parent="." unique_id=2019347102]
+unique_name_in_owner = true
+offset_left = 817.0
+offset_top = 502.0
+offset_right = 1089.0
+offset_bottom = 606.0
+theme_override_font_sizes/font_size = 70
+text = "Next -->"
+script = ExtResource("8_0oo5n")
+
+[node name="previousButton" type="Button" parent="." unique_id=521311595]
+unique_name_in_owner = true
+offset_left = 56.0
+offset_top = 505.0
+offset_right = 328.0
+offset_bottom = 609.0
+theme_override_font_sizes/font_size = 45
+text = "<-- Previous"
+script = ExtResource("8_0oo5n")

@@ -25,6 +25,11 @@ func _on_body_entered(body: Node2D) -> void:
 			# ^^^^ increases level for next scene
 			get_tree().change_scene_to_file("res://scenes/menus/levelcomplete.tscn")
 			# get_tree().change_scene_to_file("res://scenes/levels/level" + str(Global.level) + ".tscn")
+		if Global.level == 5:
+			Global.level += 1
+			print("level after: ", Global.level)
+			# ^^^^ increases level for next scene
+			get_tree().change_scene_to_file("res://scenes/menus/gamefinished.tscn")
 		else:
 			print("Error, next level doesn't expist. Redirecting to main menu...")
 			get_tree().change_scene_to_file("res://scenes/menus/main_menu.tscn")
