@@ -4,6 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://2v1y4vx7jcu6" path="res://Resources/Terrain (16x16).png" id="2_5yen4"]
 [ext_resource type="PackedScene" uid="uid://ji2ahpa1peus" path="res://scenes/other/character.tscn" id="3_7um5s"]
 [ext_resource type="PackedScene" uid="uid://dkwdp55qoy54c" path="res://scenes/other/trophy.tscn" id="4_37jyc"]
+[ext_resource type="PackedScene" uid="uid://cwqyprewtyu1i" path="res://scenes/other/pumpkin.tscn" id="5_qsj6i"]
+[ext_resource type="PackedScene" uid="uid://copqbgx1v0cee" path="res://scenes/other/tree.tscn" id="6_dju2a"]
+[ext_resource type="PackedScene" uid="uid://bghrkuwdiqxab" path="res://scenes/other/chest.tscn" id="7_v0vb7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7um5s"]
 texture = ExtResource("2_5yen4")
@@ -201,3 +204,12 @@ position = Vector2(117, 443)
 
 [node name="finish" parent="." unique_id=1769864097 instance=ExtResource("4_37jyc")]
 position = Vector2(14189, 417)
+
+[node name="pumpkin" parent="." unique_id=1481662959 instance=ExtResource("5_qsj6i")]
+position = Vector2(11601, 386)
+
+[node name="Tree" parent="." unique_id=862735303 instance=ExtResource("6_dju2a")]
+position = Vector2(8047, 305)
+
+[node name="chest" parent="." unique_id=1042047157 instance=ExtResource("7_v0vb7")]
+position = Vector2(4988, 101)
