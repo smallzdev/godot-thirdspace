@@ -56,6 +56,16 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
+[sub_resource type="LabelSettings" id="LabelSettings_gc6nn"]
+font_size = 68
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_d3qjk"]
+font_size = 35
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
 [node name="Node" type="Node" unique_id=343210777]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1169043542]
@@ -243,34 +253,34 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_w7ksh")
 
 [node name="PanelTitle" type="Label" parent="CanvasLayer/constructionPanel" unique_id=1448220448]
 layout_mode = 0
-offset_left = 239.0
-offset_top = 7.0
-offset_right = 664.0
-offset_bottom = 99.0
+offset_left = 237.0
+offset_top = 19.0
+offset_right = 667.0
+offset_bottom = 112.0
 theme_override_font_sizes/font_size = 67
 text = "Coming Soon"
+label_settings = SubResource("LabelSettings_gc6nn")
 
 [node name="conInfo" type="Label" parent="CanvasLayer/constructionPanel" unique_id=1067142797]
 layout_mode = 0
-offset_left = 14.0
-offset_top = 114.0
-offset_right = 2076.0
-offset_bottom = 554.0
+offset_left = -7.0
+offset_top = 129.0
+offset_right = 938.0
+offset_bottom = 906.0
 theme_override_font_sizes/font_size = 35
-text = "This level is still currently under construction, please 
-be patient. For now, you may play levels 1 through to
- 3 as those are the only levels at this time.
-
-
-
+text = "This level is still currently under construction, 
+please be patient. For now, you may play levels 1 
+through to 3 as those are the only levels at this time.
 
  Hope you enjoy!"
+label_settings = SubResource("LabelSettings_d3qjk")
+horizontal_alignment = 1
 
 [node name="conContinueButton" type="Button" parent="CanvasLayer/constructionPanel" unique_id=460764305]
 layout_mode = 0
-offset_left = 408.0
-offset_top = 346.0
-offset_right = 579.0
-offset_bottom = 405.0
+offset_left = 373.0
+offset_top = 418.0
+offset_right = 544.0
+offset_bottom = 477.0
 theme_override_font_sizes/font_size = 37
 text = "Continue"
