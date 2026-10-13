@@ -1,6 +1,9 @@
 # Autumn Adventures
 
-This is our first submission to a [Hack Club](https://hackclub.com/) Program called [Third Space](https://thirdspace.hackclub.com/). Code 10 hours for 8 week with some friends and earn a $1000 USD grant to upgrade your tech! Please note this is our first time making a game :D
+This is our first submission to a [Hack Club](https://hackclub.com/) Program called [Third Space](https://thirdspace.hackclub.com/). Code 10 hours for 8 week with some friends and earn a $1000 USD grant to upgrade your tech! Please note this is our first time making a game. :D
+
+Note to Reviewers:
+Something that might seem like it would take 15mins, might've actually taken us way longer due to debugging, fixing broken code, cleaning up code, customisation, and more so please please don't be too harsh on us, we've each put in our best efforts over 10 hours each week but we're only begginers. ❤️
 
 Made with <3 and Godot by [Smallz](https://github.com/smallzdev) and [Vick-St3r](https://github.com/Vick-St3r)
 

@@ -4,10 +4,7 @@ extends Area2D
 # and preloading the next scene to avoid lag, but this will do 4
 # now. 
 
-#var nextScene = preload("res://scenes/levels/level2.tscn")
-#var scene3 = preload("res://scenes/levels/level3.tscn")
-#var scene4 = preload("res://scenes/levels/level4.tscn")
-#var scene5 = preload("res://scenes/levels/level5.tscn")
+var finishScene = preload("res://scenes/menus/gamefinished.tscn")
 
 func _on_body_entered(body: Node2D) -> void:
 	print("trohy script ", body.name)
@@ -20,7 +17,6 @@ func _on_body_entered(body: Node2D) -> void:
 		Global.coins = 0
 		
 		if Global.level >= 1 and Global.level <= 5:
-			Global.level += 1
 			print("level after: ", Global.level)
 			# ^^^^ increases level for next scene
 			get_tree().change_scene_to_file("res://scenes/menus/levelcomplete.tscn")
@@ -28,6 +24,7 @@ func _on_body_entered(body: Node2D) -> void:
 			
 			if Global.level == 5:
 				get_tree().change_scene_to_file("res://scenes/menus/gamefinished.tscn")
+			Global.level += 1
 		else:
 			print("Error, next level doesn't expist. Redirecting to main menu...")
 			get_tree().change_scene_to_file("res://scenes/menus/main_menu.tscn")
